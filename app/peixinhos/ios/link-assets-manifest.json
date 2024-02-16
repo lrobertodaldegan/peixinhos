@@ -1,0 +1,197 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/assets/font/EncodeSans-Black.ttf",
+      "sha1": "e8ba5e8f92582f1980cebf4e7526a7629e78a9ef"
+    },
+    {
+      "path": "src/assets/font/EncodeSans-Bold.ttf",
+      "sha1": "6107ff4c953035648342c50bd163500dd00e0520"
+    },
+    {
+      "path": "src/assets/font/EncodeSans-ExtraBold.ttf",
+      "sha1": "7d65f027602d57c2ddc4394ccd4ddbd61a8bdaaf"
+    },
+    {
+      "path": "src/assets/font/EncodeSans-ExtraLight.ttf",
+      "sha1": "da1cfbf7c3db9e05fd5b7054ad6dea3c75389610"
+    },
+    {
+      "path": "src/assets/font/EncodeSans-Light.ttf",
+      "sha1": "d01e81f995803f63c09d604b895961cc9c9cc8c0"
+    },
+    {
+      "path": "src/assets/font/EncodeSans-Medium.ttf",
+      "sha1": "7a0835b4f779757693e1e362803ec10ae2c4b281"
+    },
+    {
+      "path": "src/assets/font/EncodeSans-Regular.ttf",
+      "sha1": "ce0834d49e9192e28b95aaff430072aeeff465fd"
+    },
+    {
+      "path": "src/assets/font/EncodeSans-SemiBold.ttf",
+      "sha1": "3d14b52bbeebb1b0e456635fad085cca6cdfa216"
+    },
+    {
+      "path": "src/assets/font/EncodeSans-Thin.ttf",
+      "sha1": "ab7e724fd2aeb71d71ab86d347a64fdb70ca0b96"
+    },
+    {
+      "path": "src/assets/font/EncodeSans-VariableFont_wdth,wght.ttf",
+      "sha1": "407cf659d1e47f93a2be185189d7f3896d7c9f85"
+    },
+    {
+      "path": "src/assets/font/EncodeSans_Condensed-Black.ttf",
+      "sha1": "d845875f252c3a1011cfb155bf1fcb29adfa01f5"
+    },
+    {
+      "path": "src/assets/font/EncodeSans_Condensed-Bold.ttf",
+      "sha1": "6901e0ffa04f33928493d31fee9beb83e0326455"
+    },
+    {
+      "path": "src/assets/font/EncodeSans_Condensed-ExtraBold.ttf",
+      "sha1": "1d04d1df97a06555af26adb3d7f6eb01cdf4eabf"
+    },
+    {
+      "path": "src/assets/font/EncodeSans_Condensed-ExtraLight.ttf",
+      "sha1": "0a04d2ba7d7994ce5ba1869cc2dbc00a98491075"
+    },
+    {
+      "path": "src/assets/font/EncodeSans_Condensed-Light.ttf",
+      "sha1": "aa4274713e0a79f11936b7e0b9bb6e0d31212a6c"
+    },
+    {
+      "path": "src/assets/font/EncodeSans_Condensed-Medium.ttf",
+      "sha1": "f54bc7cf89601387c3d2d516fbca07692f24501e"
+    },
+    {
+      "path": "src/assets/font/EncodeSans_Condensed-Regular.ttf",
+      "sha1": "9e7f5fcfeb4b93297cc159681f7a555b9bac2f08"
+    },
+    {
+      "path": "src/assets/font/EncodeSans_Condensed-SemiBold.ttf",
+      "sha1": "da4e2c1aa351ae6b37b06f29fdbc54fa8e260002"
+    },
+    {
+      "path": "src/assets/font/EncodeSans_Condensed-Thin.ttf",
+      "sha1": "7ecd2b2348c238d1d8bcd418c256279c86416f6c"
+    },
+    {
+      "path": "src/assets/font/EncodeSans_Expanded-Black.ttf",
+      "sha1": "6db0e55ce63fed28b31c8eee917d6e11de763760"
+    },
+    {
+      "path": "src/assets/font/EncodeSans_Expanded-Bold.ttf",
+      "sha1": "0c80ec243edaceea67909954a5ab59bf059d70b6"
+    },
+    {
+      "path": "src/assets/font/EncodeSans_Expanded-ExtraBold.ttf",
+      "sha1": "dd089d46418d843afa540dc6249662e991e6768f"
+    },
+    {
+      "path": "src/assets/font/EncodeSans_Expanded-ExtraLight.ttf",
+      "sha1": "4211214d5ecc5faf9201862d089fd1a3a76a9857"
+    },
+    {
+      "path": "src/assets/font/EncodeSans_Expanded-Light.ttf",
+      "sha1": "843081364c46cfd4a0041da7a67bb044009f8dfa"
+    },
+    {
+      "path": "src/assets/font/EncodeSans_Expanded-Medium.ttf",
+      "sha1": "a57ef2930ee3492ff78c4bde4bafa1c354c6ca62"
+    },
+    {
+      "path": "src/assets/font/EncodeSans_Expanded-Regular.ttf",
+      "sha1": "aa509d984f21df6c4bb32e35d01908770b6af0b5"
+    },
+    {
+      "path": "src/assets/font/EncodeSans_Expanded-SemiBold.ttf",
+      "sha1": "6e1d3e5297ce14dce02dc0346079d93f83f19d90"
+    },
+    {
+      "path": "src/assets/font/EncodeSans_Expanded-Thin.ttf",
+      "sha1": "3034f87824de96c45038323b7bf07df93cc10c14"
+    },
+    {
+      "path": "src/assets/font/EncodeSans_SemiCondensed-Black.ttf",
+      "sha1": "daad96b3c7e9172deb140607d7778bb400902778"
+    },
+    {
+      "path": "src/assets/font/EncodeSans_SemiCondensed-Bold.ttf",
+      "sha1": "b42eb87c3ccbdb05b82ab67069d5b7dbcee39157"
+    },
+    {
+      "path": "src/assets/font/EncodeSans_SemiCondensed-ExtraBold.ttf",
+      "sha1": "ad92fd41493dd2a6be40facf106244ca84b3adc8"
+    },
+    {
+      "path": "src/assets/font/EncodeSans_SemiCondensed-ExtraLight.ttf",
+      "sha1": "df63ba9f03cd9cc1878e1e2925ef179be5fcc5e9"
+    },
+    {
+      "path": "src/assets/font/EncodeSans_SemiCondensed-Light.ttf",
+      "sha1": "d933712fa9ebafaaf1d9f105bd1204465e422d77"
+    },
+    {
+      "path": "src/assets/font/EncodeSans_SemiCondensed-Medium.ttf",
+      "sha1": "6c5017af73d153042e88cd4e3ded45a04c5dae15"
+    },
+    {
+      "path": "src/assets/font/EncodeSans_SemiCondensed-Regular.ttf",
+      "sha1": "c944a0a129e366fd4788d5693222a7d99f92e5a8"
+    },
+    {
+      "path": "src/assets/font/EncodeSans_SemiCondensed-SemiBold.ttf",
+      "sha1": "67aae727790b6430a4d798dce52c13bfc180ca51"
+    },
+    {
+      "path": "src/assets/font/EncodeSans_SemiCondensed-Thin.ttf",
+      "sha1": "79b4824c2c812e9056f6fe1b7ffeec21e103e6a2"
+    },
+    {
+      "path": "src/assets/font/EncodeSans_SemiExpanded-Black.ttf",
+      "sha1": "1528d75865998de650d204c30851679d96304e47"
+    },
+    {
+      "path": "src/assets/font/EncodeSans_SemiExpanded-Bold.ttf",
+      "sha1": "4e2f3e4329b94cad98feac798bfd01907c107e84"
+    },
+    {
+      "path": "src/assets/font/EncodeSans_SemiExpanded-ExtraBold.ttf",
+      "sha1": "de3ffa315f70d880f7b848cff2e895580f71bc81"
+    },
+    {
+      "path": "src/assets/font/EncodeSans_SemiExpanded-ExtraLight.ttf",
+      "sha1": "1700bb312afd7f0f548b416573a03128488a7e23"
+    },
+    {
+      "path": "src/assets/font/EncodeSans_SemiExpanded-Light.ttf",
+      "sha1": "1c2f696ae4484e2a89f0229aa27caa984b16585c"
+    },
+    {
+      "path": "src/assets/font/EncodeSans_SemiExpanded-Medium.ttf",
+      "sha1": "8d2ec80ee429acfcfdc6674b6624bbd6b58c03a7"
+    },
+    {
+      "path": "src/assets/font/EncodeSans_SemiExpanded-Regular.ttf",
+      "sha1": "a9631bc9f3419f75432e32897ee0802b92d953ef"
+    },
+    {
+      "path": "src/assets/font/EncodeSans_SemiExpanded-SemiBold.ttf",
+      "sha1": "3afb1a9f18d31f1b982a467da253bfcc7fdc0f76"
+    },
+    {
+      "path": "src/assets/font/EncodeSans_SemiExpanded-Thin.ttf",
+      "sha1": "8ddae89ae98ff96a155184aa71f66c51fd568729"
+    },
+    {
+      "path": "src/assets/font/Kavoon-Regular.ttf",
+      "sha1": "3c2ce2e6ded93054f5b43ef09f80ff3b96dfd09d"
+    },
+    {
+      "path": "src/assets/font/OFL.txt",
+      "sha1": "696d70c50900ff762c07476dc68e91c6105d5ed2"
+    }
+  ]
+}
