@@ -40,7 +40,7 @@ export default function App(): JSX.Element {
           <Stack.Screen name="Home" component={HomeScreen} options={ScreenOptions} />
           <Stack.Screen name="About" component={AboutScreen} options={ScreenOptions} />
           <Stack.Screen name="Bible" component={BibleScreen} options={ScreenOptions} />
-          <Stack.Screen name="Caracters" component={CaractersScreen} options={ScreenOptions} />
+          <Stack.Screen name="Characters" component={CaractersScreen} options={ScreenOptions} />
           <Stack.Screen name="Games" component={GamesScreen} options={ScreenOptions} />
           <Stack.Screen name="Players" component={PlayersScreen} options={ScreenOptions} />
           <Stack.Screen name="Memory" component={MemoryScreen} options={ScreenOptions} />

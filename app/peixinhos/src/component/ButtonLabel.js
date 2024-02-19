@@ -5,10 +5,11 @@ import {
   StyleSheet,
   Text,
 } from 'react-native';
+import {Colors} from '../utils/Colors';
 
-export default function ButtonLabel({value='', size=24}) {
+export default function ButtonLabel({value='', size=24, color=Colors.white}) {
   return (
-    <Text style={[styles.lbl, {fontSize:size}]}>
+    <Text style={[styles.lbl, {fontSize:size, color:color}]}>
       {value}
     </Text>
   );
@@ -17,7 +18,6 @@ export default function ButtonLabel({value='', size=24}) {
 const styles = StyleSheet.create({
   lbl:{
     fontFamily:'Kavoon-Regular',
-    color:'#fff',
     textShadowColor:'#000',
     textShadowOffset:{width:2, height:2},
     textShadowRadius:1,
