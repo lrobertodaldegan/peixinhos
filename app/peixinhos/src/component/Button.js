@@ -10,7 +10,7 @@ import ButtonLabel from './ButtonLabel';
 
 export default function Button({action=()=>null, label='', color=Colors.orange}) {
   return (
-    <TouchableHighlight underlayColor={'transparent'} 
+    <TouchableHighlight underlayColor={color} 
         style={[styles.wrap, {backgroundColor:color}]}
         onPress={action}>
       <ButtonLabel value={label}/>

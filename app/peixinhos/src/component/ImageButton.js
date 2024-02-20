@@ -15,7 +15,7 @@ export default function ImageButton({
                             img,
                             color=Colors.orange}) {
   return (
-    <TouchableHighlight underlayColor={'transparent'} 
+    <TouchableHighlight underlayColor={color} 
         style={[styles.wrap, {backgroundColor:color}]}
         onPress={action}>
       
