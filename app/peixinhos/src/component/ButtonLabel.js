@@ -7,9 +7,14 @@ import {
 } from 'react-native';
 import {Colors} from '../utils/Colors';
 
-export default function ButtonLabel({value='', size=24, color=Colors.white}) {
+export default function ButtonLabel({
+                                value='', 
+                                size=24, 
+                                color=Colors.white,
+                                style={}
+                              }) {
   return (
-    <Text style={[styles.lbl, {fontSize:size, color:color}]}>
+    <Text style={[styles.lbl, {fontSize:size, color:color}, style]}>
       {value}
     </Text>
   );
