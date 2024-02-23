@@ -20,11 +20,11 @@ export default function MemoryScreen({navigation}) {
           action={() => navigation.goBack()}/>
 
       <ImageButton img={memoria} label={Texts.Games.Modes.classic}
-          action={() => navigation.navigate('MemoryGame', {mode:'classic'})}/>
+          action={() => navigation.navigate('MemoryGame', {mode:Texts.Games.Modes.classic})}/>
 
       <ImageButton img={memoriah} label={Texts.Games.Modes.histories}
           color={Colors.blue}
-          action={() => navigation.navigate('MemoryGame', {mode:'hist'})}/>
+          action={() => navigation.navigate('MemoryGame', {mode:Texts.Games.Modes.histories})}/>
         
       <Footer />
     </ImageBackground>

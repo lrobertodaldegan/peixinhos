@@ -21,5 +21,6 @@ const styles = StyleSheet.create({
   lbl:{
     fontFamily:'EncodeSans-Medium',
     color:Colors.black,
+    margin:1
   },
 });

@@ -108,7 +108,9 @@ export const Texts = {
       end:{
         title:'Parabéns!',
         subtitle:'Chegamos ao final do Jogo!\nDeus abençoe!'
-      }
+      },
+      good:['Boa!', 'Isso!', 'Wow!', 'Legal!'],
+      bad:['Eita!', 'Quase!', 'Ops!', 'Não...'],
     }
   },
   Input:{
@@ -116,8 +118,8 @@ export const Texts = {
   },
   CardGame:{
     atributes:[
-      'AMOR', 'ALEGRIA', 'PAZ', 'PACIÊNCIA', 'AMABILIDADE', 'BONDADE', 
-      'FIDELIDADE', 'MANSIDÃO', 'DOMÍNIO PRÓPRIO', 'NOTA'
+      '❤️ AMOR', '😁 ALEGRIA', '😄 PAZ', '🤗 PACIÊNCIA', '🥰 AMABILIDADE', '😇 BONDADE', 
+      '🤝 FIDELIDADE', '😌 MANSIDÃO', '😎 DOMÍNIO PRÓPRIO', 'NOTA'
     ],
     cards:[
       {

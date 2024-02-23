@@ -15,7 +15,6 @@ import Footer from '../component/Footer';
 export default function GamesScreen({navigation}) {
   return (
     <ImageBackground source={fundo} resizeMode="cover" style={styles.wrap}>
-
       <NavButton label={Texts.Buttons.goBack}
           action={() => navigation.goBack()}/>
 
