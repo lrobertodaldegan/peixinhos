@@ -20,11 +20,11 @@ export default function CardScreen({navigation}) {
         action={() => navigation.goBack()}/>
 
       <ImageButton img={sp} label={Texts.Games.Modes.single}
-          action={() => navigation.navigate('CardGame', {mode:'single'})}/>
+          action={() => navigation.navigate('CardGame', {mode:Texts.Games.Modes.single})}/>
 
       <ImageButton img={mp} label={Texts.Games.Modes.multiple}
           color={Colors.blue}
-          action={() => navigation.navigate('CardGame', {mode:'multiple'})}/>
+          action={() => navigation.navigate('CardGame', {mode:Texts.Games.Modes.multiple})}/>
       
       <Footer />
     </ImageBackground>

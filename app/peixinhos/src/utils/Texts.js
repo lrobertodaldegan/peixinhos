@@ -70,8 +70,41 @@ import pedro from '../assets/img/personagens/pedro.png';
 import davi from '../assets/img/personagens/davi.png';
 import rute from '../assets/img/personagens/rute.png';
 import sal from '../assets/img/personagens/sal.png';
-
-
+import cardAbigail from '../assets/img/cards/card_abigail.png';
+import cardAbraao from '../assets/img/cards/card_abraao.png';
+import cardAbsalao from '../assets/img/cards/card_absalao.png';
+import cardAna from '../assets/img/cards/card_ana.png';
+import cardArao from '../assets/img/cards/card_ana.png';
+import cardDavi from '../assets/img/cards/card_arao.png';
+import cardDebora from '../assets/img/cards/card_debora.png';
+import cardElias from '../assets/img/cards/card_elias.png';
+import cardEster from '../assets/img/cards/card_ester.png';
+import cardGolias from '../assets/img/cards/card_golias.png';
+import cardIsaias from '../assets/img/cards/card_isaias.png';
+import cardjaco from '../assets/img/cards/card_jaco.png';
+import cardjesus from '../assets/img/cards/card_jesus.png';
+import cardjezabel from '../assets/img/cards/card_jezabel.png';
+import cardjoao from '../assets/img/cards/card_joao.png';
+import cardjosue from '../assets/img/cards/card_josue.png';
+import cardlidia from '../assets/img/cards/card_lidia.png';
+import cardlucas from '../assets/img/cards/card_lucas.png';
+import cardmarcos from '../assets/img/cards/card_marcos.png';
+import cardmaria from '../assets/img/cards/card_maria.png';
+import cardmariab from '../assets/img/cards/card_mariab.png';
+import cardmartab from '../assets/img/cards/card_martab.png';
+import cardmateus from '../assets/img/cards/card_mateus.png';
+import cardmiria from '../assets/img/cards/card_miria.png';
+import cardmoises from '../assets/img/cards/card_moises.png';
+import cardpaulo from '../assets/img/cards/card_paulo.png';
+import cardpedro from '../assets/img/cards/card_pedro.png';
+import cardraabe from '../assets/img/cards/card_raabe.png';
+import cardraquel from '../assets/img/cards/card_raquel.png';
+import cardrebeca from '../assets/img/cards/card_rebeca.png';
+import cardreidavi from '../assets/img/cards/card_reidavi.png';
+import cardrute from '../assets/img/cards/card_rute.png';
+import cardsansao from '../assets/img/cards/card_sansao.png';
+import cardsara from '../assets/img/cards/card_sara.png';
+import cardsunamita from '../assets/img/cards/card_sunamita.png';
 
 export const Texts = {
   about:`Olá! Esse jogo foi criado para que sua família conheça mais sobre a palavra de Deus se divertindo!\n\nTodo conteúdo lúdico do jogo foi criado com o auxílio de inteligência artificial. Vale ressaltar que nós não coletamos seus dados e nem compartilhamos com terceiros, visando manter a experiência do app sendo a mais segura possível.\n\nDesenvolvido por @lucasrobertodev, esse jogo foi pensado com o objetivo central de propagar o conhecimento da Bíblia de forma lúdica, educacional e divertida. Afinal, quem não gosta de diversão?\n\nAcreditamos que o relacionamento com Deus pode se extender à todos os momentos e ocasiões das nossas vidas e que o mesmo pode ser aplicado nas vidas dos nossos pequeninos. Com a constante evolução tecnógica que temos observado, são raras as crianças que não possuem acesso às telas. Sendo assim, este aplicativo surge como uma ferramenta para que o reino de Deus avance cada vez mais!\n\nPara manter nossos projetos em constante melhoria, precisamos reservar um espaço no aplicativo para anúncios. Contudo, caso você possua o desejo de ofertar em qualquer um de nossos projetos, nos contate via e-mail ou instagram (informações abaixo).\n\nPor fim, agradeço a Deus pela oportunidade de construir esse app em família! Ao Senhor toda honra e glória! Jé e Ju, vocês são incríveis! Obrigado por fazer parte desse projeto!\n\nQue Deus os abençoe! Que o reino de Deus venha!`,
@@ -133,7 +166,8 @@ export const Texts = {
         fidelidade: 92,
         mansidao: 81,
         dominioproprio: 91,
-        nota: 83.3
+        nota: 83.3,
+        img:cardAbigail,
       },
       {
         name: "Abraão",
@@ -146,7 +180,8 @@ export const Texts = {
         fidelidade: 90,
         mansidao: 76,
         dominioproprio: 78,
-        nota: 81.2
+        nota: 81.2,
+        img:cardAbraao,
       },
       {
         name: "Absalão",
@@ -159,7 +194,8 @@ export const Texts = {
         fidelidade: 65,
         mansidao: 11,
         dominioproprio: 75,
-        nota: 38.8
+        nota: 38.8,
+        img:cardAbsalao,
       },
       {
         name: "Ana",
@@ -172,7 +208,8 @@ export const Texts = {
         fidelidade: 92,
         mansidao: 92,
         dominioproprio: 88,
-        nota: 80.6
+        nota: 80.6,
+        img:cardAna,
       },
       {
         name: "Arão",
@@ -185,7 +222,8 @@ export const Texts = {
         fidelidade: 61,
         mansidao: 48,
         dominioproprio: 71,
-        nota: 67.9
+        nota: 67.9,
+        img:cardArao,
       },
       {
         name: "Davi",
@@ -198,7 +236,8 @@ export const Texts = {
         fidelidade: 97,
         mansidao: 98,
         dominioproprio: 87,
-        nota: 93.7
+        nota: 93.7,
+        img:cardDavi,
       },
       {
         name: "Débora",
@@ -211,7 +250,8 @@ export const Texts = {
         fidelidade: 83,
         mansidao: 85,
         dominioproprio: 92,
-        nota: 82.7
+        nota: 82.7,
+        img:cardDebora,
       },
       {
         name: "Elias",
@@ -224,7 +264,8 @@ export const Texts = {
         fidelidade: 98,
         mansidao: 73,
         dominioproprio: 72,
-        nota: 72.4
+        nota: 72.4,
+        img:cardElias
       },
       {
         name: "Ester",
@@ -237,7 +278,8 @@ export const Texts = {
         fidelidade: 84,
         mansidao: 89,
         dominioproprio: 91,
-        nota: 87.3
+        nota: 87.3,
+        img:cardEster
       },
       {
         name: "Golias",
@@ -250,7 +292,8 @@ export const Texts = {
         fidelidade: 90,
         mansidao: 1,
         dominioproprio: 6,
-        nota: 17.4
+        nota: 17.4,
+        img:cardGolias,
       },
       {
         name: "Isaías",
@@ -263,7 +306,8 @@ export const Texts = {
         fidelidade: 90,
         mansidao: 79,
         dominioproprio: 80,
-        nota: 80.8
+        nota: 80.8,
+        img:cardIsaias,
       },
       {
         name: "Jacó",
@@ -276,7 +320,8 @@ export const Texts = {
         fidelidade: 62,
         mansidao: 78,
         dominioproprio: 61,
-        nota: 68.9
+        nota: 68.9,
+        img:cardjaco,
       },
       {
         name: "Jesus",
@@ -289,7 +334,8 @@ export const Texts = {
         fidelidade: 100,
         mansidao: 100,
         dominioproprio: 100,
-        nota: 100
+        nota: 100,
+        img:cardjesus,
       },
       {
         name: "Jezabel",
@@ -302,7 +348,8 @@ export const Texts = {
         fidelidade: 5,
         mansidao: 1,
         dominioproprio: 2,
-        nota: 3.8
+        nota: 3.8,
+        img:cardjezabel,
       },
       {
         name: "João",
@@ -315,7 +362,8 @@ export const Texts = {
         fidelidade: 98,
         mansidao: 97,
         dominioproprio: 95,
-        nota: 91.7
+        nota: 91.7,
+        img:cardjoao,
       },
       {
         name: "Josué",
@@ -328,7 +376,8 @@ export const Texts = {
         fidelidade: 92,
         mansidao: 79,
         dominioproprio: 94,
-        nota: 83.7
+        nota: 83.7,
+        img:cardjosue
       },
       {
         name: "Lídia",
@@ -341,7 +390,8 @@ export const Texts = {
         fidelidade: 90,
         mansidao: 75,
         dominioproprio: 75,
-        nota: 79.2
+        nota: 79.2,
+        img:cardlidia,
       },
       {
         name: "Lucas",
@@ -354,7 +404,8 @@ export const Texts = {
         fidelidade: 85,
         mansidao: 69,
         dominioproprio: 81,
-        nota: 77.8
+        nota: 77.8,
+        img:cardlucas
       },
       {
         name: "Marcos",
@@ -367,7 +418,8 @@ export const Texts = {
         fidelidade: 85,
         mansidao: 67,
         dominioproprio: 80,
-        nota: 74.9
+        nota: 74.9,
+        img:cardmarcos
       },
       {
         name: "Maria",
@@ -380,7 +432,8 @@ export const Texts = {
         fidelidade: 99,
         mansidao: 98,
         dominioproprio: 99,
-        nota: 96.6
+        nota: 96.6,
+        img:cardmaria
       },
       {
         name: "Maria (de Betânia)",
@@ -393,7 +446,8 @@ export const Texts = {
         fidelidade: 85,
         mansidao: 70,
         dominioproprio: 70,
-        nota: 75.8
+        nota: 75.8,
+        img:cardmariab
       },
       {
         name: "Marta (de Betânia)",
@@ -406,7 +460,8 @@ export const Texts = {
         fidelidade: 85,
         mansidao: 62,
         dominioproprio: 70,
-        nota: 69.8
+        nota: 69.8,
+        img:cardmartab
       },
       {
         name: "Mateus",
@@ -419,7 +474,8 @@ export const Texts = {
         fidelidade: 85,
         mansidao: 80,
         dominioproprio: 82,
-        nota: 78.9
+        nota: 78.9,
+        img:cardmateus
       },
       {
         name: "Miriã",
@@ -432,7 +488,8 @@ export const Texts = {
         fidelidade: 58,
         mansidao: 35,
         dominioproprio: 51,
-        nota: 64.2
+        nota: 64.2,
+        img:cardmiria
       },
       {
         name: "Moisés",
@@ -445,7 +502,8 @@ export const Texts = {
         fidelidade: 98,
         mansidao: 99,
         dominioproprio: 90,
-        nota: 91.8
+        nota: 91.8,
+        img:cardmoises
       },
       {
         name: "Paulo",
@@ -458,7 +516,8 @@ export const Texts = {
         fidelidade: 95,
         mansidao: 86,
         dominioproprio: 90,
-        nota: 82
+        nota: 82,
+        img:cardpaulo
       },
       {
         name: "Pedro",
@@ -471,7 +530,8 @@ export const Texts = {
         fidelidade: 85,
         mansidao: 59,
         dominioproprio: 45,
-        nota: 71.8
+        nota: 71.8,
+        img:cardpedro
       },
       {
         name: "Raabe",
@@ -484,7 +544,8 @@ export const Texts = {
         fidelidade: 88,
         mansidao: 71,
         dominioproprio: 60,
-        nota: 70.9
+        nota: 70.9,
+        img:cardraabe
       },
       {
         name: "Raquel",
@@ -497,7 +558,8 @@ export const Texts = {
         fidelidade: 70,
         mansidao: 71,
         dominioproprio: 69,
-        nota: 80.1
+        nota: 80.1,
+        img:cardraquel
       },
       {
         name: "Rebeca",
@@ -510,7 +572,8 @@ export const Texts = {
         fidelidade: 68,
         mansidao: 75,
         dominioproprio: 61,
-        nota: 72.6
+        nota: 72.6,
+        img:cardrebeca
       },
       {
         name: "Rei Davi",
@@ -523,7 +586,8 @@ export const Texts = {
         fidelidade: 80,
         mansidao: 93,
         dominioproprio: 90,
-        nota: 86.6
+        nota: 86.6,
+        img:cardreidavi
       },
       {
         name: "Rute",
@@ -536,7 +600,8 @@ export const Texts = {
         fidelidade: 99,
         mansidao: 79,
         dominioproprio: 82,
-        nota: 86.7
+        nota: 86.7,
+        img:cardrute
       },
       {
         name: "Sansão",
@@ -549,7 +614,8 @@ export const Texts = {
         fidelidade: 85,
         mansidao: 12,
         dominioproprio: 10,
-        nota: 45.3
+        nota: 45.3,
+        img:cardsansao
       },
       {
         name: "Sara",
@@ -562,7 +628,8 @@ export const Texts = {
         fidelidade: 80,
         mansidao: 68,
         dominioproprio: 66,
-        nota: 68.8
+        nota: 68.8,
+        img:cardsara
       },
       {
         name: "Sunamita",
@@ -575,7 +642,8 @@ export const Texts = {
         fidelidade: 90,
         mansidao: 78,
         dominioproprio: 75,
-        nota: 79.4
+        nota: 79.4,
+        img:cardsunamita
       }
     ]
   },

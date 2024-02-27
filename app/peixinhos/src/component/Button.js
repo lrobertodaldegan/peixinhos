@@ -2,7 +2,6 @@ import React from 'react';
 import {
   TouchableHighlight,
   Dimensions,
-  View,
   StyleSheet,
 } from 'react-native';
 import {Colors} from '../utils/Colors';
