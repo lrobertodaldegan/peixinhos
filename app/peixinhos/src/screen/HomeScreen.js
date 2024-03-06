@@ -1,10 +1,8 @@
 import React from 'react';
 import {
-  View,
   ImageBackground,
   StyleSheet,
   Dimensions,
-  SafeAreaView,
   Image,
 } from 'react-native';
 import fundo from '../assets/img/fundo.png';

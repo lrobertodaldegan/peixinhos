@@ -22,7 +22,7 @@ export default function HomeScreen({navigation}) {
         <Image source={logo} style={styles.logo} resizeMode="contain"/>
 
         <NavButton label={Texts.Buttons.goBack}
-            action={() => navigation.goBack()}/>
+            action={() => navigation.navigate('Home')}/>
 
         <ScrollView style={styles.textWrap}>
           <Label value={Texts.about} size={16}/>

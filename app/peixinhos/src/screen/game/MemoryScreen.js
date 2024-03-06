@@ -12,12 +12,21 @@ import memoria from '../../assets/img/memoria/memoria_classico.png';
 import memoriah from '../../assets/img/memoria/memoria_hist.png';
 import ImageButton from '../../component/ImageButton';
 import { Colors } from '../../utils/Colors';
+import { BannerAd,BannerAdSize, TestIds } from 'react-native-google-mobile-ads';
+const adUnitId = __DEV__ ? TestIds.BANNER : 'ca-app-pub-2420598559068720/1983527247';
+const adUnitIdM = __DEV__ ? TestIds.BANNER : 'ca-app-pub-2420598559068720/9312913429';
 
 export default function MemoryScreen({navigation}) {
   return (
     <ImageBackground source={fundo} resizeMode="cover" style={styles.wrap}>
+      <BannerAd
+          unitId={adUnitId}
+          size={BannerAdSize.BANNER}
+          requestOptions={{requestNonPersonalizedAdsOnly: false,}}
+      />
+      
       <NavButton label={Texts.Buttons.goBack}
-          action={() => navigation.goBack()}/>
+          action={() => navigation.navigate('Games')}/>
 
       <ImageButton img={memoria} label={Texts.Games.Modes.classic}
           action={() => navigation.navigate('MemoryGame', {mode:Texts.Games.Modes.classic})}/>
@@ -26,6 +35,12 @@ export default function MemoryScreen({navigation}) {
           color={Colors.blue}
           action={() => navigation.navigate('MemoryGame', {mode:Texts.Games.Modes.histories})}/>
         
+      <BannerAd
+        unitId={adUnitIdM}
+        size={BannerAdSize.MEDIUM_RECTANGLE}
+        requestOptions={{requestNonPersonalizedAdsOnly: false,}}
+      />
+
       <Footer />
     </ImageBackground>
   );
@@ -38,6 +53,7 @@ const styles = StyleSheet.create({
     width: screen.width,
     height:screen.height,
     alignItems:'center',
-    paddingVertical:20
+    paddingBottom:20,
+    paddingTop:50
   },
 });

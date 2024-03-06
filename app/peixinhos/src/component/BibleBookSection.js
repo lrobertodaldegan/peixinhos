@@ -105,7 +105,7 @@ export default function BibleBookSection({section={}}) {
 
       for(let i=0; i<verses?.verses?.length;i++){
         vrs.push(
-          <View style={styles.verse}>
+          <View key={`v${i}${i}${i}`} style={styles.verse}>
             <Label size={16} 
                 value={`${verses?.verses[i].number} ${verses?.verses[i].text}`} 
             />

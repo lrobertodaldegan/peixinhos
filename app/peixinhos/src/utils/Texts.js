@@ -105,9 +105,39 @@ import cardrute from '../assets/img/cards/card_rute.png';
 import cardsansao from '../assets/img/cards/card_sansao.png';
 import cardsara from '../assets/img/cards/card_sara.png';
 import cardsunamita from '../assets/img/cards/card_sunamita.png';
+import diffone from '../assets/img/7erros/diffmartamariamarialidia.png';
+import one from '../assets/img/7erros/one.png';
+import difftwo from '../assets/img/7erros/difftwo.png';
+import two from '../assets/img/7erros/two.png';
+import diffthree from '../assets/img/7erros/diffthree.png';
+import three from '../assets/img/7erros/three.png';
+import difffour from '../assets/img/7erros/difffour.png';
+import four from '../assets/img/7erros/four.png';
+import difffive from '../assets/img/7erros/difffive.png';
+import five from '../assets/img/7erros/five.png';
+import diffsix from '../assets/img/7erros/diffsix.png';
+import six from '../assets/img/7erros/six.png';
+import diffseven from '../assets/img/7erros/diffseven.png';
+import seven from '../assets/img/7erros/seven.png';
+import diffeight from '../assets/img/7erros/diffeight.png';
+import eight from '../assets/img/7erros/eight.png';
+import diffnine from '../assets/img/7erros/diffnine.png';
+import nine from '../assets/img/7erros/nine.png';
+import difften from '../assets/img/7erros/difften.png';
+import ten from '../assets/img/7erros/ten.png';
+import diffeleven from '../assets/img/7erros/diffeleven.png';
+import eleven from '../assets/img/7erros/eleven.png';
+import difftwelve from '../assets/img/7erros/difftwelve.png';
+import twelve from '../assets/img/7erros/twelve.png';
+import diffthirteen from '../assets/img/7erros/diffthirteen.png';
+import thirteen from '../assets/img/7erros/thirteen.png';
+import difffourteen from '../assets/img/7erros/difffourteen.png';
+import fourteen from '../assets/img/7erros/fourteen.png';
+import difffifteen from '../assets/img/7erros/difffifteen.png';
+import fifteen from '../assets/img/7erros/fifteen.png';
 
 export const Texts = {
-  about:`Olá! Esse jogo foi criado para que sua família conheça mais sobre a palavra de Deus se divertindo!\n\nTodo conteúdo lúdico do jogo foi criado com o auxílio de inteligência artificial. Vale ressaltar que nós não coletamos seus dados e nem compartilhamos com terceiros, visando manter a experiência do app sendo a mais segura possível.\n\nDesenvolvido por @lucasrobertodev, esse jogo foi pensado com o objetivo central de propagar o conhecimento da Bíblia de forma lúdica, educacional e divertida. Afinal, quem não gosta de diversão?\n\nAcreditamos que o relacionamento com Deus pode se extender à todos os momentos e ocasiões das nossas vidas e que o mesmo pode ser aplicado nas vidas dos nossos pequeninos. Com a constante evolução tecnógica que temos observado, são raras as crianças que não possuem acesso às telas. Sendo assim, este aplicativo surge como uma ferramenta para que o reino de Deus avance cada vez mais!\n\nPara manter nossos projetos em constante melhoria, precisamos reservar um espaço no aplicativo para anúncios. Contudo, caso você possua o desejo de ofertar em qualquer um de nossos projetos, nos contate via e-mail ou instagram (informações abaixo).\n\nPor fim, agradeço a Deus pela oportunidade de construir esse app em família! Ao Senhor toda honra e glória! Jé e Ju, vocês são incríveis! Obrigado por fazer parte desse projeto!\n\nQue Deus os abençoe! Que o reino de Deus venha!`,
+  about:`Olá! Esse jogo foi criado para que você e sua família conheçam mais sobre a palavra de Deus se divertindo!\n\nTodo conteúdo lúdico do jogo foi criado com o auxílio de inteligência artificial. Vale ressaltar que nós não coletamos seus dados e nem compartilhamos com terceiros, visando manter a experiência do app sendo a mais segura possível.\n\nDesenvolvido por @lucasrobertodev, esse jogo foi pensado com o objetivo central de propagar o conhecimento da Bíblia de forma lúdica, educacional e divertida. Afinal, quem não gosta de diversão?\n\nAcreditamos que o relacionamento com Deus pode se extender à todos os momentos e ocasiões das nossas vidas e que o mesmo pode ser aplicado nas vidas dos nossos pequeninos. Com a constante evolução tecnógica que temos observado, são raras as crianças que não possuem acesso às telas. Sendo assim, este aplicativo surge como uma ferramenta para que o reino de Deus avance cada vez mais!\n\nPara manter nossos projetos em constante melhoria, precisamos reservar um espaço no aplicativo para anúncios. Contudo, caso você possua o desejo de ofertar em qualquer um de nossos projetos, nos contate via e-mail ou instagram (informações abaixo).\n\nPor fim, agradeço a Deus pela oportunidade de construir esse app em família! Ao Senhor toda honra e glória! Jé e Ju, vocês são incríveis! Obrigado por fazer parte desse projeto!\n\nQue Deus os abençoe! Que o reino de Deus venha!`,
   nothingFound:'Não temos resultados para essa pesquisa 😞',
   Buttons:{
     letsPlay:'Vamos Jogar!',
@@ -149,6 +179,203 @@ export const Texts = {
   Input:{
     characters:'Digite um nome'
   },
+  DiffCards:[
+    {
+      name: "Mulheres no novo testamento",
+      resume: 'Você sabia que as mulheres tem um papel tão importante quanto os homens na bíblia? É o caso de Maria (mãe de Jesus), Lídia, Maria e Marta e muitas outras!',
+      diff1: 2,
+      diff2: 4,
+      diff3: 6,
+      diff4: 7,
+      diff5: 13,
+      diff6: 14,
+      diff7: 15,
+      img:diffone,
+      preimg:one,
+    },
+    {
+      name: "Discípulos de Jesus",
+      resume: 'Você sabia que alguns discípulos de Jesus escreveram partes da Bíblia? Ser um discípulo de Jesus significa que você foi chamado para viver no reino de Deus e que você está se tornando mais parecido com Jesus a cada dia que passa. Você também pode se tornar um discípulo de Jesus! Leia a Bíblia, converse com seus pais e procure um igreja para te ajudar!',
+      diff1: 0,
+      diff2: 15,
+      diff3: 4,
+      diff4: 5,
+      diff5: 6,
+      diff6: 8,
+      diff7: 9,
+      img:difftwo,
+      preimg:two,
+    },
+    {
+      name: "Homens de Deus",
+      resume: 'Ao longo da história, Deus fez coisas grandes e sempre fez questão de usar pessoas disponíveis para ouvi-Lo! Foi o caso de Abraão, Paulo, Isaías, Elias e vários outros homens da Bíblia. Você também é muito importante e pode ser usado por Deus onde você estiver! E aí? Está preparado? Ore pedindo pra conhecer mais a Deus e pedindo pra que Deus te use! Você é uma benção!',
+      diff1: 0,
+      diff2: 3,
+      diff3: 8,
+      diff4: 9,
+      diff5: 11,
+      diff6: 13,
+      diff7: 15,
+      img:diffthree,
+      preimg:three,
+    },
+    {
+      name: "Líderes",
+      resume:'Você sabe o que é um líder? Líder é uma pessoa que inspira as outras é quem em mais responsabilidade sobre algum assunto. Líderes são pessoas que Deus levanta para realizar algum objetivo importante! Você sabia que tem capacidade de se tornar líder um dia? Converse com Deus pedindo pra Ele te ajudar todos os dias e que a vontade de Deus se cumpra na sua vida!',
+      diff1: 1,
+      diff2: 2,
+      diff3: 4,
+      diff4: 7,
+      diff5: 12,
+      diff6: 14,
+      diff7: 15,
+      img:difffour,
+      preimg:four,
+    },
+    {
+      name: "Mulheres de Deus",
+      resume:'Você sabia que as mulheres tem um papel tão importante quanto os homens na bíblia? Nunca deixe ninguém te desprezar pela sua aparência ou idade! Seja uma benção por onde você passar!',
+      diff1: 1,
+      diff2: 4,
+      diff3: 7,
+      diff4: 9,
+      diff5: 10,
+      diff6: 12,
+      diff7: 15,
+      img:difffive,
+      preimg:five,
+    },
+    {
+      name: "Reis e sacerdotes",
+      resume: 'Você conhece algum rei ou sacerdote da Bíblia? Reis e sacerdotes exerciam um papel muito importante durante a história. Assim como você, foram pessoas que desde de pequenos tinham algo muito especial para viver com Deus! Alguns deles crersceram e não escolheram viver os planos de Deus, mas e você? Ore pedindo pra Deus te mostrar os planos dEle pra sua vida!',
+      diff1: 4,
+      diff2: 5,
+      diff3: 7,
+      diff4: 8,
+      diff5: 13,
+      diff6: 14,
+      diff7: 15,
+      img:diffsix,
+      preimg:six,
+    },
+    {
+      name: "Tesouro",
+      resume:'Se você tivesse um desouro valioso, o que você faria com ele? Você sabia que nós temos acesso a muitos tesouros? Lendo a Bíblia e conhecendo a Deus nós podemos descobrir coisas muito valiosas como a salvação, o reino de Deus e também nossa família e amigos e ainda outras coisas. Você já agradeceu a Deus por essas coisas? Antes de continuar faça isso!',
+      diff1: 2,
+      diff2: 3,
+      diff3: 5,
+      diff4: 6,
+      diff5: 8,
+      diff6: 13,
+      diff7: 15,
+      img:diffseven,
+      preimg:seven,
+    },
+    {
+      name: "Aparências",
+      resume:'Você já viu alguma coisa que parecia ser muito gostosa, mas quando colocou na boca não era tão gostosa assim? Deus conhece o nosso coração e isso significa que não adianta apenas parecermos boas pessoas, mas que devemos ser boas pessoas, ou seja, fazer coisas boas e corretas! Ore pedindo pra que Deus te ajude e ser uma pessoa melhor e se arrependa dos seus pecados. Afinal todos nós precisamos ser mais parecidos com Jesus!',
+      diff1: 1,
+      diff2: 4,
+      diff3: 5,
+      diff4: 6,
+      diff5: 8,
+      diff6: 9,
+      diff7: 11,
+      img:diffeight,
+      preimg:eight,
+    },
+    {
+      name: "Gafanhotos",
+      resume:'Houve um dia onde uma nuvem de gafanhotos cobriu um país chamado Egito. Isso aconteceu porque Faraó, o Rei do Egito, tinha desobedecido a Deus. Quando desobedecemos podemos enfrentar consequências graves por nosso pecado. Mas isso tudo aconteceu porque Deus estava cuidando do seu povo, que naquela época eram escravos do Rei do Egito. Deus é poderoso e está no controle de tudo! Ore a Deus pedindo pra que Ele te ajude a ser mais obediente e que a sua confiança nEle aumente!',
+      diff1: 0,
+      diff2: 3,
+      diff3: 4,
+      diff4: 5,
+      diff5: 7,
+      diff6: 11,
+      diff7: 14,
+      img:diffnine,
+      preimg:nine,
+    },
+    {
+      name: "O caminho",
+      resume: 'Uma vez, Jesus contou uma história sobre dois caminhos: Um era largo e o outro era estreito. O caminho largo é fácil de seguir, mas leva a problemas. O caminho estreito é mais difícil, mas leva à vida eterna. Como Escolher o Caminho? Jesus quer que escolhamos o caminho estreito. Isso significa obedecer a Deus, amar os outros e seguir Jesus. Lições Importantes: A vida é cheia de escolhas. Escolha o caminho certo! Jesus é o único caminho que nos leva até Deus.',
+      diff1: 0,
+      diff2: 2,
+      diff3: 7,
+      diff4: 8,
+      diff5: 9,
+      diff6: 12,
+      diff7: 14,
+      img:difften,
+      preimg:ten,
+    },
+    {
+      name: "Árvore frutífera",
+      resume: 'Uma árvore boa, produz frutos bons e deliciosos! Da mesma forma, se uma pessoa é boa e correta, suas atitudes também serão boas e corretas. Como nós podemos ser árvores frutíferas? Mostrando amor, bondade, paciência e todos os demais frutos do Espírito! Ore a Deus pedindo esses frutos na sua vida!',
+      diff1: 2,
+      diff2: 4,
+      diff3: 9,
+      diff4: 11,
+      diff5: 12,
+      diff6: 14,
+      diff7: 15,
+      img:diffeleven,
+      preimg:eleven,
+    },
+    {
+      name: "Capacete da Salvação",
+      resume: 'O capacete da salvação protege a nossa mente e os nossos pensamentos. Usar esse capacete significa que Jesus nos ajuda a termos bons pensamentos e a fazer as escolhas certas, porque Jesus nos salvou e nos protege de toda ideia errada! Ore pedindo ajuda de Deus para fazer as escolhas certas!',
+      diff1: 2,
+      diff2: 6,
+      diff3: 8,
+      diff4: 9,
+      diff5: 11,
+      diff6: 13,
+      diff7: 14,
+      img:difftwelve,
+      preimg:twelve,
+    },
+    {
+      name: "Redes",
+      resume: 'Você sabia que alguns discípulos de Jesus eram pescadores? Por mais simples que nós possamos ser, Jesus nos ajuda a fazermos coisas importantes pro Reino de Deus. Uma coisa importante é compartilhar sobre o amor de Jesus e avisar as pessoas que um dia Jesus irá voltar! Você pode fazer parte disso anunciando essa boa notícia para os seus amigos e para sua família! Vamos lá, lance sua rede ao mar e o Senhor vai te ajudar a ter uma boa pescaria!',
+      diff1: 0,
+      diff2: 6,
+      diff3: 7,
+      diff4: 8,
+      diff5: 11,
+      diff6: 12,
+      diff7: 15,
+      img:diffthirteen,
+      preimg:thirteen,
+    },
+    {
+      name: "Couraça da Justiça",
+      resume:'Só Jesus nos justifica! Sabe o que isso singifica? Que somente Jesus, o mais justo de todos, pode fazer justiça verdadeira. A couraça da justiça, assim como o capacete da salvação, nos protege contra as mentiras e culpas que outros podem jogar em nós. Com ela nós aprendemos a reconhecer as nossas falhas e a confiar em Jesus Cristo, o justo! É assim que Jesus nos ajuda a sermos pessoas melhores, cada dia mais parecidos com Ele! Não demore não! Vista sua couraça aí!',
+      diff1: 1,
+      diff2: 2,
+      diff3: 7,
+      diff4: 9,
+      diff5: 10,
+      diff6: 13,
+      diff7: 14,
+      img:difffourteen,
+      preimg:fourteen,
+    },
+    {
+      name: "Raça de víboras",
+      resume:'Você sabe o que significa hipocrisia? Hipócritas são pessoas falsas, que parecem ser boas e corretas, mas só agem com segundas intenções, visando algum benefício ou por orgulho. João Batista usou essa expressão "raça de víboras" para repeender pessoas que, por maldade, estavam falando coisas erradas com a intenção de enganar outras pessoas e imperdir elas de conhecer e confiar em Jesus. Ore pedindo pra que Jesus te ajude e ser honesto e não ser hipócrita! E que a sua vida seja uma benção para todos ao seu redor!',
+      diff1: 0,
+      diff2: 5,
+      diff3: 7,
+      diff4: 8,
+      diff5: 12,
+      diff6: 13,
+      diff7: 15,
+      img:difffifteen,
+      preimg:fifteen,
+    },
+  ],
   CardGame:{
     atributes:[
       '❤️ AMOR', '😁 ALEGRIA', '😄 PAZ', '🤗 PACIÊNCIA', '🥰 AMABILIDADE', '😇 BONDADE', 
@@ -666,7 +893,7 @@ export const Texts = {
     {
       name: "Absalão",
       img:absalao,
-      resume: "Vamos conhecer a história de Absalão, um personagem bíblico cheio de aventuras e lições importantes:\n\nQuem foi Absalão?\nAbsalão era o terceiro filho do rei Davi.\nEle nasceu em Hebrom, por volta de 1000 a.C.\nEra muito bonito e tinha cabelos longos.\nO Favorito e a Rivalidade:\nAbsalão era o favorito entre os filhos de Davi.\nEle tinha uma rivalidade com seu irmão Amnom, que havia feito algo muito ruim.\nA Conspiração e a Rebeldia:\nAbsalão secretamente planejava tomar o trono de seu pai.\nEle acusou Davi de negligenciar a justiça e se proclamou rei.\nA Batalha e a Queda:\nDavi teve que fugir de Jerusalém por causa da conspiração de Absalão.\nHouve uma batalha na floresta de Efraim, e Absalão ficou preso em galhos de árvore.\nOs soldados de Davi o encontraram e o mataram.\nLição Importante:\nA história de Absalão nos ensina sobre ambição, rebeldia e as consequências de nossas escolhas.\nLembre-se sempre: Deus nos guia para fazer o que é certo!"
+      resume: "Absalão é um personagem bíblico cheio de aventuras e lições importantes:\n\nQuem foi Absalão?\nAbsalão era o terceiro filho do rei Davi.\nEle nasceu em Hebrom, por volta de 1000 a.C.\nEra muito bonito e tinha cabelos longos.\nO Favorito e a Rivalidade:\nAbsalão era o favorito entre os filhos de Davi.\nEle tinha uma rivalidade com seu irmão Amnom, que havia feito algo muito ruim.\nA Conspiração e a Rebeldia:\nAbsalão secretamente planejava tomar o trono de seu pai.\nEle acusou Davi de negligenciar a justiça e se proclamou rei.\nA Batalha e a Queda:\nDavi teve que fugir de Jerusalém por causa da conspiração de Absalão.\nHouve uma batalha na floresta de Efraim, e Absalão ficou preso em galhos de árvore.\nOs soldados de Davi o encontraram e o mataram.\nLição Importante:\nA história de Absalão nos ensina sobre ambição, rebeldia e as consequências de nossas escolhas.\nLembre-se sempre: Deus nos guia para fazer o que é certo!"
     },
     {
       name: "Alaúde",
@@ -686,7 +913,7 @@ export const Texts = {
     {
       name: "Arca de Noé",
       img:arcanoe,
-      resume: "Vamos contar a história da Arca de Noé de forma simples e adequada para crianças:\n\nO Homem Especial Chamado Noé:\nEra uma vez um homem chamado Noé.\nNoé era muito especial aos olhos de Deus.\nEle era justo e bom, sempre andando com o Senhor.\nA Decisão de Deus:\nDeus viu que as pessoas na Terra estavam fazendo muitas coisas erradas.\nElas não queriam fazer o que era certo, e isso deixou Deus triste.\nMas Deus também viu que Noé era uma pessoa boa e correta.\nA Grande Chuva e a Arca:\nDeus decidiu enviar uma grande chuva para limpar a Terra.\nEle disse a Noé para construir uma enorme arca, um grande barco.\nDeus queria salvar Noé, sua família e os animais.\nA Construção da Arca:\nNoé obedeceu a Deus e começou a construir a arca.\nEle trabalhou duro, juntando madeira e pregando-a com cuidado.\nAs pessoas ao redor riam dele e não entendiam por que ele estava fazendo aquilo.\nOs Animais na Arca:\nQuando a arca ficou pronta, Deus disse a Noé para levar dois de cada tipo de animal.\nUm casal de leões, um casal de elefantes, um casal de girafas, e assim por diante.\nNoé fez isso, e todos os animais entraram na arca.\nA Chuva e a Segurança na Arca:\nEntão, começou a chover muito.\nA água subiu mais e mais, mas dentro da arca, Noé, sua família e os animais estavam seguros.\nEles tinham comida suficiente e estavam protegidos da chuva.\nO Fim da Chuva e a Promessa de Deus:\nQuando a chuva parou, Noé enviou um corvo e uma pomba para ver se havia terra seca.\nA pomba voltou com uma folha de oliveira no bico, sinal de que a água estava abaixando.\nDeus fez uma promessa a Noé de que nunca mais destruiria a Terra dessa maneira, e colocou um lindo arco-íris no céu como um sinal dessa promessa.\nAssim, Noé e sua família começaram uma nova vida na Terra, agradecendo a Deus pela segurança que Ele lhes proporcionou na arca. A história da Arca de Noé nos ensina sobre obediência, cuidado com a criação e a importância de confiar em Deus."
+      resume: "Era uma vez um homem chamado Noé.\nNoé era muito especial aos olhos de Deus.\nEle era justo e bom, sempre andando com o Senhor.\nA Decisão de Deus:\nDeus viu que as pessoas na Terra estavam fazendo muitas coisas erradas.\nElas não queriam fazer o que era certo, e isso deixou Deus triste.\nMas Deus também viu que Noé era uma pessoa boa e correta.\nA Grande Chuva e a Arca:\nDeus decidiu enviar uma grande chuva para limpar a Terra.\nEle disse a Noé para construir uma enorme arca, um grande barco.\nDeus queria salvar Noé, sua família e os animais.\nA Construção da Arca:\nNoé obedeceu a Deus e começou a construir a arca.\nEle trabalhou duro, juntando madeira e pregando-a com cuidado.\nAs pessoas ao redor riam dele e não entendiam por que ele estava fazendo aquilo.\nOs Animais na Arca:\nQuando a arca ficou pronta, Deus disse a Noé para levar dois de cada tipo de animal.\nUm casal de leões, um casal de elefantes, um casal de girafas, e assim por diante.\nNoé fez isso, e todos os animais entraram na arca.\nA Chuva e a Segurança na Arca:\nEntão, começou a chover muito.\nA água subiu mais e mais, mas dentro da arca, Noé, sua família e os animais estavam seguros.\nEles tinham comida suficiente e estavam protegidos da chuva.\nO Fim da Chuva e a Promessa de Deus:\nQuando a chuva parou, Noé enviou um corvo e uma pomba para ver se havia terra seca.\nA pomba voltou com uma folha de oliveira no bico, sinal de que a água estava abaixando.\nDeus fez uma promessa a Noé de que nunca mais destruiria a Terra dessa maneira, e colocou um lindo arco-íris no céu como um sinal dessa promessa.\nAssim, Noé e sua família começaram uma nova vida na Terra, agradecendo a Deus pela segurança que Ele lhes proporcionou na arca. A história da Arca de Noé nos ensina sobre obediência, cuidado com a criação e a importância de confiar em Deus."
     },
     {
       name: "Árvore frutífera",
@@ -696,12 +923,12 @@ export const Texts = {
     {
       name: "Barco na tempestade",
       img:barcotempestade,
-      resume: "O Barco dos Discípulos em Meio à Tempestade\nA História do Barco e da Tempestade:\nJesus estava com seus discípulos num barco no mar da Galileia.\nDe repente, uma tempestade forte começou, com ondas gigantes.\nO Medo dos Discípulos:\nOs discípulos ficaram assustados e preocupados.\nEles achavam que o barco ia afundar!\nJesus Acalma a Tempestade:\nJesus estava dormindo no barco.\nOs discípulos o acordaram, dizendo: “Salva-nos, Senhor!”\nO Milagre de Jesus:\nJesus repreendeu o vento e o mar.\nTudo ficou calmo e tranquilo.\nLições Importantes:\nAssim como Jesus acalmou a tempestade, Ele também pode acalmar nossos medos e preocupações.\nQuando confiamos em Jesus, Ele nos protege nas dificuldades da vida."
+      resume: "Jesus estava com seus discípulos num barco no mar da Galileia.\nDe repente, uma tempestade forte começou, com ondas gigantes.\nO Medo dos Discípulos:\nOs discípulos ficaram assustados e preocupados.\nEles achavam que o barco ia afundar!\nJesus Acalma a Tempestade:\nJesus estava dormindo no barco.\nOs discípulos o acordaram, dizendo: “Salva-nos, Senhor!”\nO Milagre de Jesus:\nJesus repreendeu o vento e o mar.\nTudo ficou calmo e tranquilo.\nLições Importantes:\nAssim como Jesus acalmou a tempestade, Ele também pode acalmar nossos medos e preocupações.\nQuando confiamos em Jesus, Ele nos protege nas dificuldades da vida."
     },
     {
       name: "Bíblia",
       img:biblia,
-      resume: "Vamos contar a história da Bíblia de forma simples e adequada para crianças:\n\nA Criação:\nDeus criou o universo, a Terra e tudo que existe.\nEle fez o dia, a noite, o céu, as estrelas e os animais.\nDeus também criou o ser humano, feito à Sua imagem e semelhança.\nO Dilúvio e a Arca de Noé:\nDeus viu que as pessoas estavam fazendo coisas más.\nEle escolheu Noé para construir uma grande arca.\nNoé e sua família entraram na arca, junto com os animais.\nDeus enviou um dilúvio para limpar a Terra e começar de novo.\nAbraão e a Promessa de Deus:\nDeus escolheu Abraão para ser o pai de uma grande nação.\nEle prometeu a Abraão muitos descendentes e uma terra especial.\nAbraão confiou em Deus e seguiu Seus planos.\nMoisés e os Dez Mandamentos:\nMoisés libertou os israelitas da escravidão no Egito.\nDeus deu a Moisés os Dez Mandamentos no Monte Sinai.\nEsses mandamentos são regras importantes para viver bem e amar a Deus e aos outros.\nO Nascimento de Jesus:\nDeus enviou Seu Filho Jesus para nos salvar.\nJesus nasceu em Belém, em uma manjedoura.\nEle cresceu, ensinou sobre amor e perdão, e fez muitos milagres.\nA Crucificação e Ressurreição de Jesus:\nJesus morreu na cruz pelos nossos pecados.\nTrês dias depois, Ele ressuscitou, mostrando Seu poder sobre a morte.\nIsso nos dá esperança e alegria!\nO Amor de Deus por Nós:\nA Bíblia nos ensina que Deus nos ama muito.\nEla nos mostra como viver bem, amar os outros e confiar em Deus.\nLembre-se sempre: a Bíblia é um livro especial que nos conta sobre o amor e os planos de Deus para nós!"
+      resume: "A Bíblia é a palavra de Deus revelada para nós! Lendo a Bíblia podemos aprender lições importantes e conhecer melhor a Deus. Ela possui várias histórias sobre o povo de Deus e a igreja. Veja só algumas: A Criação:\nDeus criou o universo, a Terra e tudo que existe.\nEle fez o dia, a noite, o céu, as estrelas e os animais.\nDeus também criou o ser humano, feito à Sua imagem e semelhança.\nO Dilúvio e a Arca de Noé:\nDeus viu que as pessoas estavam fazendo coisas más.\nEle escolheu Noé para construir uma grande arca.\nNoé e sua família entraram na arca, junto com os animais.\nDeus enviou um dilúvio para limpar a Terra e começar de novo.\nAbraão e a Promessa de Deus:\nDeus escolheu Abraão para ser o pai de uma grande nação.\nEle prometeu a Abraão muitos descendentes e uma terra especial.\nAbraão confiou em Deus e seguiu Seus planos.\nMoisés e os Dez Mandamentos:\nMoisés libertou os israelitas da escravidão no Egito.\nDeus deu a Moisés os Dez Mandamentos no Monte Sinai.\nEsses mandamentos são regras importantes para viver bem e amar a Deus e aos outros.\nO Nascimento de Jesus:\nDeus enviou Seu Filho Jesus para nos salvar.\nJesus nasceu em Belém, em uma manjedoura.\nEle cresceu, ensinou sobre amor e perdão, e fez muitos milagres.\nA Crucificação e Ressurreição de Jesus:\nJesus morreu na cruz pelos nossos pecados.\nTrês dias depois, Ele ressuscitou, mostrando Seu poder sobre a morte.\nIsso nos dá esperança e alegria!\nO Amor de Deus por Nós:\nA Bíblia nos ensina que Deus nos ama muito.\nEla nos mostra como viver bem, amar os outros e confiar em Deus.\nLembre-se sempre: a Bíblia é um livro especial que nos conta sobre o amor e os planos de Deus para nós!"
     },
     {
       name: "Cachorrinhos",
@@ -721,27 +948,27 @@ export const Texts = {
     {
       name: "Coluna de fogo",
       img:colunafogo,
-      resume: "Vamos explorar a história da Coluna de Fogo, um momento emocionante da Bíblia. Aqui estão os principais pontos, explicados de forma simples para crianças:\n\nO Que é a Coluna de Fogo?\nA Coluna de Fogo era como uma luz brilhante que aparecia durante a noite.\nEla guiava o povo de Israel enquanto eles viajavam pelo deserto.\nComo Funcionava?\nDurante o dia, Deus enviava uma coluna de nuvem para proteger o povo do sol quente.\nÀ noite, essa nuvem se transformava em uma coluna de fogo para iluminar o caminho.\nPor Que Era Importante?\nA Coluna de Fogo era um sinal especial de Deus.\nEla mostrava aos israelitas que Deus estava com eles e cuidava deles.\nLições da Coluna de Fogo:\nAprendemos que Deus nos guia, mesmo quando estamos em lugares difíceis.\nAssim como a Coluna de Fogo, Deus está sempre conosco, nos protegendo e mostrando o caminho.\nLembre-se sempre: Deus é como uma luz que nos guia, nos ama e nos ajuda a seguir em frente!"
+      resume: "Vamos explorar a história da Coluna de Fogo, um momento emocionante da Bíblia:\n\nO Que é a Coluna de Fogo?\nA Coluna de Fogo era como uma luz brilhante que aparecia durante a noite.\nEla guiava o povo de Israel enquanto eles viajavam pelo deserto.\nComo Funcionava?\nDurante o dia, Deus enviava uma coluna de nuvem para proteger o povo do sol quente.\nÀ noite, essa nuvem se transformava em uma coluna de fogo para iluminar o caminho.\nPor Que Era Importante?\nA Coluna de Fogo era um sinal especial de Deus.\nEla mostrava aos israelitas que Deus estava com eles e cuidava deles.\nLições da Coluna de Fogo:\nAprendemos que Deus nos guia, mesmo quando estamos em lugares difíceis.\nAssim como a Coluna de Fogo, Deus está sempre conosco, nos protegendo e mostrando o caminho.\nLembre-se sempre: Deus é como uma luz que nos guia, nos ama e nos ajuda a seguir em frente!"
     },
     {
       name: "Cordeiro Santo",
       img:cordeirosanto,
-      resume: "Vamos contar a história do Cordeiro Santo de forma simples e adequada para crianças:\n\nO Cordeiro da Páscoa:\nHá muito tempo, quando o povo de Deus estava no Egito, eles eram escravos.\nDeus queria libertá-los, então Ele deu instruções especiais para a celebração da Páscoa.\nCada família deveria escolher um cordeiro sem defeito e sacrificá-lo.\nO Sangue Protetor:\nO sangue desse cordeiro deveria ser passado nas portas das casas.\nIsso protegeria as famílias do anjo da morte que passaria pela terra.\nAssim, o cordeiro se tornou um símbolo de proteção e libertação.\nJesus, o Cordeiro de Deus:\nMuitos anos depois, Jesus veio ao mundo como o Cordeiro de Deus.\nEle não tinha defeitos, era perfeito e sem pecado.\nJesus se ofereceu como sacrifício na cruz para nos libertar do pecado e da separação de Deus.\nO Amor de Jesus:\nJesus tomou nosso lugar, assim como o cordeiro da Páscoa tomou o lugar das famílias.\nSeu sangue nos protege e nos reconcilia com Deus.\nEle é o nosso Salvador e nos mostra o amor infinito de Deus.\nLembre-se sempre: Jesus é o Cordeiro Santo que nos dá vida e esperança!"
+      resume: "Há muito tempo, quando o povo de Deus estava no Egito, eles eram escravos.\nDeus queria libertá-los, então Ele deu instruções especiais para a celebração da Páscoa.\nCada família deveria escolher um cordeiro sem defeito e sacrificá-lo.\nO Sangue Protetor:\nO sangue desse cordeiro deveria ser passado nas portas das casas.\nIsso protegeria as famílias do anjo da morte que passaria pela terra.\nAssim, o cordeiro se tornou um símbolo de proteção e libertação.\nJesus, o Cordeiro de Deus:\nMuitos anos depois, Jesus veio ao mundo como o Cordeiro de Deus.\nEle não tinha defeitos, era perfeito e sem pecado.\nJesus se ofereceu como sacrifício na cruz para nos libertar do pecado e da separação de Deus.\nO Amor de Jesus:\nJesus tomou nosso lugar, assim como o cordeiro da Páscoa tomou o lugar das famílias.\nSeu sangue nos protege e nos reconcilia com Deus.\nEle é o nosso Salvador e nos mostra o amor infinito de Deus.\nLembre-se sempre: Jesus é o Cordeiro Santo que nos dá vida e esperança!"
     },
     {
       name: "Couraça da justiça",
       img:couracajustica,
-      resume: "Couraça da Justiça\nO Que é a Couraça da Justiça?\nA couraça é como um colete protetor para o peito.\nEla representa a justiça e o caráter correto.\nPor Que Usar a Couraça da Justiça?\nQuando fazemos o que é justo, estamos protegidos por Deus.\nA história de Zaqueu nos mostra como a justiça transforma vidas.\nLembre-se sempre: Deus nos protege e nos ajuda a fazer o que é certo!"
+      resume: "O Que é a Couraça da Justiça?\nA couraça é como um colete protetor para o peito.\nEla representa a justiça e o caráter correto.\nPor Que Usar a Couraça da Justiça?\nQuando fazemos o que é justo, estamos protegidos por Deus.\nA história de Zaqueu nos mostra como a justiça transforma vidas.\nLembre-se sempre: Deus nos protege e nos ajuda a fazer o que é certo!"
     },
     {
       name: "Davi x Golias",
       img:davigolias,
-      resume: "Vamos conhecer a emocionante história de Davi e Golias, um dos episódios mais incríveis da Bíblia. Aqui estão os principais pontos, explicados de forma simples para crianças:\n\nDavi:\nDavi era um jovem pastor de ovelhas.\nEle era corajoso e confiava em Deus.\nMesmo sendo pequeno, ele enfrentou grandes desafios.\nGolias:\nGolias era um gigante filisteu.\nEle espalhava medo por onde passava.\nNinguém ousava enfrentá-lo.\nO Desafio:\nGolias desafiou os israelitas para uma luta.\nEle queria provar que era o mais forte.\nA Coragem de Davi:\nDavi não deixou seu tamanho impedi-lo.\nEle confiou em Deus e se ofereceu para lutar contra Golias.\nA Vitória de Davi:\nCom uma fundinha e uma pedra, Davi enfrentou o gigante.\nEle acertou Golias na testa, e o gigante caiu.\nDavi venceu!\nLição Importante: Deus nos ajuda a enfrentar nossos medos e desafios, mesmo quando somos pequenos. Assim como Davi, podemos confiar em Deus e ser corajosos!"
+      resume: "Vamos conhecer a emocionante história de Davi e Golias, um dos episódios mais incríveis da Bíblia:\n\nDavi era um jovem pastor de ovelhas.\nEle era corajoso e confiava em Deus.\nMesmo sendo pequeno, ele enfrentou grandes desafios.\nGolias:\nGolias era um gigante filisteu.\nEle espalhava medo por onde passava.\nNinguém ousava enfrentá-lo.\nO Desafio:\nGolias desafiou os israelitas para uma luta.\nEle queria provar que era o mais forte.\nA Coragem de Davi:\nDavi não deixou seu tamanho impedi-lo.\nEle confiou em Deus e se ofereceu para lutar contra Golias.\nA Vitória de Davi:\nCom uma fundinha e uma pedra, Davi enfrentou o gigante.\nEle acertou Golias na testa, e o gigante caiu.\nDavi venceu!\nLição Importante: Deus nos ajuda a enfrentar nossos medos e desafios, mesmo quando somos pequenos. Assim como Davi, podemos confiar em Deus e ser corajosos!"
     },
     {
       name: "Débora",
       img:debora,
-      resume: "Débora:\nQuem foi? Débora era uma juíza e profetisa em Israel.\nO que ela fez? Ela liderou o povo em tempos difíceis e confiou em Deus.\nLição para nós: Ser corajoso e confiar em Deus em todas as situações."
+      resume: "Quem foi? Débora era uma juíza e profetisa em Israel.\nO que ela fez? Ela liderou o povo em tempos difíceis e confiou em Deus.\nLição para nós: Ser corajoso e confiar em Deus em todas as situações."
     },
     {
       name: "Dracma",
@@ -751,7 +978,7 @@ export const Texts = {
     {
       name: "Elias",
       img:elias,
-      resume: "Elias\nQuem foi Elias?\nElias foi um profeta do Antigo Testamento.\nEle realizou milagres e confrontou falsos deuses.\nFeitos de Elias:\nEle parou a chuva por três anos.\nDesafiou os profetas de Baal no Monte Carmelo.\nLições Importantes:\nElias nos ensina sobre coragem, fé e confiança em Deus.\nDeus sempre cuida de Seus servos."
+      resume: "Quem foi Elias?\nElias foi um profeta do Antigo Testamento.\nEle realizou milagres e confrontou falsos deuses.\nFeitos de Elias:\nEle parou a chuva por três anos.\nDesafiou os profetas de Baal no Monte Carmelo.\nLições Importantes:\nElias nos ensina sobre coragem, fé e confiança em Deus.\nDeus sempre cuida de Seus servos."
     },
     {
       name: "Escudo da fé",
@@ -761,12 +988,12 @@ export const Texts = {
     {
       name: "Espada",
       img:espada,
-      resume: "A Espada na Bíblia\nO Que é a Espada?\nA espada é uma arma antiga usada para lutar.\nEla é afiada e cortante.\nA Espada na Bíblia:\nA espada é mencionada várias vezes na Bíblia.\nEla simboliza proteção, poder e a Palavra de Deus.\nA Espada do Espírito:\nNa Armadura de Deus, temos a espada do Espírito, que é a Palavra de Deus.\nEla nos protege dos ataques espirituais e nos ajuda a vencer.\nLições Importantes:\nAssim como um soldado usa a espada para lutar, nós usamos a Palavra de Deus para enfrentar as batalhas da vida."
+      resume: "O Que é a Espada?\nA espada é uma arma antiga usada para lutar.\nEla é afiada e cortante.\nA Espada na Bíblia:\nA espada é mencionada várias vezes na Bíblia.\nEla simboliza proteção, poder e a Palavra de Deus.\nA Espada do Espírito:\nNa Armadura de Deus, temos a espada do Espírito, que é a Palavra de Deus.\nEla nos protege dos ataques espirituais e nos ajuda a vencer.\nLições Importantes:\nAssim como um soldado usa a espada para lutar, nós usamos a Palavra de Deus para enfrentar as batalhas da vida."
     },
     {
       name: "Ester",
       img:ester,
-      resume: "Ester\nQuem foi Ester?\nEster era uma rainha judia.\nEla arriscou sua vida para salvar seu povo.\nFeitos de Ester:\nEster se tornou rainha da Pérsia.\nEla intercedeu pelo povo judeu durante a ameaça de genocídio.\nLições Importantes:\nEster nos ensina sobre coragem, oração e propósito.\nDeus usa pessoas para momentos cruciais na história."
+      resume: "Quem foi Ester?\nEster era uma rainha judia.\nEla arriscou sua vida para salvar seu povo.\nFeitos de Ester:\nEster se tornou rainha da Pérsia.\nEla intercedeu pelo povo judeu durante a ameaça de genocídio.\nLições Importantes:\nEster nos ensina sobre coragem, oração e propósito.\nDeus usa pessoas para momentos cruciais na história."
     },
     {
       name: "Funda",
@@ -776,42 +1003,42 @@ export const Texts = {
     {
       name: "Harpa",
       img:harpa,
-      resume: "A Harpa na Bíblia\nO Que é a Harpa?\nA harpa é um instrumento musical com cordas.\nEla é tocada com as mãos ou com um arco.\nA Harpa na Bíblia:\nA harpa é mencionada várias vezes na Bíblia.\nEla era usada para louvar a Deus e trazer paz.\nLições Importantes:\nA harpa nos ensina sobre a alegria e a presença de Deus.\nQuando tocamos ou ouvimos música, podemos nos sentir mais perto de Deus."
+      resume: "O Que é a Harpa?\nA harpa é um instrumento musical com cordas.\nEla é tocada com as mãos ou com um arco.\nA Harpa na Bíblia:\nA harpa é mencionada várias vezes na Bíblia.\nEla era usada para louvar a Deus e trazer paz.\nLições Importantes:\nA harpa nos ensina sobre a alegria e a presença de Deus.\nQuando tocamos ou ouvimos música, podemos nos sentir mais perto de Deus."
     },
     {
       name: "Isaías",
       img:isaias,
-      resume: "Isaías\nQuem foi Isaías?\nIsaías foi um profeta que viveu no Antigo Testamento.\nEle recebeu visões de Deus e mensagens de esperança.\nFeitos de Isaías:\nEle profetizou sobre o Messias que viria.\nIsaías nos ensina sobre obediência e confiança em Deus.\nLições Importantes:\nIsaías nos mostra que Deus tem planos maravilhosos para nós.\nEle nos lembra de ouvir a voz de Deus."
+      resume: "Quem foi Isaías?\nIsaías foi um profeta que viveu no Antigo Testamento.\nEle recebeu visões de Deus e mensagens de esperança.\nFeitos de Isaías:\nEle profetizou sobre o Messias que viria.\nIsaías nos ensina sobre obediência e confiança em Deus.\nLições Importantes:\nIsaías nos mostra que Deus tem planos maravilhosos para nós.\nEle nos lembra de ouvir a voz de Deus."
     },
     {
       name: "Jacó",
       img:jaco,
-      resume: "Jacó\nQuem foi Jacó?\nJacó era um dos patriarcas do povo de Israel.\nEle teve doze filhos, que se tornaram as Doze Tribos de Israel.\nA História de Jacó:\nEle lutou com um anjo e recebeu o nome de Israel.\nJacó também é conhecido por sua história com Esaú e José.\nLições Importantes:\nJacó nos ensina sobre perseverança e mudança de coração.\nDeus transforma vidas!"
+      resume: "Quem foi Jacó?\nJacó era um dos patriarcas do povo de Israel.\nEle teve doze filhos, que se tornaram as Doze Tribos de Israel.\nA História de Jacó:\nEle lutou com um anjo e recebeu o nome de Israel.\nJacó também é conhecido por sua história com Esaú e José.\nLições Importantes:\nJacó nos ensina sobre perseverança e mudança de coração.\nDeus transforma vidas!"
     },
     {
       name: "Jesus",
       img:jesus,
-      resume: "Jesus\nQuem é Jesus?:\nJesus é o Filho de Deus e o Salvador do mundo.\nEle veio à Terra para nos mostrar o amor de Deus e nos dar esperança.\nO Que Jesus Fez?:\nJesus curou os doentes, ensinou sobre o Reino de Deus e morreu por nossos pecados.\nEle ressuscitou e nos oferece vida eterna.\nLições Importantes:\nJesus é nosso amigo, modelo e Redentor.\nEle nos convida a segui-Lo e a viver uma vida de amor e fé."
+      resume: "Quem é Jesus?:\nJesus é o Filho de Deus e o Salvador do mundo.\nEle veio à Terra para nos mostrar o amor de Deus e nos dar esperança.\nO Que Jesus Fez?:\nJesus curou os doentes, ensinou sobre o Reino de Deus e morreu por nossos pecados.\nEle ressuscitou e nos oferece vida eterna.\nLições Importantes:\nJesus é nosso amigo, modelo e Redentor.\nEle nos convida a segui-Lo e a viver uma vida de amor e fé."
     },
     {
       name: "Jezabel",
       img:jezabel,
-      resume: "Jezabel:\nQuem foi? Jezabel era uma rainha má que promoveu a idolatria em Israel.\nO que ela fez? Ela perseguiu os profetas de Deus e trouxe deuses falsos para o povo.\nLição para nós: Ficar longe da idolatria e seguir a Deus verdadeiro."
+      resume: "Quem foi? Não se deixe enganar pelas aparências!!! Jezabel era uma rainha má que promoveu a idolatria em Israel. Ela perseguiu os profetas de Deus, que eram homens bons, e trouxe deuses falsos para o povo adorar.\nLição para nós: Cuidado com as pessoas que parecem ser boas, e influentes. Devemos aconselhar as pessoas a fazerem coisas boas e certas e caso elas não aceitem, precisamos nos afastar. Deus nos protege e nos ensina como viver uma vída pacífica e correta, não se deixe enganar e faça o possível para viver o bem que Deus tem para você."
     },
     {
       name: "João",
       img:joao,
-      resume: "João\nQuem foi João?\nJoão era um dos doze apóstolos de Jesus.\nEle era conhecido como João, o Amado.\nFeitos de João:\nJoão escreveu o Evangelho de João na Bíblia.\nEle também teve visões e escreveu o Livro de Apocalipse.\nLições Importantes:\nJoão nos ensina sobre amor, fé e revelações de Deus."
+      resume: "Quem foi João?\nJoão era um dos doze apóstolos de Jesus.\nEle era conhecido como João, o Amado.\nFeitos de João:\nJoão escreveu o Evangelho de João na Bíblia.\nEle também teve visões e escreveu o Livro de Apocalipse.\nLições Importantes:\nJoão nos ensina sobre amor, fé e revelações de Deus."
     },
     {
       name: "Josué",
       img:josue,
-      resume: "Josué\nQuem foi Josué?\nJosué era um jovem pastor.\nDeus o escolheu para liderar o povo após a morte de Moisés.\nFeitos de Josué:\nConquistou a Terra Prometida com coragem.\nObedeceu a Deus e lutou contra inimigos.\nLições Importantes:\nJosué nos ensina sobre coragem, confiança em Deus e obediência.\nDeus está sempre conosco nas batalhas da vida."
+      resume: "Quem foi Josué?\nJosué era um jovem pastor.\nDeus o escolheu para liderar o povo após a morte de Moisés.\nFeitos de Josué:\nConquistou a Terra Prometida com coragem.\nObedeceu a Deus e lutou contra inimigos.\nLições Importantes:\nJosué nos ensina sobre coragem, confiança em Deus e obediência.\nDeus está sempre conosco nas batalhas da vida."
     },
     {
       name: "Leão da Tribo de Judá",
       img:leaojuda,
-      resume: "Vamos contar a história do Leão da Tribo de Judá de forma simples e adequada para crianças:\n\nO Homem Especial Chamado Noé:\nHá muito tempo, um homem chamado Jacó fez uma profecia sobre um de seus filhos, chamado Judá.\nCada filho de Jacó deu nome a uma das doze tribos de Israel.\nJudá foi abençoado por Jacó e chamado de “leãozinho”.\nO Significado do Leão:\nO leão representa força, coragem e ousadia.\nNos tempos antigos, os leões eram comuns na região da Palestina.\nPara os judeus, o leão era o símbolo de um rei poderoso.\nA Profecia de Jacó:\nJacó disse que o reino seria colocado em Judá.\nEle comparou Judá a um leão.\nEssa profecia foi confirmada mais tarde pela aliança davídica, quando o rei Davi também pertencia à tribo de Judá.\nJesus, o Legítimo Leão da Tribo de Judá:\nJesus é chamado na Bíblia de “Leão da tribo de Judá”.\nEle é o Messias prometido nas escrituras judaicas.\nJesus veio para trazer salvação e vencer as forças do mal.\nLições Importantes:\nO Leão da Tribo de Judá nos ensina sobre autoridade, soberania e amor de Deus.\nEle é o nosso Salvador e nos protege como um leão protetor.\nLembre-se sempre: Jesus é o Leão da Tribo de Judá, nosso Rei e Senhor!"
+      resume: "Vamos aprender sobre o Leão da Tribo de Judá de forma simples e divertida:\n\nAntigamente a nação de Isareal, povo de Deus, era dividia em tribos.\nCada tribo tinha o nome de um dos filhos de Jacó, sendo doze tribos no total.\nJudá foi abençoado por seu pai Jacó e chamado de “leãozinho”.\nO Significado do Leão:\nO leão representa força, coragem e ousadia.\nNos tempos antigos, os leões eram comuns na região da Palestina.\nPara os judeus, o leão era o símbolo de um rei poderoso.\nA Profecia de Jacó:\nJacó disse que o reino seria colocado em Judá.\nEle comparou Judá a um leão.\nEssa profecia foi confirmada mais tarde pela aliança que Deus fez com o rei Davi, pois ele também pertencia à tribo de Judá.\nJesus, o Legítimo Leão da Tribo de Judá:\nJesus é chamado na Bíblia de “Leão da tribo de Judá”.\nEle é o Messias prometido.\nJesus veio para trazer salvação e vencer as forças do mal definitivamente.\nLições Importantes:\nO Leão da Tribo de Judá nos ensina sobre autoridade, soberania e o amor de Deus através de Jesus.\nEle é o nosso Salvador e nos protege como um leão protetor.\nLembre-se sempre: Jesus é o Leão da Tribo de Judá, nosso Rei e Salvador!"
     },
     {
       name: "Lídia",
@@ -826,7 +1053,7 @@ export const Texts = {
     {
       name: "Mar de sangue",
       img:marsangue,
-      resume: "Vamos explorar a emocionante história da Praga das Águas Tornadas em Sangue, um dos grandes milagres da Bíblia. Aqui estão os principais pontos, explicados de forma simples para crianças:\n\nO Que Aconteceu?\nMoisés, um homem especial escolhido por Deus, foi até o faraó do Egito.\nDeus disse a Moisés que usasse sua vara para ferir as águas do Nilo.\nA Transformação das Águas:\nQuando Moisés bateu com a vara, algo incrível aconteceu!\nAs águas do Nilo, que eram limpas e boas para beber, viraram sangue.\nConsequências da Praga:\nOs peixes morreram, e o rio cheirava tão mal que os egípcios não conseguiam beber da água.\nHavia sangue por toda a terra do Egito.\nLições Importantes:\nDeus estava mostrando seu poder e protegendo o povo de Israel.\nEssa história nos ensina que Deus pode fazer coisas incríveis, mesmo quando tudo parece impossível.\nLembre-se sempre: Deus está conosco e pode transformar situações difíceis em algo surpreendente!"
+      resume: "Vamos explorar a emocionante história da Praga das Águas Tornadas em Sangue, um dos grandes milagres da Bíblia:\n\nO Que Aconteceu?\nMoisés, um homem especial escolhido por Deus, foi até o faraó do Egito.\nDeus disse a Moisés que usasse sua vara para ferir as águas do Nilo.\nA Transformação das Águas:\nQuando Moisés bateu com a vara, algo incrível aconteceu!\nAs águas do Nilo, que eram limpas e boas para beber, viraram sangue.\nConsequências da Praga:\nOs peixes morreram, e o rio cheirava tão mal que os egípcios não conseguiam beber da água.\nHavia sangue por toda a terra do Egito.\nLições Importantes:\nDeus estava mostrando seu poder e protegendo o povo de Israel.\nEssa história nos ensina que Deus pode fazer coisas incríveis, mesmo quando tudo parece impossível.\nLembre-se sempre: Deus está conosco e pode transformar situações difíceis em algo surpreendente!"
     },
     {
       name: "Marcos",
@@ -866,7 +1093,7 @@ export const Texts = {
     {
       name: "Moeda na boca do peixe",
       img:peixemoeda,
-      resume: "Vamos aprender sobre a moeda na boca do peixe de forma simples e divertida:\n\nA História da Moeda na Boca do Peixe:\nJesus contou uma história muito especial.\nUm dia, os discípulos precisavam pagar um imposto no templo.\nO Pedido de Jesus:\nJesus disse a Pedro para ir pescar.\nEle disse que encontraria uma moeda na boca do primeiro peixe que pegasse!\nO Milagre da Moeda:\nPedro obedeceu e pescou.\nQuando abriu a boca do peixe, lá estava a moeda!\nAssim, eles puderam pagar o imposto.\nLições Importantes:\nEssa história nos ensina sobre a provisão de Deus.\nEle cuida de nós e nos ajuda nas situações difíceis.\nTambém nos mostra que devemos obedecer e confiar em Jesus.\nLembre-se sempre: Deus se preocupa com nossas necessidades!"
+      resume: "Vamos aprender sobre a moeda na boca do peixe de forma simples e divertida:\n\nJesus contou uma história muito especial.\nUm dia, os discípulos precisavam pagar um imposto no templo.\nO Pedido de Jesus:\nJesus disse a Pedro para ir pescar.\nEle disse que encontraria uma moeda na boca do primeiro peixe que pegasse!\nO Milagre da Moeda:\nPedro obedeceu e pescou.\nQuando abriu a boca do peixe, lá estava a moeda!\nAssim, eles puderam pagar o imposto.\nLições Importantes:\nEssa história nos ensina sobre a provisão de Deus.\nEle cuida de nós e nos ajuda nas situações difíceis.\nTambém nos mostra que devemos obedecer e confiar em Jesus.\nLembre-se sempre: Deus se preocupa com nossas necessidades!"
     },
     {
       name: "Moisés",
@@ -876,7 +1103,7 @@ export const Texts = {
     {
       name: "O bom pastor",
       img:pastor,
-      resume: "Vamos contar a história da parábola do bom pastor de forma simples e adequada para crianças:\n\nO Bom Pastor e Suas Ovelhas:\nJesus contou uma história sobre um pastor que cuidava de suas ovelhas.\nEle amava cada ovelhinha e as conhecia pelo nome.\nA Ovelha Perdida:\nUm dia, o pastor percebeu que uma ovelha estava perdida.\nEle deixou as outras noventa e nove ovelhas e foi procurar a que estava longe.\nA Alegria do Encontro:\nO pastor encontrou a ovelha perdida e a colocou nos ombros.\nEle estava muito feliz por tê-la de volta.\nEle chamou os amigos e disse: “Vamos celebrar! Encontrei minha ovelhinha!”\nLições Importantes:\nJesus é como o bom pastor que nos ama e cuida de nós.\nEle nos procura quando estamos perdidos e nos traz de volta para perto de Deus.\nAssim como o pastor se importa com cada ovelha, Jesus se importa com cada um de nós.\nLembre-se sempre: Jesus é o nosso bom pastor que nos guia e nos ama!"
+      resume: "O Bom Pastor e Suas Ovelhas:\nJesus contou uma história sobre um pastor que cuidava de suas ovelhas.\nEle amava cada ovelhinha e as conhecia pelo nome.\nA Ovelha Perdida:\nUm dia, o pastor percebeu que uma ovelha estava perdida.\nEle deixou as outras noventa e nove ovelhas e foi procurar a que estava longe.\nA Alegria do Encontro:\nO pastor encontrou a ovelha perdida e a colocou nos ombros.\nEle estava muito feliz por tê-la de volta.\nEle chamou os amigos e disse: “Vamos celebrar! Encontrei minha ovelhinha!”\nLições Importantes:\nJesus é como o bom pastor que nos ama e cuida de nós.\nEle nos procura quando estamos perdidos e nos traz de volta para perto de Deus.\nAssim como o pastor se importa com cada ovelha, Jesus se importa com cada um de nós.\nLembre-se sempre: Jesus é o nosso bom pastor que nos guia e nos ama!"
     },
     {
       name: "O caminho",
@@ -891,7 +1118,7 @@ export const Texts = {
     {
       name: "Pães e Peixes",
       img:paespeixes,
-      resume: "Vamos contar a história bíblica da multiplicação dos pães e peixes de forma simples e adequada para crianças:\n\nO Dia Ensolarado às Margens do Lago:\nJesus estava cercado por muitas pessoas: crianças, adultos e idosos.\nTodos queriam ouvir suas palavras amorosas e receber suas bênçãos.\nJesus olhou para a multidão e viu que muitos estavam cansados e com fome.\nA Descoberta dos Discípulos:\nJesus perguntou aos seus discípulos: “O que temos para oferecer a essas pessoas famintas?”\nOs discípulos olharam ao redor e encontraram apenas cinco pães e dois peixes.\nParecia muito pouco para alimentar tantas pessoas.\nO Milagre da Multiplicação:\nJesus sorriu e disse: “Não se preocupem. Tragam esses pães e peixes para mim.”\nAs crianças se aproximaram com os cestos de comida.\nJesus pegou os pães, olhou para o céu e agradeceu a Deus.\nEm seguida, partiu os pães e dividiu os peixes.\nSurpreendentemente, quando os discípulos começaram a distribuir a comida, havia o suficiente para todos!\nOs Doze Cestos Cheios de Pedaços:\nAs pessoas comeram, sorriram e agradeceram.\nE não apenas isso, ao recolherem os pedaços que sobraram, os discípulos encheram doze cestos!\nFoi um milagre incrível que mostrou como o amor e a generosidade de Jesus podem suprir todas as nossas necessidades.\nLições para os Dias de Hoje:\nEssa história nos ensina sobre a importância da compaixão, generosidade e confiança em Deus.\nMesmo quando enfrentamos desafios e temos recursos limitados, podemos confiar que Deus pode multiplicar o pouco que temos para abençoar muitos.\nNo nosso dia a dia, também podemos compartilhar o que temos com generosidade, sabendo que Deus pode transformar isso em algo incrível.\nQue linda história, não é mesmo?"
+      resume: "O Dia Ensolarado às Margens do Lago:\nJesus estava cercado por muitas pessoas: crianças, adultos e idosos.\nTodos queriam ouvir suas palavras amorosas e receber suas bênçãos.\nJesus olhou para a multidão e viu que muitos estavam cansados e com fome.\nA Descoberta dos Discípulos:\nJesus perguntou aos seus discípulos: “O que temos para oferecer a essas pessoas famintas?”\nOs discípulos olharam ao redor e encontraram apenas cinco pães e dois peixes.\nParecia muito pouco para alimentar tantas pessoas.\nO Milagre da Multiplicação:\nJesus sorriu e disse: “Não se preocupem. Tragam esses pães e peixes para mim.”\nAs crianças se aproximaram com os cestos de comida.\nJesus pegou os pães, olhou para o céu e agradeceu a Deus.\nEm seguida, partiu os pães e dividiu os peixes.\nSurpreendentemente, quando os discípulos começaram a distribuir a comida, havia o suficiente para todos!\nOs Doze Cestos Cheios de Pedaços:\nAs pessoas comeram, sorriram e agradeceram.\nE não apenas isso, ao recolherem os pedaços que sobraram, os discípulos encheram doze cestos!\nFoi um milagre incrível que mostrou como o amor e a generosidade de Jesus podem suprir todas as nossas necessidades.\nLições para os Dias de Hoje:\nEssa história nos ensina sobre a importância da compaixão, generosidade e confiança em Deus.\nMesmo quando enfrentamos desafios e temos recursos limitados, podemos confiar que Deus pode multiplicar o pouco que temos para abençoar muitos.\nNo nosso dia a dia, também podemos compartilhar o que temos com generosidade, sabendo que Deus pode transformar isso em algo incrível.\nQue linda história, não é mesmo?"
     },
     {
       name: "Pão e Vinho",
@@ -911,12 +1138,12 @@ export const Texts = {
     {
       name: "Porcos",
       img:porquinhos,
-      resume: "Vamos aprender sobre os porcos na Bíblia de forma simples e divertida:\n\nOs Porcos Possuídos:\nJesus contou uma história em que demônios possuíam um homem.\nOs demônios pediram para serem enviados para uma manada de porcos.\nJesus permitiu, e os porcos se jogaram no mar e se afogaram.\nPorcos e Impureza:\nNa época da Bíblia, os hebreus não comiam porco.\nPorcos eram considerados impuros e símbolos de gente longe da fé.\nLições Importantes:\nEssa história nos ensina sobre o poder de Jesus sobre os demônios.\nTambém mostra que nem tudo é bom para nós, mesmo que pareça gostoso.\nLembre-se sempre: Deus nos protege e nos ensina o que é melhor!"
+      resume: "Vamos aprender sobre os porcos na Bíblia de forma simples e divertida:\n\nCerta vez Jesus curou e libertou um homem que estava possuído por demônios.\nAntes de serem expulsos, os demônios pediram para serem enviados para uma manada de porcos.\nJesus permitiu, e os porcos se jogaram no mar e se afogaram.\nPorcos e Impureza:\nNa época da Bíblia, os hebreus não comiam porco.\nPorcos eram considerados impuros e símbolos de gente longe da fé.\nLições Importantes:\nEssa história nos ensina sobre o poder de Jesus para curar e libertar.\nLembre-se sempre: Deus nos protege e nos ensina o que é melhor! Se você ou alguém da sua família precisa de libertação, ore a Deus pedindo por ajuda e com muito carinho, peça aos seus pais para irem a uma igreja."
     },
     {
       name: "Praga dos Gafanhotos",
       img:gafanhotos,
-      resume: "Vamos contar a história da praga dos gafanhotos de forma simples e adequada para crianças:\n\nO Dia em que os Gafanhotos Cobriram o Egito:\nHá muito tempo, o povo de Deus estava no Egito, e o faraó não queria deixá-los ir embora.\nDeus enviou uma praga de gafanhotos para mostrar Seu poder e pedir ao faraó que libertasse o povo.\nOs Gafanhotos Devoradores:\nOs gafanhotos vieram em grande número, cobrindo toda a terra do Egito.\nEles devoraram todas as plantas, árvores e vegetação.\nNunca antes havia tantos gafanhotos, e eles causaram muita destruição.\nO Pedido de Perdão do Faraó:\nO faraó ficou assustado e chamou Moisés e Arão.\nEle pediu perdão a Deus e pediu que a praga fosse retirada.\nDeus ouviu e fez os gafanhotos desaparecerem.\nLições Importantes:\nEssa história nos ensina sobre a obediência a Deus.\nQuando não obedecemos, podemos enfrentar consequências.\nDeus é poderoso e cuida de Seu povo.\nLembre-se sempre: Deus está no controle, e podemos confiar Nele!"
+      resume: "O Dia em que os Gafanhotos Cobriram o Egito:\nHá muito tempo, o povo de Deus estava no Egito, e o faraó não queria deixá-los ir embora.\nDeus enviou uma praga de gafanhotos para mostrar Seu poder e pedir ao faraó que libertasse o povo.\nOs Gafanhotos Devoradores:\nOs gafanhotos vieram em grande número, cobrindo toda a terra do Egito.\nEles devoraram todas as plantas, árvores e vegetação.\nNunca antes havia tantos gafanhotos, e eles causaram muita destruição.\nO Pedido de Perdão do Faraó:\nO faraó ficou assustado e chamou Moisés e Arão.\nEle pediu perdão a Deus e pediu que a praga fosse retirada.\nDeus ouviu e fez os gafanhotos desaparecerem.\nLições Importantes:\nEssa história nos ensina sobre a obediência a Deus.\nQuando não obedecemos, podemos enfrentar consequências.\nDeus é poderoso e cuida de Seu povo.\nLembre-se sempre: Deus está no controle, e podemos confiar Nele!"
     },
     {
       name: "Raabe",
@@ -926,17 +1153,17 @@ export const Texts = {
     {
       name: "Raça de víboras",
       img:viboras,
-      resume: "A Expressão “Raça de Víboras”\nO Que Significa “Raça de Víboras”?\nJoão Batista usou essa expressão para repreender os líderes religiosos.\nEle queria mostrar que eles eram hipócritas e enganadores.\nLições Importantes:\nA bíblia nos ensina a ser sinceros e honestos.\nNão devemos ser como as víboras, mas sim como pessoas justas."
+      resume: "O Que Significa “Raça de Víboras”?\nJoão Batista usou essa expressão para repreender os líderes religiosos.\nEle queria mostrar que eles eram hipócritas e enganadores.\nLições Importantes:\nA bíblia nos ensina a ser sinceros e honestos.\nNão devemos ser como as víboras, mas sim como pessoas justas."
     },
     {
       name: "Raquel",
       img:raquel,
-      resume: "Raquel:\nQuem foi? Raquel foi a esposa de Jacó e mãe de José e Benjamim.\nO que ela fez? Ela mostrou fé em Deus e enfrentou desafios, como a esterilidade, com esperança.\nLição para nós: Acreditar em Deus mesmo quando as coisas parecem impossíveis."
+      resume: "Quem foi? Raquel foi a esposa de Jacó e mãe de José e Benjamim.\nO que ela fez? Ela mostrou fé em Deus e enfrentou desafios, como a esterilidade, com esperança.\nLição para nós: Acreditar em Deus mesmo quando as coisas parecem impossíveis."
     },
     {
       name: "Rebeca",
       img:rebeca,
-      resume: "Rebeca\nQuem foi Rebeca?\nRebeca era a esposa de Isaque.\nEla é conhecida por sua beleza e generosidade.\nFeitos de Rebeca:\nRebeca deu água aos servos de Abraão e seus camelos.\nEla se tornou a mãe de Esaú e Jacó.\nLições Importantes:\nRebeca nos ensina sobre hospitalidade e servir aos outros.\nDeus usa pessoas comuns para cumprir Seus planos."
+      resume: "Quem foi Rebeca?\nRebeca era a esposa de Isaque.\nEla é conhecida por sua beleza e generosidade.\nFeitos de Rebeca:\nRebeca deu água aos servos de Abraão e seus camelos.\nEla se tornou a mãe de Esaú e Jacó.\nLições Importantes:\nRebeca nos ensina sobre hospitalidade e servir aos outros.\nDeus usa pessoas comuns para cumprir Seus planos."
     },
     {
       name: "Redes de pesca",
@@ -946,7 +1173,7 @@ export const Texts = {
     {
       name: "Rei Davi",
       img:davi,
-      resume: "Rei Davi\nQuem foi Davi?\nDavi era um jovem pastor também.\nEle se tornou rei de Israel.\nFeitos de Davi:\nDerrotou o gigante Golias com uma funda.\nCometeu erros, mas também se arrependeu.\nLições Importantes:\nDavi nos ensina sobre humildade, fé e adoração.\nDeus olha para o coração das pessoas."
+      resume: "Quem foi Davi?\nDavi era um jovem pastor também.\nEle se tornou rei de Israel.\nFeitos de Davi:\nDerrotou o gigante Golias com uma funda.\nCometeu erros, mas também se arrependeu.\nLições Importantes:\nDavi nos ensina sobre humildade, fé e adoração.\nDeus olha para o coração das pessoas."
     },
     {
       name: "Rubis",
@@ -956,42 +1183,42 @@ export const Texts = {
     {
       name: "Rute",
       img:rute,
-      resume: "Rute\nQuem foi Rute?\nRute era uma mulher moabita.\nEla se tornou uma ancestral de Jesus.\nFeitos de Rute:\nRute escolheu seguir sua sogra Noemi.\nEla trabalhou nos campos de Boaz.\nLições Importantes:\nRute nos ensina sobre lealdade, coragem e fé.\nDeus honra aqueles que confiam Nele."
+      resume: "Quem foi Rute?\nRute era uma mulher moabita.\nEla se tornou uma ancestral de Jesus.\nFeitos de Rute:\nRute escolheu seguir sua sogra Noemi.\nEla trabalhou nos campos de Boaz.\nLições Importantes:\nRute nos ensina sobre lealdade, coragem e fé.\nDeus honra aqueles que confiam Nele."
     },
     {
       name: "Sal da Terra",
       img:sal,
-      resume: "O Sal da Terra\nO Que é o Sal da Terra?\nJesus disse que nós somos o sal da terra.\nAssim como o sal dá sabor à comida, nós devemos dar sabor ao mundo com nossas ações.\nO Significado Espiritual do Sal da Terra:\nQuando seguimos Jesus, somos chamados a ser diferentes.\nDevemos ser exemplos de amor, bondade e justiça.\nComo Ser o Sal da Terra:\nQuando ajudamos alguém, damos um sorriso ou fazemos o bem, estamos sendo o sal da terra.\nNossas atitudes devem fazer as pessoas se sentirem melhores e mais felizes.\nLições Importantes:\nO sal também preserva e purifica.\nAssim, devemos preservar o amor e a verdade e purificar nossos corações."
+      resume: "O Que é o Sal da Terra?\nJesus disse que nós somos o sal da terra.\nAssim como o sal dá sabor à comida, nós devemos dar sabor ao mundo com nossas ações.\nO Significado Espiritual do Sal da Terra:\nQuando seguimos Jesus, somos chamados a ser diferentes.\nDevemos ser exemplos de amor, bondade e justiça.\nComo Ser o Sal da Terra:\nQuando ajudamos alguém, damos um sorriso ou fazemos o bem, estamos sendo o sal da terra.\nNossas atitudes devem fazer as pessoas se sentirem melhores e mais felizes.\nLições Importantes:\nO sal também preserva e purifica.\nAssim, devemos preservar o amor e a verdade e purificar nossos corações."
     },
     {
       name: "Sansão",
       img:sansao,
-      resume: "Vamos explorar a história de Sansão, um personagem bíblico cheio de aventuras e lições importantes. Aqui estão os principais pontos sobre ele, explicados de forma simples para crianças:\n\nQuem foi Sansão?\nSansão era um homem muito forte escolhido por Deus para ajudar o povo de Israel.\nEle tinha cabelos compridos e uma força incrível!\nO Voto Especial de Sansão:\nDesde antes de nascer, os pais de Sansão fizeram um voto especial a Deus.\nEsse voto dizia que ele não deveria cortar o cabelo e deveria ser dedicado a Deus.\nFeitos Incríveis:\nCom a força de Deus, Sansão fez coisas incríveis, como matar um leão com as mãos!\nEle também derrotou muitos inimigos dos israelitas.\nDalila e a Traição:\nInfelizmente, Sansão se apaixonou por Dalila, que era má.\nEla queria descobrir o segredo da força dele e o enganou.\nA Queda de Sansão:\nSansão contou o segredo de sua força para Dalila: era o cabelo!\nQuando ela cortou seu cabelo, ele perdeu sua força.\nArrependimento e Vitória Final:\nSansão se arrependeu e pediu a Deus uma última chance.\nEle derrubou uma grande casa e muitos inimigos filisteus com sua força.\nLição Importante: Sansão nos ensina que devemos confiar em Deus, ser fiéis aos nossos votos e nos arrepender quando erramos. Mesmo quando caímos, Deus pode nos ajudar a nos levantar novamente!"
+      resume: "Vamos explorar a história de Sansão, um personagem bíblico cheio de aventuras e lições importantes:\n\nQuem foi Sansão?\nSansão era um homem muito forte escolhido por Deus para ajudar o povo de Israel.\nEle tinha cabelos compridos e uma força incrível!\nO Voto Especial de Sansão:\nDesde antes de nascer, os pais de Sansão fizeram um voto especial a Deus.\nEsse voto dizia que ele não deveria cortar o cabelo e deveria ser dedicado a Deus.\nFeitos Incríveis:\nCom a força de Deus, Sansão fez coisas incríveis, como matar um leão com as mãos!\nEle também derrotou muitos inimigos dos israelitas.\nDalila e a Traição:\nInfelizmente, Sansão se apaixonou por Dalila, que era má.\nEla queria descobrir o segredo da força dele e o enganou.\nA Queda de Sansão:\nSansão contou o segredo de sua força para Dalila: era o cabelo!\nQuando ela cortou seu cabelo, ele perdeu sua força.\nArrependimento e Vitória Final:\nSansão se arrependeu e pediu a Deus uma última chance.\nEle derrubou uma grande casa e muitos inimigos filisteus com sua força.\nLição Importante: Sansão nos ensina que devemos confiar em Deus, ser fiéis aos nossos votos e nos arrepender quando erramos. Mesmo quando caímos, Deus pode nos ajudar a nos levantar novamente!"
     },
     {
       name: "Sara",
       img:sara,
-      resume: "Sara:\nQuem foi? Sara foi a esposa de Abraão e mãe de Isaque.\nO que ela fez? Ela mostrou fé em Deus, mesmo quando era estéril e não conseguia ter filhos.\nLição para nós: Acreditar em Deus, mesmo quando as coisas parecem impossíveis."
+      resume: "Quem foi? Sara foi a esposa de Abraão e mãe de Isaque.\nO que ela fez? Ela mostrou fé em Deus, mesmo quando era estéril e não conseguia ter filhos.\nLição para nós: Acreditar em Deus, mesmo quando as coisas parecem impossíveis."
     },
     {
       name: "Sarça Ardente",
       img:sarcaardente,
-      resume: "Vamos explorar a história da Sarça Ardente, um momento emocionante da Bíblia. Aqui estão os principais pontos, explicados de forma simples para crianças:\n\nO Que é a Sarça Ardente?\nA Sarça Ardente é uma bushinha que estava pegando fogo no deserto.\nMas, surpreendentemente, não estava sendo consumida pelo fogo!\nMoisés e a Sarça Ardente:\nMoisés era um homem especial escolhido por Deus.\nUm dia, ele viu essa bushinha em chamas e ficou curioso.\nA Conversa com Deus:\nQuando Moisés se aproximou, Deus falou com ele através da sarça.\nDeus disse que tinha uma missão importante para Moisés: libertar o povo de Israel do faraó.\nA Lição da Sarça Ardente:\nA sarça ardente nos ensina que Deus está sempre presente.\nMesmo quando enfrentamos situações difíceis, Deus nos capacita e nos ajuda a seguir em frente.\nAtividades Divertidas:\n\nTire os Sapatos: Assim como Moisés, tire os sapatos quando estiver em um lugar especial.\nRelógio de Fogo: Se for seguro, faça um pequeno fogo e explique como a sarça ardente foi um milagre.\nSegurando a Serpente: Use uma corda para mostrar como, com a ajuda de Deus, podemos fazer coisas que parecem impossíveis.\nLembre-se sempre: Deus está conosco, assim como estava com Moisés na sarça ardente!"
+      resume: "Vamos explorar a história da Sarça Ardente, um momento emocionante da Bíblia:\n\nO Que é a Sarça Ardente?\nA Sarça Ardente é uma bushinha que estava pegando fogo no deserto.\nMas, surpreendentemente, não estava sendo consumida pelo fogo!\nMoisés e a Sarça Ardente:\nMoisés era um homem especial escolhido por Deus.\nUm dia, ele viu essa bushinha em chamas e ficou curioso.\nA Conversa com Deus:\nQuando Moisés se aproximou, Deus falou com ele através da sarça.\nDeus disse que tinha uma missão importante para Moisés: libertar o povo de Israel do faraó.\nA Lição da Sarça Ardente:\nA sarça ardente nos ensina que Deus está sempre presente.\nMesmo quando enfrentamos situações difíceis, Deus nos capacita e nos ajuda a seguir em frente.\nAtividades Divertidas:\n\nTire os Sapatos: Assim como Moisés, tire os sapatos quando estiver em um lugar especial.\nRelógio de Fogo: Se for seguro, faça um pequeno fogo e explique como a sarça ardente foi um milagre.\nSegurando a Serpente: Use uma corda para mostrar como, com a ajuda de Deus, podemos fazer coisas que parecem impossíveis.\nLembre-se sempre: Deus está conosco, assim como estava com Moisés na sarça ardente!"
     },
     {
       name: "Tábuas dos Mandamentos",
       img:tabua,
-      resume: "Vamos contar a história bíblica das Tábuas dos Mandamentos de forma simples e adequada para crianças:\n\nO Dia Especial no Monte Sinai:\nMoisés, um homem sábio e corajoso, subiu ao Monte Sinai para falar com Deus.\nLá, Deus lhe entregou duas tábuas de pedra com regras importantes.\nOs Dez Mandamentos:\nEssas regras são chamadas de Dez Mandamentos.\nSão como um guia para viver bem e amar a Deus e aos outros.\nO Que Dizem os Mandamentos?:\nO primeiro mandamento diz: “Adore somente a Deus”.\nOutros mandamentos ensinam coisas como não mentir, não roubar e honrar os pais.\nAs Tábuas Escritas por Deus:\nDeus escreveu esses mandamentos nas tábuas com Seu próprio dedo.\nElas eram especiais e sagradas.\nLições Importantes:\nAs Tábuas dos Mandamentos nos mostram como ser pessoas boas.\nQuando seguimos essas regras, estamos mostrando amor a Deus e aos outros.\nLembre-se sempre: Deus nos ama e quer o melhor para nós!"
+      resume: "O Dia Especial no Monte Sinai:\nMoisés, um homem sábio e corajoso, subiu ao Monte Sinai para falar com Deus.\nLá, Deus lhe entregou duas tábuas de pedra com regras importantes.\nOs Dez Mandamentos:\nEssas regras são chamadas de Dez Mandamentos.\nSão como um guia para viver bem e amar a Deus e aos outros.\nO Que Dizem os Mandamentos?:\nO primeiro mandamento diz: “Adore somente a Deus”.\nOutros mandamentos ensinam coisas como não mentir, não roubar e honrar os pais.\nAs Tábuas Escritas por Deus:\nDeus escreveu esses mandamentos nas tábuas com Seu próprio dedo.\nElas eram especiais e sagradas.\nLições Importantes:\nAs Tábuas dos Mandamentos nos mostram como ser pessoas boas.\nQuando seguimos essas regras, estamos mostrando amor a Deus e aos outros.\nLembre-se sempre: Deus nos ama e quer o melhor para nós!"
     },
     {
       name: "Tesouro",
       img:tesouro,
-      resume: "Vamos contar a história da parábola do tesouro de grande valor de forma simples e adequada para crianças:\n\nO Tesouro Escondido no Campo:\nJesus contou uma história sobre um homem que estava andando pelo campo.\nDe repente, ele encontrou um tesouro escondido no chão!\nEra um tesouro muito valioso, como ouro ou joias preciosas.\nA Alegria do Homem:\nO homem ficou muito feliz ao encontrar o tesouro.\nEle sabia que era algo especial e único.\nEle decidiu esconder o tesouro novamente no campo para que ninguém mais o encontrasse.\nA Decisão Importante:\nO homem tinha que tomar uma decisão: o que fazer com o tesouro?\nEle vendeu tudo o que tinha para comprar o campo onde o tesouro estava escondido.\nEle sabia que o tesouro valia mais do que qualquer outra coisa.\nLições Importantes:\nEssa parábola nos ensina que o Reino de Deus é como esse tesouro.\nQuando encontramos Jesus e entendemos Seu amor, isso se torna nosso tesouro mais valioso.\nDevemos estar dispostos a abandonar tudo para seguir a Jesus e ter o Reino de Deus em nossas vidas.\nLembre-se sempre: Jesus é o nosso tesouro mais precioso!"
+      resume: "O Tesouro Escondido no Campo:\nJesus contou uma história sobre um homem que estava andando pelo campo.\nDe repente, ele encontrou um tesouro escondido no chão!\nEra um tesouro muito valioso, como ouro ou joias preciosas.\nA Alegria do Homem:\nO homem ficou muito feliz ao encontrar o tesouro.\nEle sabia que era algo especial e único.\nEle decidiu esconder o tesouro novamente no campo para que ninguém mais o encontrasse.\nA Decisão Importante:\nO homem tinha que tomar uma decisão: o que fazer com o tesouro?\nEle vendeu tudo o que tinha para comprar o campo onde o tesouro estava escondido.\nEle sabia que o tesouro valia mais do que qualquer outra coisa.\nLições Importantes:\nEssa parábola nos ensina que o Reino de Deus é como esse tesouro.\nQuando encontramos Jesus e entendemos Seu amor, isso se torna nosso tesouro mais valioso.\nDevemos estar dispostos a abandonar tudo para seguir a Jesus e ter o Reino de Deus em nossas vidas.\nLembre-se sempre: Jesus é o nosso tesouro mais precioso!"
     },
     {
       name: "Torre de Babel",
       img:torrebabel,
-      resume: "A Torre de Babel é um episódio bíblico registrado no livro de Gênesis, no Antigo Testamento. Vamos explorar essa história em uma estrutura de tópicos:\n\nContexto Inicial:\nNo mundo todo, havia apenas uma língua e um único modo de falar.\nOs homens saíram do Oriente e encontraram uma planície em Sinear, onde decidiram se fixar.\nA Construção da Torre:\nOs homens decidiram fazer tijolos e queimá-los bem.\nEm vez de usar pedras, eles usaram tijolos e piche como argamassa.\nO plano era construir uma grande cidade com uma torre que alcançasse os céus.\nAcreditavam que isso traria fama e evitaria que fossem espalhados pela face da terra.\nA Intervenção Divina:\nO Senhor desceu para ver a cidade e a torre que os homens estavam construindo.\nEle percebeu que, como um só povo com uma só língua, nada poderia impedir o que planejavam fazer.\nEntão, o Senhor decidiu confundir a língua que falavam para que não se entendessem mais uns aos outros.\nA Dispersão:\nO Senhor dispersou os homens dali por toda a terra.\nA cidade ficou conhecida como Babel, que significa “confusão”, porque ali o Senhor confundiu a língua de todo o mundo.\nAssim, a Torre de Babel serve como um lembrete da importância da humildade e da comunicação entre os povos, além de mostrar como a soberba pode levar à dispersão e à incompreensão"
+      resume: "No mundo todo, havia apenas uma língua e um único modo de falar.\nOs homens saíram do Oriente e encontraram uma planície em Sinear, onde decidiram se fixar.\nA Construção da Torre:\nOs homens decidiram fazer tijolos e queimá-los bem.\nEm vez de usar pedras, eles usaram tijolos e piche como argamassa.\nO plano era construir uma grande cidade com uma torre que alcançasse os céus.\nAcreditavam que isso traria fama e evitaria que fossem espalhados pela face da terra.\nA Intervenção Divina:\nO Senhor desceu para ver a cidade e a torre que os homens estavam construindo.\nEle percebeu que, como um só povo com uma só língua, nada poderia impedir o que planejavam fazer.\nEntão, o Senhor decidiu confundir a língua que falavam para que não se entendessem mais uns aos outros.\nA Dispersão:\nO Senhor dispersou os homens dali por toda a terra.\nA cidade ficou conhecida como Babel, que significa “confusão”, porque ali o Senhor confundiu a língua de todo o mundo.\nAssim, a Torre de Babel serve como um lembrete da importância da humildade e da comunicação entre os povos, além de mostrar como a soberba pode levar à dispersão e à incompreensão"
     },
     {
       name: "Vaso de barro",
@@ -1001,7 +1228,7 @@ export const Texts = {
     {
       name: "Zaqueu",
       img:zaqueu,
-      resume: "Vamos contar a história de Zaqueu de forma simples e adequada para crianças:\n\nO Homem Curioso e Baixinho:\nHavia um homem chamado Zaqueu.\nEle era pequenininho e queria muito ver Jesus.\nA Árvore e o Encontro com Jesus:\nQuando Jesus passou pela cidade, havia muita gente ao redor.\nZaqueu, mesmo sendo baixinho, subiu em uma árvore para ver melhor.\nJesus olhou para cima e disse: “Zaqueu, desça! Vou ficar na sua casa hoje.”\nA Mudança de Coração:\nZaqueu ficou muito feliz e desceu correndo.\nEle recebeu Jesus em sua casa com alegria.\nAs pessoas reclamaram, mas Zaqueu prometeu ser honesto e devolver o que tinha roubado.\nLições Importantes:\nA história de Zaqueu nos ensina sobre arrependimento e mudança de coração.\nJesus ama a todos, mesmo os pecadores, e quer nos transformar também.\nLembre-se sempre: Jesus nos aceita como somos e nos ajuda a sermos melhores!"
+      resume: "O Homem Curioso e Baixinho:\nHavia um homem chamado Zaqueu.\nEle era pequenininho e queria muito ver Jesus.\nA Árvore e o Encontro com Jesus:\nQuando Jesus passou pela cidade, havia muita gente ao redor.\nZaqueu, mesmo sendo baixinho, subiu em uma árvore para ver melhor.\nJesus olhou para cima e disse: “Zaqueu, desça! Vou ficar na sua casa hoje.”\nA Mudança de Coração:\nZaqueu ficou muito feliz e desceu correndo.\nEle recebeu Jesus em sua casa com alegria.\nAs pessoas reclamaram, mas Zaqueu prometeu ser honesto e devolver o que tinha roubado.\nLições Importantes:\nA história de Zaqueu nos ensina sobre arrependimento e mudança de coração.\nJesus ama a todos, mesmo os pecadores, e quer nos transformar também.\nLembre-se sempre: Jesus nos aceita como somos e nos ajuda a sermos melhores!"
     }
   ],
   Bible:[

@@ -9,14 +9,12 @@ import AboutScreen from './src/screen/AboutScreen';
 import BibleScreen from './src/screen/BibleScreen';
 import CaractersScreen from './src/screen/CaractersScreen';
 import GamesScreen from './src/screen/GamesScreen';
-import PlayersScreen from './src/screen/PlayersScreen';
-import DiffScreen from './src/screen/game/DiffScreen';
 import MemoryScreen from './src/screen/game/MemoryScreen';
 import DiffGameScreen from './src/screen/game/DiffGameScreen';
 import MemoryGameScreen from './src/screen/game/MemoryGameScreen';
 import CardScreen from './src/screen/game/CardScreen';
 import CardGameScreen from './src/screen/game/CardGameScreen';
-import EndGameScreen from './src/screen/game/EndGameScreen';
+import AdScreen from './src/screen/AdScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -42,14 +40,12 @@ export default function App(): JSX.Element {
           <Stack.Screen name="Bible" component={BibleScreen} options={ScreenOptions} />
           <Stack.Screen name="Characters" component={CaractersScreen} options={ScreenOptions} />
           <Stack.Screen name="Games" component={GamesScreen} options={ScreenOptions} />
-          <Stack.Screen name="Players" component={PlayersScreen} options={ScreenOptions} />
           <Stack.Screen name="Memory" component={MemoryScreen} options={ScreenOptions} />
           <Stack.Screen name="MemoryGame" component={MemoryGameScreen} options={ScreenOptions} />
           <Stack.Screen name="Card" component={CardScreen} options={ScreenOptions} />
           <Stack.Screen name="CardGame" component={CardGameScreen} options={ScreenOptions} />
-          <Stack.Screen name="Diff" component={DiffScreen} options={ScreenOptions} />
           <Stack.Screen name="DiffGame" component={DiffGameScreen} options={ScreenOptions} />
-          <Stack.Screen name="EndGame" component={EndGameScreen} options={ScreenOptions} />
+          <Stack.Screen name="Ads" component={AdScreen} options={ScreenOptions} />
         </Stack.Navigator>
       </NavigationContainer>
     </>

@@ -13,28 +13,36 @@ import personagens from '../assets/img/personagens/personagens.png';
 import outrosapps from '../assets/img/outrosapps.png';
 import { Texts } from '../utils/Texts';
 import { Links } from '../utils/Links';
+import { BannerAd,BannerAdSize, TestIds } from 'react-native-google-mobile-ads';
+const adUnitIdM = __DEV__ ? TestIds.BANNER : 'ca-app-pub-2420598559068720/9312913429';
 
 export default function GamesMenu({navigation}) {
   return (
     <View style={styles.wrap}>
       <ImageButton img={memoria} label={Texts.Games.Menus.memory}
-          action={() => navigation.navigate('Memory')}/>
+          action={() => navigation.navigate('Ads', {nextScreen:'Memory'})}/>
 
       <ImageButton img={erros} label={Texts.Games.Menus.erros}
           color={Colors.blue}
-          action={() => navigation.navigate('Diff')}/>
+          action={() => navigation.navigate('Ads', {nextScreen:'DiffGame'})}/>
 
       <ImageButton img={card} label={Texts.Games.Menus.cards}
           color={Colors.lightGreen}
-          action={() => navigation.navigate('Card')}/>
+          action={() => navigation.navigate('Ads', {nextScreen:'Card'})}/>
 
       <ImageButton img={personagens} label={Texts.Games.Menus.characters}
           color={Colors.darkBlue}
-          action={() => navigation.navigate('Characters')}/>
+          action={() => navigation.navigate('Ads', {nextScreen:'Characters'})}/>
 
       <ImageButton img={outrosapps} label={Texts.Games.Menus.others}
           color={Colors.yellow}
           action={() => Linking.openURL(Links.othersApps)}/>
+
+      <BannerAd
+          unitId={adUnitIdM}
+          size={BannerAdSize.MEDIUM_RECTANGLE}
+          requestOptions={{requestNonPersonalizedAdsOnly: false,}}
+      />
     </View>
   );
 }

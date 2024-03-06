@@ -253,7 +253,7 @@ export default function MemoryGame({mode, navigation}) {
         </View>
 
         <NavButton label={Texts.Buttons.leave}
-            action={() => navigation.goBack()}/>
+            action={() => navigation.navigate('Ads', {nextScreen:'Games'})}/>
       </ScrollView>
     </>
   );

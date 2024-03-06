@@ -13,6 +13,9 @@ import CharacterResumeCard from '../component/CharacterResumeCard';
 import Footer from '../component/Footer';
 import NavButton from '../component/NavButton';
 import { Texts } from '../utils/Texts';
+import { BannerAd,BannerAdSize, TestIds } from 'react-native-google-mobile-ads';
+const adUnitId = __DEV__ ? TestIds.BANNER : 'ca-app-pub-2420598559068720/1983527247';
+const adUnitIdM = __DEV__ ? TestIds.BANNER : 'ca-app-pub-2420598559068720/9312913429';
 
 export default function CaractersScreen({navigation}) {
   const [itens, setItens] = useState(null);
@@ -30,9 +33,14 @@ export default function CaractersScreen({navigation}) {
 
   return (
       <ImageBackground source={fundo} resizeMode="cover" style={styles.wrap}>
+        <BannerAd
+            unitId={adUnitId}
+            size={BannerAdSize.BANNER}
+            requestOptions={{requestNonPersonalizedAdsOnly: false,}}
+        />
 
         <NavButton label={Texts.Buttons.goBack}
-            action={() => navigation.goBack()}/>
+            action={() => navigation.navigate('Games')}/>
 
         <FlatList style={styles.textWrap}
             keyboardDismissMode='on-drag'
@@ -50,7 +58,15 @@ export default function CaractersScreen({navigation}) {
                 <CharacterResumeCard character={item} />
               );
             }}
-            ListFooterComponent={<View style={{height:100}}/>}
+            ListFooterComponent={
+              <View style={styles.adWrap}>
+                <BannerAd
+                    unitId={adUnitIdM}
+                    size={BannerAdSize.MEDIUM_RECTANGLE}
+                    requestOptions={{requestNonPersonalizedAdsOnly: false,}}
+                />
+              </View>
+            }
         />
         
         <Footer />
@@ -66,9 +82,14 @@ const styles = StyleSheet.create({
     height:screen.height,
     alignItems:'center',
     padding:10,
-    paddingTop:20,
+    paddingTop:50,
   },
   textWrap:{
     maxHeight:screen.height * 0.9
+  },
+  adWrap:{
+    minHeight:450,
+    alignItems:'center',
+    justifyContent:'center'
   }
 });

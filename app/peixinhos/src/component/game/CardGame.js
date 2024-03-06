@@ -6,6 +6,7 @@ import {
   FlatList,
   StatusBar,
   ImageBackground,
+  TouchableHighlight,
 } from 'react-native';
 import { Colors } from '../../utils/Colors';
 import { Texts } from '../../utils/Texts';
@@ -216,7 +217,7 @@ export default function CardGame({navigation, mode}) {
           <ButtonLabel value={Texts.Games.Messages.end.title} size={32} />
           <ButtonLabel value={Texts.Games.Messages.end.subtitle} size={22} />
 
-          <NavButton action={() => navigation.goBack()} 
+          <NavButton action={() => navigation.navigate('Ads',{nextScreen:'Games'})} 
               label={Texts.Buttons.goBack}/>
         </View>
       );
@@ -281,9 +282,13 @@ export default function CardGame({navigation, mode}) {
             <ButtonLabel value={botScore} size={30}
                 color={Colors.orange}/>
             <ButtonLabel value={'x'} style={styles.scoreDiv} size={14}/>
-            <ButtonLabel value={topScore} size={30}
-                color={Colors.blue}/>
+            <ButtonLabel value={topScore} size={30} color={Colors.blue}/>
           </View>
+
+          <TouchableHighlight underlayColor='transparent'
+              onPress={() => navigation.navigate('Ads', {nextScreen:'Games'})}>
+            <ButtonLabel value={Texts.Buttons.leave} size={16}/>
+          </TouchableHighlight>
         </View>
 
         {renderBotSelection()}
@@ -344,6 +349,10 @@ const styles = StyleSheet.create({
     borderTopWidth:4,
     borderBottomWidth:4,
     height:screen.height * 0.333,
+    alignItems: 'center',
+    justifyContent: 'space-around'
+  },
+  scoreBoardWrap:{
     alignItems: 'center',
     justifyContent: 'space-around'
   },

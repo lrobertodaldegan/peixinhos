@@ -14,7 +14,7 @@ export default function BibleBookLabel({
                                 onSelect=()=>null}) {
 
   return (
-    <TouchableHighlight key={abrev}
+    <TouchableHighlight
         underlayColor='transparent'
         style={styles.booksLblWrap}
         onPress={onSelect}>

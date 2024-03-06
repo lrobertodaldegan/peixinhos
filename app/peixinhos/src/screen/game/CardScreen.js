@@ -12,12 +12,21 @@ import sp from '../../assets/img/cards/1p.png';
 import mp from '../../assets/img/cards/2p.png';
 import ImageButton from '../../component/ImageButton';
 import { Colors } from '../../utils/Colors';
+import { BannerAd,BannerAdSize, TestIds } from 'react-native-google-mobile-ads';
+const adUnitId = __DEV__ ? TestIds.BANNER : 'ca-app-pub-2420598559068720/1983527247';
+const adUnitIdM = __DEV__ ? TestIds.BANNER : 'ca-app-pub-2420598559068720/9312913429';
 
 export default function CardScreen({navigation}) {
   return (
     <ImageBackground source={fundo} resizeMode="cover" style={styles.wrap}>
+      <BannerAd
+          unitId={adUnitId}
+          size={BannerAdSize.BANNER}
+          requestOptions={{requestNonPersonalizedAdsOnly: false,}}
+      />
+
       <NavButton label={Texts.Buttons.goBack}
-        action={() => navigation.goBack()}/>
+        action={() => navigation.navigate('Games')}/>
 
       <ImageButton img={sp} label={Texts.Games.Modes.single}
           action={() => navigation.navigate('CardGame', {mode:Texts.Games.Modes.single})}/>
@@ -26,6 +35,12 @@ export default function CardScreen({navigation}) {
           color={Colors.blue}
           action={() => navigation.navigate('CardGame', {mode:Texts.Games.Modes.multiple})}/>
       
+      <BannerAd
+          unitId={adUnitIdM}
+          size={BannerAdSize.MEDIUM_RECTANGLE}
+          requestOptions={{requestNonPersonalizedAdsOnly: false,}}
+      />
+
       <Footer />
     </ImageBackground>
   );
@@ -38,6 +53,7 @@ const styles = StyleSheet.create({
     width: screen.width,
     height:screen.height,
     alignItems:'center',
-    paddingVertical:20
+    paddingBottom:20,
+    paddingTop:50
   },
 });
