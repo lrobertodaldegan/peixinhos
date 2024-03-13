@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from 'react';
 import {
-  View,
   ImageBackground,
   StyleSheet,
   Dimensions,
@@ -15,7 +14,6 @@ import NavButton from '../component/NavButton';
 import { Texts } from '../utils/Texts';
 import { BannerAd,BannerAdSize, TestIds } from 'react-native-google-mobile-ads';
 const adUnitId = __DEV__ ? TestIds.BANNER : 'ca-app-pub-2420598559068720/1983527247';
-const adUnitIdM = __DEV__ ? TestIds.BANNER : 'ca-app-pub-2420598559068720/9312913429';
 
 export default function CaractersScreen({navigation}) {
   const [itens, setItens] = useState(null);
@@ -58,15 +56,6 @@ export default function CaractersScreen({navigation}) {
                 <CharacterResumeCard character={item} />
               );
             }}
-            ListFooterComponent={
-              <View style={styles.adWrap}>
-                <BannerAd
-                    unitId={adUnitIdM}
-                    size={BannerAdSize.MEDIUM_RECTANGLE}
-                    requestOptions={{requestNonPersonalizedAdsOnly: false,}}
-                />
-              </View>
-            }
         />
         
         <Footer />

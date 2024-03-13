@@ -14,7 +14,6 @@ import ImageButton from '../../component/ImageButton';
 import { Colors } from '../../utils/Colors';
 import { BannerAd,BannerAdSize, TestIds } from 'react-native-google-mobile-ads';
 const adUnitId = __DEV__ ? TestIds.BANNER : 'ca-app-pub-2420598559068720/1983527247';
-const adUnitIdM = __DEV__ ? TestIds.BANNER : 'ca-app-pub-2420598559068720/9312913429';
 
 export default function CardScreen({navigation}) {
   return (
@@ -34,12 +33,6 @@ export default function CardScreen({navigation}) {
       <ImageButton img={mp} label={Texts.Games.Modes.multiple}
           color={Colors.blue}
           action={() => navigation.navigate('CardGame', {mode:Texts.Games.Modes.multiple})}/>
-      
-      <BannerAd
-          unitId={adUnitIdM}
-          size={BannerAdSize.MEDIUM_RECTANGLE}
-          requestOptions={{requestNonPersonalizedAdsOnly: false,}}
-      />
 
       <Footer />
     </ImageBackground>
