@@ -30,7 +30,7 @@ export default function GamesMenu({navigation}) {
 
       <ImageButton img={personagens} label={Texts.Games.Menus.characters}
           color={Colors.darkBlue}
-          action={() => navigation.navigate('Ads', {nextScreen:'Characters'})}/>
+          action={() => navigation.navigate('Characters')}/>
 
       <ImageButton img={outrosapps} label={Texts.Games.Menus.others}
           color={Colors.yellow}

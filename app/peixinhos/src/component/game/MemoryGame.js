@@ -12,6 +12,8 @@ import { Colors } from '../../utils/Colors';
 import ButtonLabel from '../ButtonLabel';
 import MemoryCard from '../MemoryCard';
 import Label from '../Label';
+import { BannerAd, BannerAdSize, TestIds } from 'react-native-google-mobile-ads';
+const adUnitId = __DEV__ ? TestIds.BANNER : 'ca-app-pub-2420598559068720/9312913429';
 
 export default function MemoryGame({mode, navigation}) {
   const [fase, setFase] = useState(1);
@@ -253,7 +255,13 @@ export default function MemoryGame({mode, navigation}) {
         </View>
 
         <NavButton label={Texts.Buttons.leave}
-            action={() => navigation.navigate('Ads', {nextScreen:'Games'})}/>
+            action={() => navigation.navigate('Games')}/>
+
+        <BannerAd
+            unitId={adUnitId}
+            size={BannerAdSize.MEDIUM_RECTANGLE}
+            requestOptions={{requestNonPersonalizedAdsOnly: false,}}
+        />
       </ScrollView>
     </>
   );
@@ -264,7 +272,8 @@ const screen = Dimensions.get('screen');
 const styles = StyleSheet.create({
   wrap:{
     paddingHorizontal:10,
-    height:screen.height * 2
+    height:screen.height * 2,
+    alignItems:'center'
   },
   cardsWrap:{
     flexDirection:'row',

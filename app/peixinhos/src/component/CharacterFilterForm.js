@@ -21,12 +21,13 @@ export default function CharacterFilterForm({onSearch=(f)=>null}) {
     <View style={styles.wrap}>
       <TextInput value={filter} placeholder={Texts.Input.characters}
           onChangeText={(v) => setFilter(v)}
+          onSubmitEditing={() => onSearch(filter)}
           style={styles.input}/>
 
       <TouchableHighlight underlayColor={Colors.white}
           style={styles.inputWrap}
           onPress={() => onSearch(filter)}>
-        <ButtonLabel value={Texts.Buttons.search} size={22}/>
+        <ButtonLabel value={Texts.Buttons.search} size={18}/>
       </TouchableHighlight>
     </View>
   );
@@ -55,8 +56,8 @@ const styles = StyleSheet.create({
     borderRadius:10,
     borderWidth:3,
     borderColor:Colors.black,
-    width:(screen.width - 20) * 0.6,
-    marginRight:(screen.width - 20) * 0.045,
+    width:(screen.width - 20) * 0.7,
+    marginRight:(screen.width - 20) * 0.01,
     paddingHorizontal:20,
     fontFamily:'EncodeSans-Medium',
   },

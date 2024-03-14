@@ -5,29 +5,31 @@ import {
   Dimensions,
 } from 'react-native';
 import fundo from '../assets/img/fundo-branco.png';
+import { Texts } from '../utils/Texts';
+import NavButton from '../component/NavButton';
+import ButtonLabel from "../component/ButtonLabel";
 import { useIsFocused } from '@react-navigation/native';
 import { InterstitialAd, AdEventType, TestIds } from 'react-native-google-mobile-ads';
-import ButtonLabel from "../component/ButtonLabel";
 const adUnitId = __DEV__ ? TestIds.INTERSTITIAL : 'ca-app-pub-2420598559068720/8349625045';
 
 const iad = InterstitialAd.createForAdRequest(adUnitId);
 
 export default function AdScreen({navigation, route}){
-  const [loaded, setLoaded] = useState(false);
+  const [timeouted, setTimeouted] = useState(false);
   const isOnFocus = useIsFocused();
 
   const {nextScreen} = route.params;
 
   useEffect(() => {
     if(isOnFocus === true){
+      setTimeout(() => setTimeouted(true), 10000);
+
       const unsubscribe = iad.addAdEventListener(
                                             AdEventType.LOADED, 
-                                            handleAdsLoaded);
+                                            () => iad.show());
       iad.load();
 
       iad.addAdEventListener(AdEventType.CLOSED, () => {
-        setLoaded(false);
-
         navigation.navigate(nextScreen ? nextScreen : 'Games');
       });
       // Unsubscribe from events on unmount
@@ -35,19 +37,29 @@ export default function AdScreen({navigation, route}){
     }
   },[isOnFocus]);
 
-  const handleAdsLoaded = () => {
-    setLoaded(true);
+  const renderContinue = () => {
+    if(timeouted === true){
+      return (
+        <NavButton 
+            action={() => navigation.navigate(nextScreen ? nextScreen : 'Games')} 
+            label={'Toque aqui para continuar'}/>
+      );
+    }
 
-    iad.show();
+    return (
+      <ButtonLabel size={14}
+          value={'Se o anúncio não carregar, você poderá continuar.\nAguarde até 10 segundos...'}
+      />
+    );
   }
 
   return (
     <ImageBackground source={fundo} resizeMode="cover" style={styles.wrap}>
-      <ButtonLabel size={16}
-          value={loaded === true 
-                          ? '' 
-                          : 'Antes de continuar,\numa palavrinha dos nossos patrocinadores'}
+      <ButtonLabel size={20}
+          value={'Carregando anúncios...'}
       />
+
+      {renderContinue()}
     </ImageBackground>
   );
 }
@@ -59,7 +71,7 @@ const styles = StyleSheet.create({
     width: screen.width,
     height:screen.height,
     alignItems:'center',
+    justifyContent:'center',
     paddingHorizontal:10,
-    paddingTop:100,
   },
 });

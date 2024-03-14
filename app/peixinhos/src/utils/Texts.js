@@ -1,75 +1,74 @@
 import { Colors } from "./Colors";
-import jesus from '../assets/img/personagens/jesus.png';
-import sunamita from '../assets/img/personagens/sunamita.png';
-import abigail from '../assets/img/personagens/abigail.png';
-import abraao from '../assets/img/personagens/Abraao.png';
-import absalao from '../assets/img/personagens/absalao.png';
-import alaude from '../assets/img/personagens/alaude.png';
-import ana from '../assets/img/personagens/ana.png';
-import arao from '../assets/img/personagens/Arao.png';
-import arcanoe from '../assets/img/personagens/arcanoe.png';
-import arvorefrutifera from '../assets/img/personagens/arvorefrutifera.png';
-import barcotempestade from '../assets/img/personagens/barcotempestade.png';
-import biblia from '../assets/img/personagens/biblia.png';
-import cachorrinhos from '../assets/img/personagens/cachorrinhos.png';
-import capacetesalvacao from '../assets/img/personagens/capacetesalvacao.png';
-import casarocha from '../assets/img/personagens/casa_rocha.png';
-import colunafogo from '../assets/img/personagens/colunafogo.png';
-import cordeirosanto from '../assets/img/personagens/cordeirosanto.png';
-import couracajustica from '../assets/img/personagens/couracajustica.png';
-import davigolias from '../assets/img/personagens/davi_golias.png';
-import dracma from '../assets/img/personagens/dracma.png';
-import escudofe from '../assets/img/personagens/escudofe.png';
-import espada from '../assets/img/personagens/espada.png';
-import gafanhotos from '../assets/img/personagens/gafanhotos.png';
-import harpa from '../assets/img/personagens/harpa.png';
-import josue from '../assets/img/personagens/josue.png';
-import lucas from '../assets/img/personagens/lucas.png';
-import marcos from '../assets/img/personagens/marcos.png';
-import marsangue from '../assets/img/personagens/marsangue.png';
-import mateus from '../assets/img/personagens/mateus.png';
-import mel from '../assets/img/personagens/mel.png';
-import oliveira from '../assets/img/personagens/oliveira.png';
-import paespeixes from '../assets/img/personagens/paespeixes.png';
-import paovinho from '../assets/img/personagens/paovinho.png';
-import pastor from '../assets/img/personagens/pastor.png';
-import peixemoeda from '../assets/img/personagens/peixemoeda.png';
-import porquinhos from '../assets/img/personagens/porquinhos.png';
-import rede from '../assets/img/personagens/rede.png';
-import rubis from '../assets/img/personagens/rubis.png';
-import sansao from '../assets/img/personagens/sansao.png';
-import sarcaardente from '../assets/img/personagens/sarcaardente.png';
-import tabua from '../assets/img/personagens/tabua.png';
-import tesouro from '../assets/img/personagens/tesouro.png';
-import torrebabel from '../assets/img/personagens/torrebabel.png';
-import vasobarro from '../assets/img/personagens/vasobarro.png';
-import viboras from '../assets/img/personagens/viboras.png';
-import zaqueu from '../assets/img/personagens/zaqueu.png';
-import elias from '../assets/img/personagens/elias.png';
-import debora from '../assets/img/personagens/debora.png';
-import funda from '../assets/img/personagens/funda.png';
-import ester from '../assets/img/personagens/ester.png';
-import jaco from '../assets/img/personagens/jaco.png';
-import isaias from '../assets/img/personagens/isaias.png';
-import jezabel from '../assets/img/personagens/jezabel.png';
-import joao from '../assets/img/personagens/joao.png';
-import leaojuda from '../assets/img/personagens/leaojuda.png';
-import lidia from '../assets/img/personagens/lidia.png';
-import maria from '../assets/img/personagens/maria.png';
-import mariab from '../assets/img/personagens/mariab.png';
-import marta from '../assets/img/personagens/marta.png';
-import sara from '../assets/img/personagens/sara.png';
-import raquel from '../assets/img/personagens/raquel.png';
-import rebeca from '../assets/img/personagens/rebeca.png';
-import raabe from '../assets/img/personagens/raabe.png';
-import miria from '../assets/img/personagens/miria.png';
-import moises from '../assets/img/personagens/moises.png';
-import caminho from '../assets/img/personagens/caminho.png';
-import paulo from '../assets/img/personagens/paulo.png';
-import pedro from '../assets/img/personagens/pedro.png';
-import davi from '../assets/img/personagens/davi.png';
-import rute from '../assets/img/personagens/rute.png';
-import sal from '../assets/img/personagens/sal.png';
+import jesus from '../assets/img/personagens/jesus-min.png';
+import sunamita from '../assets/img/personagens/sunamita-min.png';
+import abigail from '../assets/img/personagens/abigail-min.png';
+import abraao from '../assets/img/personagens/Abraao-min.png';
+import absalao from '../assets/img/personagens/absalao-min.png';
+import alaude from '../assets/img/personagens/alaude-min.png';
+import ana from '../assets/img/personagens/ana-min.png';
+import arao from '../assets/img/personagens/Arao-min.png';
+import arcanoe from '../assets/img/personagens/arcanoe-min.png';
+import arvorefrutifera from '../assets/img/personagens/arvorefrutifera-min.png';
+import barcotempestade from '../assets/img/personagens/barcotempestade-min.png';
+import biblia from '../assets/img/personagens/biblia-min.png';
+import capacetesalvacao from '../assets/img/personagens/capacetesalvacao-min.png';
+import casarocha from '../assets/img/personagens/casa_rocha-min.png';
+import colunafogo from '../assets/img/personagens/colunafogo-min.png';
+import cordeirosanto from '../assets/img/personagens/cordeirosanto-min.png';
+import couracajustica from '../assets/img/personagens/couracajustica-min.png';
+import davigolias from '../assets/img/personagens/davi_golias-min.png';
+import dracma from '../assets/img/personagens/dracma-min.png';
+import escudofe from '../assets/img/personagens/escudofe-min.png';
+import espada from '../assets/img/personagens/espada-min.png';
+import gafanhotos from '../assets/img/personagens/gafanhotos-min.png';
+import harpa from '../assets/img/personagens/harpa-min.png';
+import josue from '../assets/img/personagens/josue-min.png';
+import lucas from '../assets/img/personagens/lucas-min.png';
+import marcos from '../assets/img/personagens/marcos-min.png';
+import marsangue from '../assets/img/personagens/marsangue-min.png';
+import mateus from '../assets/img/personagens/mateus-min.png';
+import mel from '../assets/img/personagens/mel-min.png';
+import oliveira from '../assets/img/personagens/oliveira-min.png';
+import paespeixes from '../assets/img/personagens/paespeixes-min.png';
+import paovinho from '../assets/img/personagens/paovinho-min.png';
+import pastor from '../assets/img/personagens/pastor-min.png';
+import peixemoeda from '../assets/img/personagens/peixemoeda-min.png';
+import porquinhos from '../assets/img/personagens/porquinhos-min.png';
+import rede from '../assets/img/personagens/rede-min.png';
+import rubis from '../assets/img/personagens/rubis-min.png';
+import sansao from '../assets/img/personagens/sansao-min.png';
+import sarcaardente from '../assets/img/personagens/sarcaardente-min.png';
+import tabua from '../assets/img/personagens/tabua-min.png';
+import tesouro from '../assets/img/personagens/tesouro-min.png';
+import torrebabel from '../assets/img/personagens/torrebabel-min.png';
+import vasobarro from '../assets/img/personagens/vasobarro-min.png';
+import viboras from '../assets/img/personagens/viboras-min.png';
+import zaqueu from '../assets/img/personagens/zaqueu-min.png';
+import elias from '../assets/img/personagens/elias-min.png';
+import debora from '../assets/img/personagens/debora-min.png';
+import funda from '../assets/img/personagens/funda-min.png';
+import ester from '../assets/img/personagens/ester-min.png';
+import jaco from '../assets/img/personagens/jaco-min.png';
+import isaias from '../assets/img/personagens/isaias-min.png';
+import jezabel from '../assets/img/personagens/jezabel-min.png';
+import joao from '../assets/img/personagens/joao-min.png';
+import leaojuda from '../assets/img/personagens/leaojuda-min.png';
+import lidia from '../assets/img/personagens/lidia-min.png';
+import maria from '../assets/img/personagens/maria-min.png';
+import mariab from '../assets/img/personagens/mariab-min.png';
+import marta from '../assets/img/personagens/marta-min.png';
+import sara from '../assets/img/personagens/sara-min.png';
+import raquel from '../assets/img/personagens/raquel-min.png';
+import rebeca from '../assets/img/personagens/rebeca-min.png';
+import raabe from '../assets/img/personagens/raabe-min.png';
+import miria from '../assets/img/personagens/miria-min.png';
+import moises from '../assets/img/personagens/moises-min.png';
+import caminho from '../assets/img/personagens/caminho-min.png';
+import paulo from '../assets/img/personagens/paulo-min.png';
+import pedro from '../assets/img/personagens/pedro-min.png';
+import davi from '../assets/img/personagens/davi-min.png';
+import rute from '../assets/img/personagens/rute-min.png';
+import sal from '../assets/img/personagens/sal-min.png';
 import cardAbigail from '../assets/img/cards/card_abigail.png';
 import cardAbraao from '../assets/img/cards/card_abraao.png';
 import cardAbsalao from '../assets/img/cards/card_absalao.png';
@@ -893,7 +892,7 @@ export const Texts = {
     {
       name: "Absalão",
       img:absalao,
-      resume: "Absalão é um personagem bíblico cheio de aventuras e lições importantes:\n\nQuem foi Absalão?\nAbsalão era o terceiro filho do rei Davi.\nEle nasceu em Hebrom, por volta de 1000 a.C.\nEra muito bonito e tinha cabelos longos.\nO Favorito e a Rivalidade:\nAbsalão era o favorito entre os filhos de Davi.\nEle tinha uma rivalidade com seu irmão Amnom, que havia feito algo muito ruim.\nA Conspiração e a Rebeldia:\nAbsalão secretamente planejava tomar o trono de seu pai.\nEle acusou Davi de negligenciar a justiça e se proclamou rei.\nA Batalha e a Queda:\nDavi teve que fugir de Jerusalém por causa da conspiração de Absalão.\nHouve uma batalha na floresta de Efraim, e Absalão ficou preso em galhos de árvore.\nOs soldados de Davi o encontraram e o mataram.\nLição Importante:\nA história de Absalão nos ensina sobre ambição, rebeldia e as consequências de nossas escolhas.\nLembre-se sempre: Deus nos guia para fazer o que é certo!"
+      resume: "Absalão é um personagem bíblico cheio de aventuras e lições importantes:\n\nQuem foi Absalão?\nAbsalão era o terceiro filho do rei Davi.\nEle nasceu em Hebrom, por volta de 1000 a.C.\nEra muito bonito e tinha cabelos longos.\nEle tinha uma rivalidade com seu irmão Amnom, que havia feito algo muito ruim.\nA Conspiração e a Rebeldia:\nAbsalão secretamente planejava tomar o trono de seu pai.\nEle acusou Davi de negligenciar a justiça e se proclamou rei.\nA Batalha e a Queda:\nDavi teve que fugir de Jerusalém por causa da conspiração de Absalão.\nHouve uma batalha na floresta de Efraim, e Absalão ficou preso em galhos de árvore.\nOs soldados de Davi o encontraram e o mataram.\nLição Importante:\nA história de Absalão nos ensina sobre as consequências da ambição, rebeldia e de más escolhas.\nLembre-se sempre: Deus nos guia para fazer o que é certo!"
     },
     {
       name: "Alaúde",
@@ -928,12 +927,7 @@ export const Texts = {
     {
       name: "Bíblia",
       img:biblia,
-      resume: "A Bíblia é a palavra de Deus revelada para nós! Lendo a Bíblia podemos aprender lições importantes e conhecer melhor a Deus. Ela possui várias histórias sobre o povo de Deus e a igreja. Veja só algumas: A Criação:\nDeus criou o universo, a Terra e tudo que existe.\nEle fez o dia, a noite, o céu, as estrelas e os animais.\nDeus também criou o ser humano, feito à Sua imagem e semelhança.\nO Dilúvio e a Arca de Noé:\nDeus viu que as pessoas estavam fazendo coisas más.\nEle escolheu Noé para construir uma grande arca.\nNoé e sua família entraram na arca, junto com os animais.\nDeus enviou um dilúvio para limpar a Terra e começar de novo.\nAbraão e a Promessa de Deus:\nDeus escolheu Abraão para ser o pai de uma grande nação.\nEle prometeu a Abraão muitos descendentes e uma terra especial.\nAbraão confiou em Deus e seguiu Seus planos.\nMoisés e os Dez Mandamentos:\nMoisés libertou os israelitas da escravidão no Egito.\nDeus deu a Moisés os Dez Mandamentos no Monte Sinai.\nEsses mandamentos são regras importantes para viver bem e amar a Deus e aos outros.\nO Nascimento de Jesus:\nDeus enviou Seu Filho Jesus para nos salvar.\nJesus nasceu em Belém, em uma manjedoura.\nEle cresceu, ensinou sobre amor e perdão, e fez muitos milagres.\nA Crucificação e Ressurreição de Jesus:\nJesus morreu na cruz pelos nossos pecados.\nTrês dias depois, Ele ressuscitou, mostrando Seu poder sobre a morte.\nIsso nos dá esperança e alegria!\nO Amor de Deus por Nós:\nA Bíblia nos ensina que Deus nos ama muito.\nEla nos mostra como viver bem, amar os outros e confiar em Deus.\nLembre-se sempre: a Bíblia é um livro especial que nos conta sobre o amor e os planos de Deus para nós!"
-    },
-    {
-      name: "Cachorrinhos",
-      img:cachorrinhos,
-      resume: ""
+      resume: "A Bíblia é a palavra de Deus revelada para nós! Lendo a Bíblia podemos aprender lições importantes e conhecer melhor a Deus. Ela possui várias histórias sobre o povo de Deus e a igreja. Veja só algumas: A Criação:\nDeus criou o universo, a Terra e tudo que existe.\nEle fez o dia, a noite, o céu, as estrelas e os animais.\nDeus também criou o ser humano, feito à Sua imagem e semelhança.\nO Dilúvio e a Arca de Noé:\nDeus viu que as pessoas estavam fazendo coisas más.\nEle escolheu Noé para construir uma grande arca.\nNoé e sua família entraram na arca, junto com os animais.\nDeus enviou um dilúvio para limpar a Terra e começar de novo.\nAbraão e a Promessa de Deus:\nDeus escolheu Abraão para ser o pai de uma grande nação.\nEle prometeu a Abraão muitos descendentes e uma terra especial.\nAbraão confiou em Deus e seguiu Seus planos.\nMoisés e os Dez Mandamentos:\nMoisés libertou os israelitas da escravidão no Egito.\nDeus deu a Moisés os Dez Mandamentos no Monte Sinai.\nO Nascimento de Jesus:\nDeus enviou Seu Filho Jesus para nos salvar.\nJesus nasceu em Belém, em uma manjedoura.\nEle cresceu, ensinou sobre amor e perdão, e fez muitos milagres.\nA Crucificação e Ressurreição de Jesus:\nJesus morreu na cruz pelos nossos pecados.\nTrês dias depois, Ele ressuscitou, mostrando Seu poder sobre a morte.\nIsso nos dá esperança e alegria!\nO Amor de Deus por Nós:\nA Bíblia nos ensina que Deus nos ama muito.\nEla nos mostra como viver bem, amar os outros e confiar em Deus.\nLembre-se sempre: a Bíblia é um livro especial que nos conta sobre o amor e os planos de Deus para nós!"
     },
     {
       name: "Capacete da salvação",
@@ -948,7 +942,7 @@ export const Texts = {
     {
       name: "Coluna de fogo",
       img:colunafogo,
-      resume: "Vamos explorar a história da Coluna de Fogo, um momento emocionante da Bíblia:\n\nO Que é a Coluna de Fogo?\nA Coluna de Fogo era como uma luz brilhante que aparecia durante a noite.\nEla guiava o povo de Israel enquanto eles viajavam pelo deserto.\nComo Funcionava?\nDurante o dia, Deus enviava uma coluna de nuvem para proteger o povo do sol quente.\nÀ noite, essa nuvem se transformava em uma coluna de fogo para iluminar o caminho.\nPor Que Era Importante?\nA Coluna de Fogo era um sinal especial de Deus.\nEla mostrava aos israelitas que Deus estava com eles e cuidava deles.\nLições da Coluna de Fogo:\nAprendemos que Deus nos guia, mesmo quando estamos em lugares difíceis.\nAssim como a Coluna de Fogo, Deus está sempre conosco, nos protegendo e mostrando o caminho.\nLembre-se sempre: Deus é como uma luz que nos guia, nos ama e nos ajuda a seguir em frente!"
+      resume: "A Coluna de Fogo era como uma luz brilhante que aparecia durante a noite.\nEla guiava o povo de Israel enquanto eles viajavam pelo deserto. Durante o dia, Deus enviava uma coluna de nuvem para proteger o povo do sol quente. À noite, essa nuvem se transformava em uma coluna de fogo para iluminar o caminho.\nPor Que Era Importante?\nA Coluna de Fogo era um sinal especial de Deus. Ela mostrava aos israelitas que Deus estava com eles e cuidava deles. Com ela aprendemos que Deus nos guia, mesmo quando estamos em lugares difíceis.\nAssim como a Coluna de Fogo, Deus está sempre conosco, nos protegendo e mostrando o caminho.\nLembre-se sempre: Deus é como uma luz que nos guia, nos ama e nos ajuda a seguir em frente!"
     },
     {
       name: "Cordeiro Santo",
@@ -1083,7 +1077,7 @@ export const Texts = {
     {
       name: "Mel",
       img:mel,
-      resume: "O Mel na Bíblia\nO Que é o Mel?\nO mel é uma substância doce e pegajosa feita pelas abelhas.\nEle é encontrado em colmeias e é usado como alimento.\nO Mel na Bíblia:\nNa Bíblia, o mel é mencionado como algo doce e bom.\nÉ comparado à sabedoria e à Palavra de Deus.\nVersículo Importante:\nEm Provérbios 24:13-14, lemos: “Meu filho, coma mel, pois o mel faz bem. Assim como o favo de mel é doce na sua língua, assim também a sabedoria é boa para a sua alma. Se você a conseguir, terá um bom futuro e não perderá a esperança.”\nLições Importantes:\nAssim como o mel é bom para o corpo, a sabedoria e a Palavra de Deus são boas para a nossa alma."
+      resume: "O Mel na Bíblia\nO Que é o Mel?\nO mel é uma substância doce e pegajosa feita pelas abelhas.\nEle é encontrado em colmeias e é usado como alimento.\nO Mel na Bíblia:\nNa Bíblia, o mel é mencionado como algo doce e bom.\nÉ comparado à sabedoria e à Palavra de Deus.\nVersículo Importante:\nEm Provérbios 24:13-14, lemos: 'Meu filho, coma mel, pois o mel faz bem. Assim como o favo de mel é doce na sua língua, assim também a sabedoria é boa para a sua alma. Se você a conseguir, terá um bom futuro e não perderá a esperança.'\nLições Importantes:\nAssim como o mel é bom para o corpo, a sabedoria e a Palavra de Deus são boas para a nossa alma."
     },
     {
       name: "Miriã",
@@ -1178,7 +1172,7 @@ export const Texts = {
     {
       name: "Rubis",
       img:rubis,
-      resume: "Vamos aprender sobre os rubis na Bíblia de forma simples e divertida:\n\nO Que São Rubis?\nOs rubis são pedras preciosas muito especiais.\nEles têm uma cor vermelha linda e brilhante.\nRubis na Bíblia:\nNa Bíblia, os rubis são mencionados várias vezes.\nEles são símbolos de sabedoria, beleza e valor.\nO Valor dos Rubis:\nImagine que você encontrou um tesouro escondido no chão.\nEsse tesouro é como os rubis na Bíblia: muito valioso!\nLições Importantes:\nOs rubis nos ensinam sobre a sabedoria divina.\nAssim como os rubis são preciosos, Deus nos ama muito e quer o melhor para nós.\nLembre-se sempre: você é um tesouro valioso para Deus!"
+      resume: 'Os rubis são pedras preciosas muito especiais.\nEles têm uma cor vermelha linda e brilhante.\nNa Bíblia, os rubis são mencionados algumas vezes e em uma delas a Bíblia ressalta o valor da mulher cheia de virtudes. Virtudes são qualidades que pessoas valiosas possuem.Olha o que a Bíblia diz:\n"Mulher virtuosa, quem a achará? O seu valor muito excede o de rubins. O coração do seu marido está nela confiado, e a ela nenhuma fazenda faltará. Ela lhe faz bem e não mal, todos os dias da sua vida." - Provérbios 31:10-12'
     },
     {
       name: "Rute",
@@ -1193,7 +1187,7 @@ export const Texts = {
     {
       name: "Sansão",
       img:sansao,
-      resume: "Vamos explorar a história de Sansão, um personagem bíblico cheio de aventuras e lições importantes:\n\nQuem foi Sansão?\nSansão era um homem muito forte escolhido por Deus para ajudar o povo de Israel.\nEle tinha cabelos compridos e uma força incrível!\nO Voto Especial de Sansão:\nDesde antes de nascer, os pais de Sansão fizeram um voto especial a Deus.\nEsse voto dizia que ele não deveria cortar o cabelo e deveria ser dedicado a Deus.\nFeitos Incríveis:\nCom a força de Deus, Sansão fez coisas incríveis, como matar um leão com as mãos!\nEle também derrotou muitos inimigos dos israelitas.\nDalila e a Traição:\nInfelizmente, Sansão se apaixonou por Dalila, que era má.\nEla queria descobrir o segredo da força dele e o enganou.\nA Queda de Sansão:\nSansão contou o segredo de sua força para Dalila: era o cabelo!\nQuando ela cortou seu cabelo, ele perdeu sua força.\nArrependimento e Vitória Final:\nSansão se arrependeu e pediu a Deus uma última chance.\nEle derrubou uma grande casa e muitos inimigos filisteus com sua força.\nLição Importante: Sansão nos ensina que devemos confiar em Deus, ser fiéis aos nossos votos e nos arrepender quando erramos. Mesmo quando caímos, Deus pode nos ajudar a nos levantar novamente!"
+      resume: "Sansão é um personagem bíblico cheio de aventuras e lições importantes:\n\nQuem foi Sansão?\nSansão era um homem muito forte escolhido por Deus para ajudar o povo de Israel.\nEle tinha cabelos compridos e uma força incrível!\nO Voto Especial de Sansão:\nDesde antes de nascer, os pais de Sansão fizeram um voto especial a Deus.\nEsse voto dizia que ele não deveria cortar o cabelo e deveria ser dedicado a Deus.\nFeitos Incríveis:\nCom a força de Deus, Sansão fez coisas incríveis, como matar um leão com as mãos!\nEle também derrotou muitos inimigos dos israelitas.\nDalila e a Traição:\nInfelizmente, Sansão se apaixonou por Dalila, que era má.\nEla queria descobrir o segredo da força dele e o enganou.\nA Queda de Sansão:\nSansão contou o segredo de sua força para Dalila: era o cabelo!\nQuando ela cortou seu cabelo, ele perdeu sua força.\nArrependimento e Vitória Final:\nSansão se arrependeu e pediu a Deus uma última chance.\nEle derrubou uma grande casa e muitos inimigos filisteus com sua força.\nLição Importante: Sansão nos ensina que devemos confiar em Deus, ser fiéis aos nossos votos e nos arrepender quando erramos. Mesmo quando caímos, Deus pode nos ajudar a nos levantar novamente!"
     },
     {
       name: "Sara",
@@ -1203,10 +1197,10 @@ export const Texts = {
     {
       name: "Sarça Ardente",
       img:sarcaardente,
-      resume: "Vamos explorar a história da Sarça Ardente, um momento emocionante da Bíblia:\n\nO Que é a Sarça Ardente?\nA Sarça Ardente é uma bushinha que estava pegando fogo no deserto.\nMas, surpreendentemente, não estava sendo consumida pelo fogo!\nMoisés e a Sarça Ardente:\nMoisés era um homem especial escolhido por Deus.\nUm dia, ele viu essa bushinha em chamas e ficou curioso.\nA Conversa com Deus:\nQuando Moisés se aproximou, Deus falou com ele através da sarça.\nDeus disse que tinha uma missão importante para Moisés: libertar o povo de Israel do faraó.\nA Lição da Sarça Ardente:\nA sarça ardente nos ensina que Deus está sempre presente.\nMesmo quando enfrentamos situações difíceis, Deus nos capacita e nos ajuda a seguir em frente.\nAtividades Divertidas:\n\nTire os Sapatos: Assim como Moisés, tire os sapatos quando estiver em um lugar especial.\nRelógio de Fogo: Se for seguro, faça um pequeno fogo e explique como a sarça ardente foi um milagre.\nSegurando a Serpente: Use uma corda para mostrar como, com a ajuda de Deus, podemos fazer coisas que parecem impossíveis.\nLembre-se sempre: Deus está conosco, assim como estava com Moisés na sarça ardente!"
+      resume: "O Que é a Sarça Ardente?\nA Sarça Ardente é um arbusto que estava pegando fogo no deserto.\nMas, surpreendentemente, não estava sendo consumida pelo fogo!\nMoisés e a Sarça Ardente:\nMoisés era um homem especial escolhido por Deus.\nUm dia, ele viu esse arbusto em chamas e ficou curioso.\nA Conversa com Deus:\nQuando Moisés se aproximou, Deus falou com ele através da sarça.\nDeus disse que tinha uma missão importante para Moisés: libertar o povo de Israel do faraó.\nA Lição da Sarça Ardente:\nA sarça ardente nos ensina que Deus está sempre presente.\nMesmo quando enfrentamos situações difíceis, Deus nos capacita e nos ajuda a seguir em frente.\nAtividades Divertidas:\n\nTire os Sapatos: Assim como Moisés, tire os sapatos quando estiver em um lugar especial.\nRelógio de Fogo: Se for seguro, faça um pequeno fogo e explique como a sarça ardente foi um milagre.\nSegurando a Serpente: Use uma corda para mostrar como, com a ajuda de Deus, podemos fazer coisas que parecem impossíveis.\nLembre-se sempre: Deus está conosco, assim como estava com Moisés na sarça ardente!"
     },
     {
-      name: "Tábuas dos Mandamentos",
+      name: "Tábuas da Lei",
       img:tabua,
       resume: "O Dia Especial no Monte Sinai:\nMoisés, um homem sábio e corajoso, subiu ao Monte Sinai para falar com Deus.\nLá, Deus lhe entregou duas tábuas de pedra com regras importantes.\nOs Dez Mandamentos:\nEssas regras são chamadas de Dez Mandamentos.\nSão como um guia para viver bem e amar a Deus e aos outros.\nO Que Dizem os Mandamentos?:\nO primeiro mandamento diz: “Adore somente a Deus”.\nOutros mandamentos ensinam coisas como não mentir, não roubar e honrar os pais.\nAs Tábuas Escritas por Deus:\nDeus escreveu esses mandamentos nas tábuas com Seu próprio dedo.\nElas eram especiais e sagradas.\nLições Importantes:\nAs Tábuas dos Mandamentos nos mostram como ser pessoas boas.\nQuando seguimos essas regras, estamos mostrando amor a Deus e aos outros.\nLembre-se sempre: Deus nos ama e quer o melhor para nós!"
     },

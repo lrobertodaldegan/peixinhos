@@ -26,9 +26,10 @@ export default function DiffGameBlockOpt({
     <TouchableHighlight
         style={[
           styles.diffBlocks, 
-          selected === true
-            ? {backgroundColor:correct === true ? Colors.green : Colors.orange}
-            : {},
+          selected === true ? {...styles.slctd} : {},
+          selected === true && correct === true 
+              ? {...styles.slctdCorrect} 
+              : {...styles.slctdIncorrect},
         ]}
         underlayColor='transparent' onPress={handleSelection}>
       <></>
@@ -42,6 +43,16 @@ const styles = StyleSheet.create({
   diffBlocks:{
     height:(screen.width * 0.83) * 0.25,
     width:(screen.width * 0.83) * 0.25,
-    opacity:0.2,
+  },
+  slctd:{
+    opacity:0.8,
+    borderWidth:10,
+    borderRadius:10,
+  },
+  slctdCorrect:{
+    borderColor:Colors.green,
+  },
+  slctdIncorrect:{
+    borderColor:Colors.orange,
   },
 });

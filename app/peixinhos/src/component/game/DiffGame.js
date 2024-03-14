@@ -13,6 +13,8 @@ import {Colors} from '../../utils/Colors';
 import ButtonLabel from '../ButtonLabel';
 import Label from '../Label';
 import DiffGameBlockOpt from '../DiffGameBlockOpt';
+import { BannerAd, BannerAdSize, TestIds } from 'react-native-google-mobile-ads';
+const adUnitId = __DEV__ ? TestIds.BANNER : 'ca-app-pub-2420598559068720/9312913429';
 
 export default function DiffGame({navigation}) {
   const [card, setCard] = useState(null);
@@ -65,7 +67,7 @@ export default function DiffGame({navigation}) {
         
         setBlockIdSlctd(slctd);
 
-        setPoints(points + (slctd.length * 10));
+        setPoints(points + slctd.length);
 
         if(slctd.length > 6){
           let f = fase+1;
@@ -76,6 +78,7 @@ export default function DiffGame({navigation}) {
             setBlockIdSlctd([]);
             setBlockIdWrongSlctd([]);
             setErr(0);
+            setPoints(0);
           } else {
             setGameOver(true);
           }
@@ -166,13 +169,19 @@ export default function DiffGame({navigation}) {
       <View style={styles.pointsWrap}>
         <ButtonLabel value={`${fase}\nFase`} style={styles.pointsLbl}/>
 
-        <ButtonLabel value={`${err}/3\nErros`} style={styles.pointsLbl}/>
+        <ButtonLabel value={`${err}/3\nFalhas`} style={styles.pointsLbl}/>
 
-        <ButtonLabel value={`${points}\nPontos`} style={styles.pointsLbl}/>
+        <ButtonLabel value={`${points}/7\nAcertos`} style={styles.pointsLbl}/>
       </View>
 
       <NavButton label={Texts.Buttons.leave}
-          action={() => navigation.navigate('Ads', {nextScreen:'Games'})}/>
+          action={() => navigation.navigate('Games')}/>
+
+      <BannerAd
+          unitId={adUnitId}
+          size={BannerAdSize.MEDIUM_RECTANGLE}
+          requestOptions={{requestNonPersonalizedAdsOnly: false,}}
+      />
     </ScrollView>
   );
 }
@@ -181,7 +190,8 @@ const screen = Dimensions.get('screen');
 
 const styles = StyleSheet.create({
   wrap:{
-    minHeight: screen.height,
+    minHeight: screen.height + 300,
+    alignItems:'center'
   },
   pointsWrap:{
     flexDirection:'row',

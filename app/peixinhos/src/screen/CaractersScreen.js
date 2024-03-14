@@ -4,6 +4,7 @@ import {
   StyleSheet,
   Dimensions,
   FlatList,
+  View,
 } from 'react-native';
 import fundo from '../assets/img/fundo-branco.png';
 import ButtonLabel from '../component/ButtonLabel';
@@ -24,7 +25,7 @@ export default function CaractersScreen({navigation}) {
 
   const handleFilter = (filter) => {
     if(filter && filter !== null && filter.length > 0)
-      setItens(Texts.Characters.filter(f => f.name.includes(filter)));
+      setItens(Texts.Characters.filter(f => f.name.toLowerCase().includes(filter.toLowerCase())));
     else
       setItens(Texts.Characters);
   }
@@ -40,12 +41,11 @@ export default function CaractersScreen({navigation}) {
         <NavButton label={Texts.Buttons.goBack}
             action={() => navigation.navigate('Games')}/>
 
+        <CharacterFilterForm onSearch={(f) => handleFilter(f)}/>
+
         <FlatList style={styles.textWrap}
             keyboardDismissMode='on-drag'
             keyboardShouldPersistTaps='always'
-            ListHeaderComponent={
-              <CharacterFilterForm onSearch={(f) => handleFilter(f)}/>
-            }
             ListEmptyComponent={
               <ButtonLabel value={Texts.nothingFound} size={16}/>
             }
@@ -56,6 +56,7 @@ export default function CaractersScreen({navigation}) {
                 <CharacterResumeCard character={item} />
               );
             }}
+            ListFooterComponent={<View style={styles.spacer}/>}
         />
         
         <Footer />
@@ -80,5 +81,8 @@ const styles = StyleSheet.create({
     minHeight:450,
     alignItems:'center',
     justifyContent:'center'
-  }
+  },
+  spacer:{
+    height:screen.height * 0.5
+  },
 });
