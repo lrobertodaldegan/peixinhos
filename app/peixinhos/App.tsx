@@ -15,6 +15,16 @@ import MemoryGameScreen from './src/screen/game/MemoryGameScreen';
 import CardScreen from './src/screen/game/CardScreen';
 import CardGameScreen from './src/screen/game/CardGameScreen';
 import AdScreen from './src/screen/AdScreen';
+import Sound from 'react-native-sound';
+
+Sound.setCategory('Playback');
+
+var ding = new Sound('theme.mp3', Sound.MAIN_BUNDLE, (error) => {
+  if (error) {
+    console.log('failed to load the sound', error);
+    return;
+  }
+});
 
 const Stack = createNativeStackNavigator();
 
@@ -28,6 +38,27 @@ export default function App(): JSX.Element {
   useEffect(()=>{
     SplashScreen.hide();
   },[]);
+
+  useEffect(() => {
+    ding.setVolume(1);
+
+    return () => {
+      ding.release();
+    };
+  }, []);
+
+  useEffect(() => {
+    playPause();
+  }, []);
+
+  const playPause = () => {
+    ding.setNumberOfLoops(-1);
+
+    ding.play(success => {
+      if (!success)
+        console.log('playback failed due to audio decoding errors');
+    });
+  };
 
   return (
     <>
