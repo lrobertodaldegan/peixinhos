@@ -4,6 +4,8 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import mobileAds from 'react-native-google-mobile-ads';
 import SplashScreen from 'react-native-splash-screen';
 import {StatusBar} from 'react-native';
+import { Provider } from "react-redux";
+import {store} from './src/redux/store';
 import HomeScreen from './src/screen/HomeScreen';
 import AboutScreen from './src/screen/AboutScreen';
 import BibleScreen from './src/screen/BibleScreen';
@@ -14,17 +16,9 @@ import DiffGameScreen from './src/screen/game/DiffGameScreen';
 import MemoryGameScreen from './src/screen/game/MemoryGameScreen';
 import CardScreen from './src/screen/game/CardScreen';
 import CardGameScreen from './src/screen/game/CardGameScreen';
+import BibleBookGameScreen from './src/screen/game/BibleBookGameScreen';
+import WordsGameScreen from './src/screen/game/WordsGameScreen';
 import AdScreen from './src/screen/AdScreen';
-import Sound from 'react-native-sound';
-
-Sound.setCategory('Playback');
-
-var ding = new Sound('theme.mp3', Sound.MAIN_BUNDLE, (error) => {
-  if (error) {
-    console.log('failed to load the sound', error);
-    return;
-  }
-});
 
 const Stack = createNativeStackNavigator();
 
@@ -39,46 +33,29 @@ export default function App(): JSX.Element {
     SplashScreen.hide();
   },[]);
 
-  useEffect(() => {
-    ding.setVolume(1);
-
-    return () => {
-      ding.release();
-    };
-  }, []);
-
-  useEffect(() => {
-    playPause();
-  }, []);
-
-  const playPause = () => {
-    ding.setNumberOfLoops(-1);
-
-    ding.play(success => {
-      if (!success)
-        console.log('playback failed due to audio decoding errors');
-    });
-  };
-
   return (
     <>
       <StatusBar barStyle='dark-content' translucent={true} backgroundColor={'transparent'}/>
       
-      <NavigationContainer>
-        <Stack.Navigator>
-          <Stack.Screen name="Home" component={HomeScreen} options={ScreenOptions} />
-          <Stack.Screen name="About" component={AboutScreen} options={ScreenOptions} />
-          <Stack.Screen name="Bible" component={BibleScreen} options={ScreenOptions} />
-          <Stack.Screen name="Characters" component={CaractersScreen} options={ScreenOptions} />
-          <Stack.Screen name="Games" component={GamesScreen} options={ScreenOptions} />
-          <Stack.Screen name="Memory" component={MemoryScreen} options={ScreenOptions} />
-          <Stack.Screen name="MemoryGame" component={MemoryGameScreen} options={ScreenOptions} />
-          <Stack.Screen name="Card" component={CardScreen} options={ScreenOptions} />
-          <Stack.Screen name="CardGame" component={CardGameScreen} options={ScreenOptions} />
-          <Stack.Screen name="DiffGame" component={DiffGameScreen} options={ScreenOptions} />
-          <Stack.Screen name="Ads" component={AdScreen} options={ScreenOptions} />
-        </Stack.Navigator>
-      </NavigationContainer>
+      <Provider store={store} >
+        <NavigationContainer>
+          <Stack.Navigator>
+            <Stack.Screen name="Home" component={HomeScreen} options={ScreenOptions} />
+            <Stack.Screen name="About" component={AboutScreen} options={ScreenOptions} />
+            <Stack.Screen name="Bible" component={BibleScreen} options={ScreenOptions} />
+            <Stack.Screen name="Characters" component={CaractersScreen} options={ScreenOptions} />
+            <Stack.Screen name="Games" component={GamesScreen} options={ScreenOptions} />
+            <Stack.Screen name="Memory" component={MemoryScreen} options={ScreenOptions} />
+            <Stack.Screen name="MemoryGame" component={MemoryGameScreen} options={ScreenOptions} />
+            <Stack.Screen name="Card" component={CardScreen} options={ScreenOptions} />
+            <Stack.Screen name="CardGame" component={CardGameScreen} options={ScreenOptions} />
+            <Stack.Screen name="DiffGame" component={DiffGameScreen} options={ScreenOptions} />
+            <Stack.Screen name="BibleBookGame" component={BibleBookGameScreen} options={ScreenOptions} />
+            <Stack.Screen name="WordsGame" component={WordsGameScreen} options={ScreenOptions} />
+            <Stack.Screen name="Ads" component={AdScreen} options={ScreenOptions} />
+          </Stack.Navigator>
+        </NavigationContainer>
+      </Provider>
     </>
   );
 }

@@ -7,12 +7,18 @@ import {
 import {Colors} from '../utils/Colors';
 import ButtonLabel from './ButtonLabel';
 
-export default function Button({action=()=>null, label='', color=Colors.orange}) {
+export default function Button({
+                          action=()=>null, 
+                          label='', 
+                          labelSize=24,
+                          color=Colors.orange,
+                          style={},
+                        }) {
   return (
     <TouchableHighlight underlayColor={color} 
-        style={[styles.wrap, {backgroundColor:color}]}
+        style={[styles.wrap, style, {backgroundColor:color}]}
         onPress={action}>
-      <ButtonLabel value={label}/>
+      <ButtonLabel value={label} size={labelSize}/>
     </TouchableHighlight>
   );
 }

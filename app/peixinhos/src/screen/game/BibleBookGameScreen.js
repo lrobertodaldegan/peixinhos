@@ -6,16 +6,14 @@ import {
 } from 'react-native';
 import fundo from '../../assets/img/fundo-branco.png';
 import Footer from '../../component/Footer';
-import MemoryGame from '../../component/game/MemoryGame';
+import BibleBookGame from '../../component/game/BibleBookGame';
 
-export default function MemoryGameScreen({navigation, route}) {
-  
-  const {mode} = route.params;
+export default function BibleBookGameScreen({navigation}) {
   
   return (
     <ImageBackground source={fundo} resizeMode="cover" style={styles.wrap}>
 
-      <MemoryGame mode={mode} navigation={navigation}/>
+      <BibleBookGame navigation={navigation}/>
 
       <Footer />
     </ImageBackground>

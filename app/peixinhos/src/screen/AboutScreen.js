@@ -30,11 +30,13 @@ export default function HomeScreen({navigation}) {
           <Label selectable={true} value={'\n'} size={16}/>
 
           <SimpleButton 
+              align='center'
               label={Texts.Buttons.insta}
               action={() => Linking.openURL(Links.instagram)}/>
           <SimpleButton 
-              label={Texts.Buttons.mail}
-              action={() => Linking.openURL(Links.email)}/>
+              align='center'
+              label={Texts.Buttons.site}
+              action={() => Linking.openURL(Links.othersApps)}/>
         </ScrollView>
 
         <Footer />

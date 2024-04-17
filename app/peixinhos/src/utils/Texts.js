@@ -148,8 +148,9 @@ export const Texts = {
     choose:'Escolher',
     legend:'Legenda',
     search:'Pesquisar',
-    mail:'Nosso e-mail (lrobertodaldegan@hotmail.com.br)',
-    insta:'Nosso insta (@lucasrobertodev)'
+    mail:'Nosso e-mail\n(lrobertodaldegan@hotmail.com.br)',
+    insta:'Visite nosso insta\n(@lucasrobertodev)',
+    site:'Visite nosso site\n(https://lucasrobertodev.com.br)'
   },
   Games:{
     Menus:{
@@ -157,7 +158,9 @@ export const Texts = {
       erros:'Jogo dos 7 erros',
       cards:'Jogo das Cartinhas',
       characters:'Personagens',
-      others:'Outros Apps'
+      others:'Outros Apps',
+      words:'Jogo das palavras',
+      bibleBook:'Qual é o livro?'
     },
     Modes:{
       single:'1 Jogador',
@@ -171,8 +174,8 @@ export const Texts = {
         title:'Parabéns!',
         subtitle:'Chegamos ao final do Jogo!\nDeus abençoe!'
       },
-      good:['Boa!', 'Isso!', 'Wow!', 'Legal!'],
-      bad:['Eita!', 'Quase!', 'Ops!', 'Não...'],
+      good:['Boa!', 'Isso!', 'Wow!', 'Legal!', 'Incrível!', 'YES!'],
+      bad:['Eita!', 'Quase!', 'Ops!', 'Não...', 'Hmm...', 'Nops!', 'Vish!'],
     }
   },
   Input:{

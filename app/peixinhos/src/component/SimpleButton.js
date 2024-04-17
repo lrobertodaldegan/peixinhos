@@ -8,12 +8,12 @@ import {
 import {Colors} from '../utils/Colors';
 import Label from './Label';
 
-export default function SimpleButton({action=()=>null, label=''}) {
+export default function SimpleButton({action=()=>null, label='', align=null}) {
   return (
     <TouchableHighlight underlayColor={'transparent'} 
         style={[styles.wrap]}
         onPress={action}>
-      <Label selectable={true} value={label} size={18}/>
+      <Label selectable={true} value={label} size={18} align={align}/>
     </TouchableHighlight>
   );
 }

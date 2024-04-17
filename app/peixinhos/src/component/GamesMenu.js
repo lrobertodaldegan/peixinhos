@@ -24,8 +24,15 @@ export default function GamesMenu({navigation}) {
           color={Colors.blue}
           action={() => navigation.navigate('Ads', {nextScreen:'DiffGame'})}/>
 
+      <ImageButton img={card} label={Texts.Games.Menus.words}
+          color={Colors.darkBlue}
+          action={() => navigation.navigate('Ads', {nextScreen:'WordsGame'})}/>
+
+      <ImageButton img={card} label={Texts.Games.Menus.bibleBook}
+          action={() => navigation.navigate('Ads', {nextScreen:'BibleBookGame'})}/>
+
       <ImageButton img={card} label={Texts.Games.Menus.cards}
-          color={Colors.lightGreen}
+          color={Colors.blue}
           action={() => navigation.navigate('Ads', {nextScreen:'Card'})}/>
 
       <ImageButton img={personagens} label={Texts.Games.Menus.characters}

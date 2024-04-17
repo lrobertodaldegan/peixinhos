@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {
   View,
   ImageBackground,
@@ -6,6 +6,8 @@ import {
   Dimensions,
   FlatList,
 } from 'react-native';
+import {useDispatch} from 'react-redux';
+import { stop } from '../redux/actions/music_actions';
 import fundo from '../assets/img/fundo-branco.png';
 import BibleBookSection from '../component/BibleBookSection';
 import Footer from '../component/Footer';
@@ -15,6 +17,13 @@ import { BannerAd,BannerAdSize, TestIds } from 'react-native-google-mobile-ads';
 const adUnitId = __DEV__ ? TestIds.BANNER : 'ca-app-pub-2420598559068720/1983527247';
 
 export default function BibleScreen({navigation}) {
+
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(stop());
+  }, []);
+  
   return (
       <ImageBackground source={fundo} resizeMode="cover" style={styles.wrap}>
 

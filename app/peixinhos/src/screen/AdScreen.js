@@ -5,7 +5,8 @@ import {
   Dimensions,
 } from 'react-native';
 import fundo from '../assets/img/fundo-branco.png';
-import { Texts } from '../utils/Texts';
+import {useDispatch} from 'react-redux';
+import { play, pause } from '../redux/actions/music_actions';
 import NavButton from '../component/NavButton';
 import ButtonLabel from "../component/ButtonLabel";
 import { useIsFocused } from '@react-navigation/native';
@@ -20,7 +21,11 @@ export default function AdScreen({navigation, route}){
 
   const {nextScreen} = route.params;
 
+  const dispatch = useDispatch();
+
   useEffect(() => {
+    dispatch(pause());
+
     if(isOnFocus === true){
       setTimeout(() => setTimeouted(true), 10000);
 
@@ -30,6 +35,8 @@ export default function AdScreen({navigation, route}){
       iad.load();
 
       iad.addAdEventListener(AdEventType.CLOSED, () => {
+        dispatch(play());
+
         navigation.navigate(nextScreen ? nextScreen : 'Games');
       });
       // Unsubscribe from events on unmount
