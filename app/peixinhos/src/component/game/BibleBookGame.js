@@ -3,7 +3,6 @@ import {
   View,
   StyleSheet,
   Dimensions,
-  ToastAndroid,
   ScrollView,
   ActivityIndicator,
 } from 'react-native';
@@ -11,11 +10,11 @@ import { Texts } from '../../utils/Texts';
 import NavButton from '../NavButton';
 import { Colors } from '../../utils/Colors';
 import ButtonLabel from '../ButtonLabel';
-import MemoryCard from '../MemoryCard';
 import Label from '../Label';
-import { BannerAd, BannerAdSize, TestIds } from 'react-native-google-mobile-ads';
 import { getRandomVerse } from '../../service/BibleService';
 import Button from '../Button';
+import RankingModal from '../RankingModal';
+import { BannerAd, BannerAdSize, TestIds } from 'react-native-google-mobile-ads';
 const adUnitId = __DEV__ ? TestIds.BANNER : 'ca-app-pub-2420598559068720/9312913429';
 
 export default function BibleBookGame({navigation}) {
@@ -26,6 +25,7 @@ export default function BibleBookGame({navigation}) {
   const [answer, setAnswer] = useState(null);
   const [loading, setLoading] = useState(false);
   const [msg, setMessage] = useState('');
+  const [showModal, setShowModal] = useState(false);
   const [endGame, setEndGame] = useState(false);
 
   useEffect(() => {
@@ -53,7 +53,7 @@ export default function BibleBookGame({navigation}) {
         text:'Houve um erro ao tentar carregar o versículo!\nAtive a sua internet e tente novamente mais tarde!'
       };
 
-      if(response.status === 200){
+      if(response && response.status === 200){
         c = response.content;
 
         setCard(c);
@@ -69,7 +69,14 @@ export default function BibleBookGame({navigation}) {
         let idx = Math.floor(Math.random() * bks.length);
 
         opts.push({book:{title:bks[idx]?.title}, right: false});
-        opts.push({book:{title:getRandomBookExceptIndex(bks, idx)?.title}, right: false});
+
+        let title = getRandomBookExceptIndex(bks, idx)?.title;
+
+        while(title === bks[idx]?.title){
+          title = getRandomBookExceptIndex(bks, idx)?.title;
+        }
+
+        opts.push({book:{title:title}, right: false});
 
         setOptions(shuffle(opts));
       }else{
@@ -187,6 +194,11 @@ export default function BibleBookGame({navigation}) {
 
   return (
     <>
+      <RankingModal game={Texts.Games.Menus.bibleBook}
+        show={showModal}
+        points={points}
+        onClose={() => navigation.navigate('Games')}
+      />
 
       <ScrollView contentContainerStyle={styles.wrap}>
         {renderComp()}
@@ -200,7 +212,7 @@ export default function BibleBookGame({navigation}) {
         </View>
 
         <NavButton label={Texts.Buttons.leave}
-            action={() => navigation.navigate('Games')}/>
+            action={() => setShowModal(true)}/>
 
         <BannerAd
             unitId={adUnitId}

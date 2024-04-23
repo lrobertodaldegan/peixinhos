@@ -18,6 +18,7 @@ import CardScreen from './src/screen/game/CardScreen';
 import CardGameScreen from './src/screen/game/CardGameScreen';
 import BibleBookGameScreen from './src/screen/game/BibleBookGameScreen';
 import WordsGameScreen from './src/screen/game/WordsGameScreen';
+import RankingScreen from './src/screen/RankingScreen';
 import AdScreen from './src/screen/AdScreen';
 
 const Stack = createNativeStackNavigator();
@@ -52,6 +53,7 @@ export default function App(): JSX.Element {
             <Stack.Screen name="DiffGame" component={DiffGameScreen} options={ScreenOptions} />
             <Stack.Screen name="BibleBookGame" component={BibleBookGameScreen} options={ScreenOptions} />
             <Stack.Screen name="WordsGame" component={WordsGameScreen} options={ScreenOptions} />
+            <Stack.Screen name="Ranking" component={RankingScreen} options={ScreenOptions} />
             <Stack.Screen name="Ads" component={AdScreen} options={ScreenOptions} />
           </Stack.Navigator>
         </NavigationContainer>

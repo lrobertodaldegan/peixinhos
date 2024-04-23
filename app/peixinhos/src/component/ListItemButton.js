@@ -9,10 +9,10 @@ import {
 import {Colors} from '../utils/Colors';
 import ButtonLabel from './ButtonLabel';
 
-export default function Button({
+export default function ListItemButton({
                           action=()=>null, 
                           label='', 
-                          labelSize=24,
+                          labelSize=16,
                           color=Colors.orange,
                           style={},
                           loading=false,
@@ -38,14 +38,14 @@ const screen = Dimensions.get('screen');
 
 const styles = StyleSheet.create({
   wrap:{
-    paddingHorizontal:30,
-    minWidth:screen.width * 0.5,
-    minHeight:50,
+    width:screen.width * 0.33,
+    height:50,
     borderRadius:25,
     borderWidth:4,
     borderColor:Colors.black,
     alignItems:'center',
     justifyContent:'center',
-    marginVertical:5
+    marginVertical:5,
+    marginHorizontal:5
   },
 });

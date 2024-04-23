@@ -6,10 +6,7 @@ const DEFAULT_HEADERS = {
 
 const get = async (urlPath, errorHandler=()=>null, headers=DEFAULT_HEADERS) => {
   try{
-    let response = await axios.get(urlPath, headers/*{
-      withCredentials:true,
-      headers: {...headers, 'Authorization':jwt}
-    }*/);
+    let response = await axios.get(urlPath, {headers:headers});
 
     return response;
   }catch(err){
@@ -22,12 +19,9 @@ const get = async (urlPath, errorHandler=()=>null, headers=DEFAULT_HEADERS) => {
 }
 
 const post = async (urlPath, body={}, errorHandler=()=>null, headers=DEFAULT_HEADERS) => {
-  try{
-    let jwt = await CacheService.get('@jwt');
-    
-    let response = await axios.post(`${BASEURL}${urlPath}`, body, {
-      withCredentials:true,
-      headers: {...headers, 'Authorization':jwt}
+  try{    
+    let response = await axios.post(urlPath, body, {
+      headers: headers
     });
 
     return response;
@@ -41,31 +35,9 @@ const post = async (urlPath, body={}, errorHandler=()=>null, headers=DEFAULT_HEA
 }
 
 const del = async (urlPath, errorHandler=()=>null, headers=DEFAULT_HEADERS) => {
-  try{
-    let jwt = await CacheService.get('@jwt');
-    
-    let response = await axios.delete(`${BASEURL}${urlPath}`, {
-      withCredentials:true,
-      headers: {...headers, 'Authorization':jwt}
-    });
-
-    return response;
-  }catch(err){
-    console.log(err);
-
-    errorHandler();
-
-    return {status:500, error:err}
-  }
-}
-
-const put = async (urlPath, body={}, errorHandler=()=>null, headers=DEFAULT_HEADERS) => {
-  try{
-    let jwt = await CacheService.get('@jwt');
-    
-    let response = await axios.put(`${BASEURL}${urlPath}`, body, {
-      withCredentials:true,
-      headers: {...headers, 'Authorization':jwt}
+  try{    
+    let response = await axios.delete(urlPath, {
+      headers: headers
     });
 
     return response;
@@ -82,5 +54,4 @@ export {
   get,
   post,
   del,
-  put,
 }

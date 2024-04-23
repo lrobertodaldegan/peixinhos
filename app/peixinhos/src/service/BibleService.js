@@ -1,4 +1,5 @@
 import { get } from "../utils/Rest";
+import { Texts } from "../utils/Texts";
 import CacheService from './CacheService';
 
 const HEADERS = {
@@ -37,15 +38,27 @@ const getChapter = async (abrev, chap, errorHandler=(err)=>errorHandler(err)) =>
 }
 
 const getRandomVerse = async (errorHandler=(err)=>errorHandler(err)) => {
-  return get(
-    `https://www.abibliadigital.com.br/api/verses/nvi/random?t=${new Date().getTime()}`, 
-      errorHandler, 
-      HEADERS
-  )
-  .then(async (response) => {
+  let index = Math.floor(Math.random() * Texts.Verses.length);
+
+  let text = Texts.Verses[index];
+
+  let path = `${text.abbrev}/${text.chap}/${text.verse}`;
+
+  let url = `https://www.abibliadigital.com.br/api/verses/nvi/${path}`;
+
+  return get(url, errorHandler, HEADERS)
+  .then((response) => {
     let result = {status:response.status, content:{...response.data}};
 
     return result;
+  }).catch((err) => {
+    get('https://www.abibliadigital.com.br/api/verses/nvi/random', 
+                errorHandler, HEADERS)
+    .then((response) => {
+      let result = {status:response.status, content:{...response.data}};
+
+      return result;
+    });
   });
 }
 

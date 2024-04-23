@@ -3,14 +3,21 @@ import {
   View,
   Dimensions,
   StyleSheet,
+  TouchableHighlight
 } from 'react-native';
-import NavButton from './NavButton';
+import ButtonLabel from './ButtonLabel';
 import { Colors } from '../utils/Colors';
 
 export default function Modal({onClose=()=>null, closable=true, content=<></>}){
   const renderClose = () => {
-    if(closable === true)
-      return <NavButton action={onClose} label={'X'}/>;
+    if(closable === true){
+      return (
+        <TouchableHighlight underlayColor={'transparent'} 
+            onPress={onClose}>
+          <ButtonLabel value={'X'} size={30}/>
+        </TouchableHighlight>
+      );
+    }
 
     return <></>
   }
@@ -44,25 +51,23 @@ const styles = StyleSheet.create({
     alignItems:'center',
   },
   subWrap:{
-    borderWidth:1,
+    borderWidth:4,
     borderColor:Colors.offWhite,
     borderRadius:10,
     width:screen.width - 20,
     padding:10,
-    backgroundColor:Colors.white,
+    backgroundColor:Colors.yellow,
     zIndex:10,
     marginTop:screen.height * 0.05
   },
   header:{
-    justifyContent:'center',
     alignItems:'flex-end',
-    zIndex:11
+    zIndex:11,
   },
   content:{
     alignItems:'center',
     justifyContent:'center',
     zIndex:11,
-    backgroundColor:Colors.white,
     maxHeight: screen.height * 0.8
   },
 });
