@@ -210,6 +210,576 @@ export const Texts = {
   Input:{
     characters:'Digite um nome'
   },
+  WordsGame:[
+    {
+      word:'AMOR',
+      helpers:[
+        {id:1,text:'Fruto do Espírito'},
+        {id:2,text:'Deus é...'},
+        {id:3,text:'1 Co 13.4-7'},
+      ]
+    },
+    {
+      word:'AÇUDE',
+      helpers:[
+        {id:1,text:'Construído para represar águas'},
+        {id:2,text:'Também conhecido como barragem'},
+        {id:3,text:'Ec 2.6'},
+      ]
+    },
+    {
+      word:'ALDEIA',
+      helpers:[
+        {id:1,text:'Pequeno agrupamento de casas'},
+        {id:2,text:'Mais comum nos tempos antigos'},
+        {id:3,text:'Js 15.45'},
+      ]
+    },
+    {
+      word:'ALABASTRO',
+      helpers:[
+        {id:1,text:'Pedra branca'},
+        {id:2,text:'Usada antigamente para fazer vasos'},
+        {id:3,text:'Mt 26.7'},
+      ]
+    },
+    {
+      word:'ALEGRIA',
+      helpers:[
+        {id:1,text:'Estado de satisfação e felicidade'},
+        {id:2,text:'Quem sorri tem ...'},
+        {id:3,text:'Sl 16.11'},
+      ]
+    },
+    {
+      word:'ALFA',
+      helpers:[
+        {id:1,text:'Primeira letra do alfabeto grego'},
+        {id:2,text:'Princípio'},
+        {id:3,text:'Ap 1.8'},
+      ]
+    },
+    {
+      word:'ALTAR',
+      helpers:[
+        {id:1,text:'Mesa de madeira, terra ou pedras'},
+        {id:2,text:'Usada nos sacrifícios'},
+        {id:3,text:'Ex 30.1-10'},
+      ]
+    },
+    {
+      word:'ALVO',
+      helpers:[
+        {id:1,text:'Objetivo'},
+        {id:2,text:'Meta'},
+        {id:3,text:'1 Sm 20.20'},
+      ]
+    },
+    {
+      word:'AMARGURA',
+      helpers:[
+        {id:1,text:'Tristeza'},
+        {id:2,text:'Ressentimento'},
+        {id:3,text:'Ef 4.31'},
+      ]
+    },
+    {
+      word:'AMENDOEIRA',
+      helpers:[
+        {id:1,text:'Árvore'},
+        {id:2,text:'Produz amêndoas'},
+        {id:3,text:'Jr 1.11'},
+      ]
+    },
+    {
+      word:'AMÉM',
+      helpers:[
+        {id:1,text:'Que assim seja'},
+        {id:2,text:'Palavra hebraica'},
+        {id:3,text:'Ap 3.14'},
+      ]
+    },
+    {
+      word:'ANA',
+      helpers:[
+        {id:1,text:'Mãe de um profeta'},
+        {id:2,text:'Mulher de Elcana'},
+        {id:3,text:'1 Sm 1.1 - 2.21'},
+      ]
+    },
+    {
+      word:'ANDRÉ',
+      helpers:[
+        {id:1,text:'Irmão de Pedro'},
+        {id:2,text:'Um dos apóstolos'},
+        {id:3,text:'Mc 1.29'},
+      ]
+    },
+    {
+      word:'ÂNCORA',
+      helpers:[
+        {id:1,text:'Feita de ferro'},
+        {id:2,text:'Representa sustento e firmeza'},
+        {id:3,text:'Hb 6.19'},
+      ]
+    },
+    {
+      word:'ANRÃO',
+      helpers:[
+        {id:1,text:'Pai de Arão, Moisés e Miriã'},
+        {id:2,text:'Levita'},
+        {id:3,text:'Nm 26.59'},
+      ]
+    },
+    {
+      word:'ANTIOQUIA',
+      helpers:[
+        {id:1,text:'Cidade da Síria'},
+        {id:2,text:'Onde Paulo e Barnabé trabalharam'},
+        {id:3,text:'At 11.19-26'},
+      ]
+    },
+    {
+      word:'ASAFE',
+      helpers:[
+        {id:1,text:'Autor de 12 Salmos'},
+        {id:2,text:'Responsável pela música nos tempos de Davi e Salomão'},
+        {id:3,text:'1 Cr 16.5'},
+      ]
+    },
+    {
+      word:'ASENATE',
+      helpers:[
+        {id:1,text:'Esposa de José'},
+        {id:2,text:'Mãe de Manassés e Efraim'},
+        {id:3,text:'Gn 41.45-52'},
+      ]
+    },
+    {
+      word:'AURORA',
+      helpers:[
+        {id:1,text:'Usado como nome próprio feminino'},
+        {id:2,text:'Antecede o nascer do sol'},
+        {id:3,text:'Pv 4.18'},
+      ]
+    },
+    {
+      word:'AUTORIDADE',
+      helpers:[
+        {id:1,text:'Quem tem ..., tem poder'},
+        {id:2,text:'Competência'},
+        {id:3,text:'Rm 13.1'},
+      ]
+    },
+    {
+      word:'AZEITE',
+      helpers:[
+        {id:1,text:'Óleo de azeionas'},
+        {id:2,text:'Usado para ungir'},
+        {id:3,text:'Tg 5.14'},
+      ]
+    },
+    {
+      word:'BÁLSAMO',
+      helpers:[
+        {id:1,text:'Líquido'},
+        {id:2,text:'Usado na cura de feridas'},
+        {id:3,text:'Gn 43.11'},
+      ]
+    },
+    {
+      word:'BANQUETE',
+      helpers:[
+        {id:1,text:'Refeição'},
+        {id:2,text:'Comum em casamentos'},
+        {id:3,text:'Lc 20.46'},
+      ]
+    },
+    {
+      word:'BARTIMEU',
+      helpers:[
+        {id:1,text:'Seu nome significa "filho de Timeu"'},
+        {id:2,text:'Foi curado por Jesus'},
+        {id:3,text:'Mc 10.46'},
+      ]
+    },
+    {
+      word:'BATISMO',
+      helpers:[
+        {id:1,text:'Nas águas e/ou no Espírito'},
+        {id:2,text:'Sinal de arrependimento'},
+        {id:3,text:'At 2.38'},
+      ]
+    },
+    {
+      word:'BELÉM',
+      helpers:[
+        {id:1,text:'Cidade de Judá'},
+        {id:2,text:'Onde o rei Davi e Jesus nasceram'},
+        {id:3,text:'Lc 2.4-7'},
+      ]
+    },
+    {
+      word:'BEN',
+      helpers:[
+        {id:1,text:'Palavra hebraica'},
+        {id:2,text:'Significa "filho"'},
+        {id:3,text:'Gn 19.38'},
+      ]
+    },
+    {
+      word:'BÊNÇÃO',
+      helpers:[
+        {id:1,text:'Presente'},
+        {id:2,text:'Deus concede...'},
+        {id:3,text:'Pv 10.22'},
+      ]
+    },
+    {
+      word:'BENJAMIM',
+      helpers:[
+        {id:1,text:'Filho de Jacó'},
+        {id:2,text:'Uma das 12 tribos'},
+        {id:3,text:'Js 21.17'},
+      ]
+    },
+    {
+      word:'BETÂNIA',
+      helpers:[
+        {id:1,text:'Povoado aos arredores de Jerusalém'},
+        {id:2,text:'Maria, Marta e Lázaro moravam lá'},
+        {id:3,text:'Jo 11.18'},
+      ]
+    },
+    {
+      word:'BÍBLIA',
+      helpers:[
+        {id:1,text:'É a palavra de Deus revelada aos homens'},
+        {id:2,text:'Revela a vontade eterna de Deus'},
+        {id:3,text:'2 Tm 3.16'},
+      ]
+    },
+    {
+      word:'BOAZ',
+      helpers:[
+        {id:1,text:'Se casou com Rute'},
+        {id:2,text:'Um dos antepassados de Jesus'},
+        {id:3,text:'Mt 1.5'},
+      ]
+    },
+    {
+      word:'BRASEIRO',
+      helpers:[
+        {id:1,text:'Vasilha de bronze, ou prata ou ouro'},
+        {id:2,text:'Servia para levar fogo'},
+        {id:3,text:'1 Rs 7.50'},
+      ]
+    },
+    {
+      word:'CAIM',
+      helpers:[
+        {id:1,text:'Irmão de Abel'},
+        {id:2,text:'Filho de Adão'},
+        {id:3,text:'Gn 4'},
+      ]
+    },
+    {
+      word:'CALEBE',
+      helpers:[
+        {id:1,text:'Líder da tribo de Judá'},
+        {id:2,text:'Um dos 12 espias'},
+        {id:3,text:'Nm 14.30'},
+      ]
+    },
+    {
+      word:'CÁLICE',
+      helpers:[
+        {id:1,text:'Copo'},
+        {id:2,text:'Representa sofrimento ou missão'},
+        {id:3,text:'Lc 22.20'},
+      ]
+    },
+    {
+      word:'CALVÁRIO',
+      helpers:[
+        {id:1,text:'Monte onde Jesus foi crucificado'},
+        {id:2,text:'Também chamado de Gólgota'},
+        {id:3,text:'Jo 19.17'},
+      ]
+    },
+    {
+      word:'CAMELO',
+      helpers:[
+        {id:1,text:'Animal de carga'},
+        {id:2,text:'Seu pelo servia para tecidos'},
+        {id:3,text:'Mt 3.4'},
+      ]
+    },
+    {
+      word:'CAMINHO',
+      helpers:[
+        {id:1,text:'Representa modos de vida'},
+        {id:2,text:'O ..., a verdade e a vida'},
+        {id:3,text:'Jo 14.6'},
+      ]
+    },
+    {
+      word:'CAPACETE',
+      helpers:[
+        {id:1,text:'Faz parte da armadura de Deus'},
+        {id:2,text:'Usado em exércitos'},
+        {id:3,text:'Ef 6.17'},
+      ]
+    },
+    {
+      word:'CARGA',
+      helpers:[
+        {id:1,text:'Peso'},
+        {id:2,text:'Fardo'},
+        {id:3,text:'Mt 11.30'},
+      ]
+    },
+    {
+      word:'CASTIÇAL',
+      helpers:[
+        {id:1,text:'Candelabro'},
+        {id:2,text:'Haviam 10 no lugar santíssimo do templo'},
+        {id:3,text:'1 Rs 7.49'},
+      ]
+    },
+    {
+      word:'CEDRO',
+      helpers:[
+        {id:1,text:'Árvore comum no Líbano'},
+        {id:2,text:'Madeira usada em construções'},
+        {id:3,text:'2 Sm 7.7'},
+      ]
+    },
+    {
+      word:'CELEBRAR',
+      helpers:[
+        {id:1,text:'Festejar'},
+        {id:2,text:'Comemorar'},
+        {id:3,text:'Hb 11.28'},
+      ]
+    },
+    {
+      word:'CATACUMBAS',
+      helpers:[
+        {id:1,text:'Túneis cavados abaixo da terra'},
+        {id:2,text:'Onde os primeiros cristãos se reuniam'},
+        {id:3,text:'Existem muitas em Roma'},
+      ]
+    },
+    {
+      word:'CHARCO',
+      helpers:[
+        {id:1,text:'Água parada'},
+        {id:2,text:'Água suja e pouco profunda'},
+        {id:3,text:'Ez 47.11'},
+      ]
+    },
+    {
+      word:'CINTO',
+      helpers:[
+        {id:1,text:'Peça de vestuário'},
+        {id:2,text:'Usado ao redor da cintura'},
+        {id:3,text:'Mc 1.6'},
+      ]
+    },
+    {
+      word:'CÍTARA',
+      helpers:[
+        {id:1,text:'Pequena harpa em forma de triângulo'},
+        {id:2,text:'Instrumento musical'},
+        {id:3,text:'Dn 3.5'},
+      ]
+    },
+    {
+      word:'COMINHO',
+      helpers:[
+        {id:1,text:'Plantinha'},
+        {id:2,text:'Tempero'},
+        {id:3,text:'Mt 23.23'},
+      ]
+    },
+    {
+      word:'COMPANHIA',
+      helpers:[
+        {id:1,text:'Convivência'},
+        {id:2,text:'Estar junto'},
+        {id:3,text:'1 Co 15.33'},
+      ]
+    },
+    {
+      word:'CONFESSSAR',
+      helpers:[
+        {id:1,text:'Admitir algo'},
+        {id:2,text:'... pecados'},
+        {id:3,text:'Hb 13.15'},
+      ]
+    },
+    {
+      word:'CORDEIRO',
+      helpers:[
+        {id:1,text:'Filhote da ovelha'},
+        {id:2,text:'Jesus é representado por um ...'},
+        {id:3,text:'Jo 1.29'},
+      ]
+    },
+    {
+      word:'CRISTO',
+      helpers:[
+        {id:1,text:'Jesus'},
+        {id:2,text:'Cruz'},
+        {id:3,text:'Cricificado'},
+      ]
+    },
+    {
+      word:'DESTINAR',
+      helpers:[
+        {id:1,text:'Dar direção'},
+        {id:2,text:'Direcionar'},
+        {id:3,text:'Ef 2.3'},
+      ]
+    },
+    {
+      word:'DECRETO',
+      helpers:[
+        {id:1,text:'Lei'},
+        {id:2,text:'Ordem de um chefe de estado'},
+        {id:3,text:'Et 4.8'},
+      ]
+    },
+    {
+      word:'EMANUEL',
+      helpers:[
+        {id:1,text:'Deus conosco'},
+        {id:2,text:'Nome usado pelo profeta para falar sobre Jesus'},
+        {id:3,text:'Is 7.13-14'},
+      ]
+    },
+    {
+      word:'ESTÊVÃO',
+      helpers:[
+        {id:1,text:'Um dos primeiros diáconos'},
+        {id:2,text:'Primeiro mártir'},
+        {id:3,text:'At 7'},
+      ]
+    },
+    {
+      word:'ESTRANHO',
+      helpers:[
+        {id:1,text:'Estrangeiro'},
+        {id:2,text:'Desconhecido'},
+        {id:3,text:'Sl 81.9'},
+      ]
+    },
+    {
+      word:'ESTILINGUE',
+      helpers:[
+        {id:1,text:'Feito de madeira e borracha'},
+        {id:2,text:'Usado para atirar pedras'},
+        {id:3,text:'Pv 26.8'},
+      ]
+    },
+    {
+      word:'ETERNO',
+      helpers:[
+        {id:1,text:'Não tem começo nem fim'},
+        {id:2,text:'Dura para sempre'},
+        {id:3,text:'Hb 13.20'},
+      ]
+    },
+    {
+      word:'EVANGELHO',
+      helpers:[
+        {id:1,text:'Boa notícia'},
+        {id:2,text:'Mensagem de salvação'},
+        {id:3,text:'Rm 1.15'},
+      ]
+    },
+    {
+      word:'FARISEU',
+      helpers:[
+        {id:1,text:'Membro de grupo religioso'},
+        {id:2,text:'Seguiam as leis de Moisés rigorosamente'},
+        {id:3,text:'Mt 16.1'},
+      ]
+    },
+    {
+      word:'FIGUEIRA',
+      helpers:[
+        {id:1,text:'Árvore'},
+        {id:2,text:'Produz uma fruta'},
+        {id:3,text:'Lc 13.6'},
+      ]
+    },
+    {
+      word:'GRAÇA',
+      helpers:[
+        {id:1,text:'Presente de Deus'},
+        {id:2,text:'Salvação'},
+        {id:3,text:'Ef 2.5'},
+      ]
+    },
+    {
+      word:'HEBREUS',
+      helpers:[
+        {id:1,text:'Abraão e seus descendentes'},
+        {id:2,text:'Nome de um livro da Bíblia'},
+        {id:3,text:'Gn 14.13'},
+      ]
+    },
+    {
+      word:'HISSOPO',
+      helpers:[
+        {id:1,text:'Planta usada na purificação'},
+        {id:2,text:'Usadapara borrifar líquidos'},
+        {id:3,text:'Ex 12.22'},
+      ]
+    },
+    {
+      word:'IDOLATRIA',
+      helpers:[
+        {id:1,text:'Adorar outras coiass e não a Deus'},
+        {id:2,text:'O povo chamado gentio praticava ...'},
+        {id:3,text:'Jr 10.3-5'},
+      ]
+    },
+    {
+      word:'MISERICÓRDIA',
+      helpers:[
+        {id:1,text:'Bondade'},
+        {id:2,text:'Amor aos necessitados'},
+        {id:3,text:'Mt 5.7'},
+      ]
+    },
+    {
+      word:'PECADOS',
+      helpers:[
+        {id:1,text:'Nos afasta de Deus'},
+        {id:2,text:'Precisamos nos arrepender de nossos ...'},
+        {id:3,text:'Rm 6.23'},
+      ]
+    },
+    {
+      word:'PERDÃO',
+      helpers:[
+        {id:1,text:'Remove o castigo'},
+        {id:2,text:'Nos leva a reconciliação com Deus'},
+        {id:3,text:'Cl 1.14'},
+      ]
+    },
+    {
+      word:'RECONCILIAÇÃO',
+      helpers:[
+        {id:1,text:'Conciliar de novo'},
+        {id:2,text:'Fazer as pazes'},
+        {id:3,text:'Cl 1:20'},
+      ]
+    },
+  ],
   DiffCards:[
     {
       name: "Mulheres no novo testamento",
@@ -406,7 +976,6 @@ export const Texts = {
       img:difffifteen,
       preimg:fifteen,
     },
-    //...
     {
       name: "O poço",
       resume:'Certa vez Jesus encontrou uma mulher da cidade de Samaria e esse encontro mudou a vida dela! Os poços eram lugares onde as pessoas iam para encontrar água. A mulher samaritana, naquele dia, encontrou a água da vida, a fonte da vida, que é Jesus! E você? Já se encontrou com Ele hoje?',

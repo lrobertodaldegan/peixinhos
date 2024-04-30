@@ -12,15 +12,18 @@ import {Texts} from '../../utils/Texts';
 import {Colors} from '../../utils/Colors';
 import ButtonLabel from '../ButtonLabel';
 import Label from '../Label';
+import RankingModal from '../RankingModal';
 import DiffGameBlockOpt from '../DiffGameBlockOpt';
 import { BannerAd, BannerAdSize, TestIds } from 'react-native-google-mobile-ads';
 const adUnitId = __DEV__ ? TestIds.BANNER : 'ca-app-pub-2420598559068720/9312913429';
 
 export default function DiffGame({navigation}) {
   const [card, setCard] = useState(null);
+  const [played, setPlayed] = useState([]);
   const [fase, setFase] = useState(1);
   const [points, setPoints] = useState(0);
   const [gameOver, setGameOver] = useState(false);
+  const [showRankingModal, setShowRankingModal] = useState(false);
   const [blockIdSlctd, setBlockIdSlctd] = useState([]);
   const [blockIdWrongSlctd, setBlockIdWrongSlctd] = useState([]);
   const [mainComp, setMainComp] = useState(<></>);
@@ -45,12 +48,18 @@ export default function DiffGame({navigation}) {
 
     let caard = Texts.DiffCards[index];
 
-    let change = caard.name === card?.name;
+    let change = caard.name === card?.name || played.includes(caard.name);
 
     if(change === true)
       return randomCard();
 
     setCard(caard);
+
+    let pld = played;
+    
+    pld.push(caard.name);
+
+    setPlayed(pld);
 
     return caard;
   }
@@ -72,7 +81,7 @@ export default function DiffGame({navigation}) {
         if(slctd.length > 6){
           let f = fase+1;
 
-          if(f < 8){
+          if(f < 30){
             setFase(f);
 
             setBlockIdSlctd([]);
@@ -163,26 +172,34 @@ export default function DiffGame({navigation}) {
   }
 
   return (
-    <ScrollView contentContainerStyle={styles.wrap}>
-      {mainComp}
-
-      <View style={styles.pointsWrap}>
-        <ButtonLabel value={`${fase}\nFase`} style={styles.pointsLbl}/>
-
-        <ButtonLabel value={`${err}/3\nFalhas`} style={styles.pointsLbl}/>
-
-        <ButtonLabel value={`${points}/7\nAcertos`} style={styles.pointsLbl}/>
-      </View>
-
-      <NavButton label={Texts.Buttons.leave}
-          action={() => navigation.navigate('Games')}/>
-
-      <BannerAd
-          unitId={adUnitId}
-          size={BannerAdSize.MEDIUM_RECTANGLE}
-          requestOptions={{requestNonPersonalizedAdsOnly: false,}}
+    <>
+      <RankingModal game={Texts.Games.Menus.erros}
+        show={showRankingModal}
+        points={fase-1}
+        onClose={() => navigation.navigate('Games')}
       />
-    </ScrollView>
+
+      <ScrollView contentContainerStyle={styles.wrap}>
+        {mainComp}
+
+        <View style={styles.pointsWrap}>
+          <ButtonLabel value={`${fase}\nFase`} style={styles.pointsLbl}/>
+
+          <ButtonLabel value={`${err}/3\nFalhas`} style={styles.pointsLbl}/>
+
+          <ButtonLabel value={`${points}/7\nAcertos`} style={styles.pointsLbl}/>
+        </View>
+
+        <NavButton label={Texts.Buttons.leave}
+            action={() => setShowRankingModal(true)}/>
+
+        <BannerAd
+            unitId={adUnitId}
+            size={BannerAdSize.MEDIUM_RECTANGLE}
+            requestOptions={{requestNonPersonalizedAdsOnly: false,}}
+            />
+      </ScrollView>
+    </>
   );
 }
 

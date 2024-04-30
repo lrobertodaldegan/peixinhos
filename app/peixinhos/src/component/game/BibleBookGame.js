@@ -26,7 +26,6 @@ export default function BibleBookGame({navigation}) {
   const [loading, setLoading] = useState(false);
   const [msg, setMessage] = useState('');
   const [showModal, setShowModal] = useState(false);
-  const [endGame, setEndGame] = useState(false);
 
   useEffect(() => {
     setFase(1);

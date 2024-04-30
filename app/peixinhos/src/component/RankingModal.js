@@ -8,7 +8,6 @@ import {
 import { Colors } from '../utils/Colors';
 import { postRanking } from '../service/RankingService';
 import Button from './Button';
-import ButtonLabel from './ButtonLabel';
 import Label from './Label';
 import Modal from './Modal';
 
@@ -23,27 +22,31 @@ export default function RankingModal({
   const [err, setErr] = useState(null);
   
   const handleSubmit = () => {
-    if(player && player !== null){
-      setLoading(true);
+    if(points !== null && points > 0){
+      if(player && player !== null){
+        setLoading(true);
 
-      let body = {
-        player:player,
-        game:game,
-        score:points,
-      };
+        let body = {
+          player:player,
+          game:game,
+          score:points,
+        };
 
-      postRanking(body).then(response => {
-        if(response && response !== null && response.status == 200){
-          setLoading(false);
+        postRanking(body).then(response => {
+          if(response && response !== null && response.status == 200){
+            setLoading(false);
 
-          onClose();
-        } else {
-          setErr('Houve um erro ao tentar enviar para o ranking! Tente novamente mais tarde!');    
-        }
-      });
+            onClose();
+          } else {
+            setErr('Houve um erro ao tentar enviar para o ranking! Tente novamente mais tarde!');    
+          }
+        });
+      } else {
+        setErr('Preencha seu nome para o ranking!');
+        setLoading(false);
+      }
     } else {
-      setErr('Preencha seu nome para o ranking!');
-      setLoading(false);
+      onClose();
     }
   }
 

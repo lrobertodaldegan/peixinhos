@@ -3,46 +3,79 @@ import {
   View,
   StyleSheet,
   Dimensions,
-  ToastAndroid,
+  ActivityIndicator,
   ScrollView,
+  TouchableHighlight,
 } from 'react-native';
 import { Texts } from '../../utils/Texts';
 import NavButton from '../NavButton';
 import { Colors } from '../../utils/Colors';
 import ButtonLabel from '../ButtonLabel';
-import MemoryCard from '../MemoryCard';
+import RankingModal from '../RankingModal';
 import Label from '../Label';
 import { BannerAd, BannerAdSize, TestIds } from 'react-native-google-mobile-ads';
 const adUnitId = __DEV__ ? TestIds.BANNER : 'ca-app-pub-2420598559068720/9312913429';
 
+const ALPHABET = 'ABCDEFGHIJKLMNOPQRSTUVXYZ';
+
 export default function WordsGame({mode, navigation}) {
   const [fase, setFase] = useState(1);
-  const [width, setWidth] = useState(1);
-  const [cards, setCards] = useState([]);
-  const [selections, setSelections] = useState([]);
   const [points, setPoints] = useState(0);
+  const [word, setWord] = useState('');
+  const [mask, setMask] = useState('');
+  const [options, setOptions] = useState([]);
+  const [abouts, setAbouts] = useState([]);
+  const [answers, setAnswers] = useState([]);
+  const [loading, setLoading] = useState(false);
   const [msg, setMessage] = useState('');
-  const [block, setBlock] = useState(true);
-  const [endGame, setEndGame] = useState(false);
-  const [modalContent, setModalContent] = useState(false);
-  const [modalActive, setModalActive] = useState(false);
+  const [showModal, setShowModal] = useState(false);
 
   useEffect(() => {
     setFase(1);
-
-    if(cards.length < 1)
-      init(1);
+    setPoints(0);
+    setAnswers([]);
   }, []);
 
-  const getRandomCard = (itens) => {
-    let index = Math.floor(Math.random() * Texts.Characters.length);
+  useEffect(() => {
+    setAnswers([]);
+    getRandomWord();
+  }, [fase]);
 
-    let change = itens.filter(i => i.index == index).length > 0;
+  const getRandomWord = () => {
+    setLoading(true);
 
-    if(change === true)
-      return getRandomCard(itens);
-    else
-      return {index:index, character:Texts.Characters[index]};
+    let w = Texts.WordsGame[Math.floor(Math.random() * Texts.WordsGame.length)];
+
+    let max = 15;
+
+    let opts = [];
+
+    for(let i=0; i < w.word.length; i++){
+      if(!opts.includes(w.word[i]))
+        opts.push(w.word[i]);
+    }
+
+    while(opts.length < max){
+      let o = ALPHABET[Math.floor(Math.random() * ALPHABET.length)];
+
+      if(!opts.includes(o))
+        opts.push(o);
+    }
+
+    setAbouts(w.helpers);
+
+    setOptions(shuffle(opts));
+ 
+    let wo = '';
+
+    while(wo.length < w.word.length){
+      wo = `${wo}-`; 
+    }
+
+    setMask(wo);
+    setWord(w.word);
+
+    setLoading(false);
   }
 
   const getMessage = (good) => {
@@ -54,7 +87,7 @@ export default function WordsGame({mode, navigation}) {
   }
 
   const shuffle = (array) => {
-    let currentIndex = array.length,  randomIndex;
+    let currentIndex = array.length, randomIndex;
   
     // While there remain elements to shuffle.
     while (currentIndex > 0) {
@@ -63,7 +96,10 @@ export default function WordsGame({mode, navigation}) {
       currentIndex--;
   
       // And swap it with the current element.
-      [array[currentIndex], array[randomIndex]] = [
+      [
+        array[currentIndex], 
+        array[randomIndex]
+      ] = [
         array[randomIndex], 
         array[currentIndex]
       ];
@@ -72,179 +108,108 @@ export default function WordsGame({mode, navigation}) {
     return array;
   }
 
-  const init = (f) => {
-    let cQtd = 2 + (2 * f);
-
-    let div = f >= 3 ? 4 : cQtd*0.5;
-
-    setWidth((screen.width - 40)/div);
-
-    let itens = [];
-
-    for(let i=0; i < (cQtd * 0.5); i++){
-      let item = getRandomCard(itens);
-
-      let a = {...item, id:`${item.index}`, show:false, mode:Texts.Games.Modes.classic};
-      let b = {...item, id:`${item.index}b`, show:false, mode:mode};
-
-      itens.push(a);
-      itens.push(b);
+  const getBorderColor = (opt) => {
+    if(answers.includes(opt)){
+      if(word.includes(opt))
+        return Colors.green;
+      else
+        return Colors.orange;
     }
 
-    setCards(shuffle(itens));
-
-    setBlock(false);
+    return Colors.black;
   }
 
-  const handleSelection = (card) => {
-    if(block === false){
-      let ss = selections;
+  const handleSelection = (selected) => {
+    if(selected && selected !== null){
+      let newMask = '';
 
-      let result = [];
-      
-      if(ss.length < 2){
-        for(let i=0; i < cards.length; i++){
-          let c = cards[i];
-
-          if(c.id === card?.id){
-            c.show = true;
-
-            ss.push(c);
-          }
-          
-          result.push(c);
-        }
-        
-        setCards(result);
-        setSelections(ss);
-      }
-
-      handleCombination(ss);
-    }
-  }
-
-  const handleCombination = (ss) => {
-    if(ss.length > 1){
-      setBlock(true);
-
-      let a = null;
-      let b = null;
-
-      for(let i=0; i < ss.length; i++){
-        if(a === null)
-          a = ss[i];
-        else
-          b = ss[i];
-      }
-
-      let ps = points;
-      
-      if(a.character.name === b?.character.name){
-        setPoints(ps + 10);
+      if(word.includes(selected)){
+        setPoints(points + 10);
 
         setMessage(getMessage(true));
 
-        setBlock(false);
+
+        for(c=0; c < word.length; c++){
+          if(selected === word[c])
+            newMask = newMask + selected;
+          else
+            newMask = newMask + mask[c];
+        }
+        
+        setMask(newMask);
       } else {
+        if(points > 0)
+          setPoints(points - 5);
+
         setMessage(getMessage(false));
-
-        setTimeout(() => {
-          let result = [];
-          //turnover selecteds
-          for(let i=0; i < cards.length; i++){
-            let c = cards[i];
-    
-            if(c.id === a.id || c.id === b.id)
-              c.show = false;
-            
-            result.push(c);
-          }
-  
-          setCards(result);
-
-          setBlock(false);
-        }, 1500);
       }
 
-      setSelections([]);
+      let as = answers;
 
-      handleEndFase();
-    }
-  }
+      as.push(selected);
 
-  const handleEndFase = () => {
-    let faseEnded = cards.filter(c => c.show === false).length < 1;
+      setAnswers(as);
 
-    if(faseEnded === true){
-      let f = fase + 1;
-
-      if(f > 15){
-        ToastAndroid.show('🎉 Parabéns!', 1000);
-
-        setEndGame(true);
-      } else {
-        ToastAndroid.show('🎉 Parabéns!', 300);
-
-        setFase(f);
-
-        setTimeout(() => init(f), 500);
+      if(newMask === word){
+        setTimeout(() => setFase(fase + 1), 1000);
       }
     }
   }
 
-  const showModal = (content) => {
-    setModalContent(<Label value={content} size={16}/>);
-    
-    setModalActive(true);
-  }
-
-  const renderCardsOrEndGame = ()=> {
-    if(endGame === true){
+  const renderComp = () => {
+    if(loading === true){
       return (
-        <View style={styles.endGameWrap}>
-          <ButtonLabel value='Parabéns!' size={32}/>
-          <ButtonLabel value={'Chegamos ao final do jogo!'}
-              size={22}/>
-          <ButtonLabel value={'Deus abençoe!!!'}
-              size={22}/>
-        </View>
+        <ActivityIndicator color={Colors.yellow}
+          size={'large'}
+          style={styles.loading}
+        />
       );
     } else {
       return (
-        <View style={styles.cardsWrap}>
-          {cards.map(c => {
-            return (
-              <MemoryCard key={c.id} item={c} width={width} mode={c.mode}
-                  show={c.show} onPress={() => handleSelection(c)}
-                  onMaximize={() => showModal(c.character.resume)}/>
-            )
-          })}
+        <View style={styles.compWrap}>
+          <View style={styles.board}>
+            <ButtonLabel value='Qual é a palavra?' size={24}/>
+            {abouts.map(a => {
+              return (
+                <Label key={a.id} value={`${a.id} - ${a.text}`} size={14}/>
+              );
+            })}
+          </View>
+          <View style={styles.inputWrap}>
+            <View style={styles.input}>
+              <Label value={mask} size={24}/>
+            </View>
+          </View>
+          <View style={styles.optsWrap}>
+            {options.map((opt, i) => {
+              return (
+                <TouchableHighlight key={`${i}${opt}`}
+                    underlayColor={'transparent'}
+                    style={[
+                      styles.btnOpt,
+                      {borderColor:getBorderColor(opt)}
+                    ]}
+                    onPress={() => handleSelection(opt)}>
+                  <Label value={opt} size={18} />
+                </TouchableHighlight>
+              );
+            })}
+          </View>
         </View>
       );
-    }
-  }
-
-  const renderModal = () => {
-    if(modalActive === true){
-      return (
-        <View style={styles.modalWrap}>
-          {modalContent}
-
-          <NavButton label={Texts.Buttons.goBack}
-            action={() => setModalActive(false)}/>
-        </View>
-      );
-    } else {
-      return <></>
     }
   }
 
   return (
     <>
-      {renderModal()}
+      <RankingModal game={Texts.Games.Menus.words}
+        show={showModal}
+        points={points}
+        onClose={() => navigation.navigate('Games')}
+      />
 
       <ScrollView contentContainerStyle={styles.wrap}>
-        {renderCardsOrEndGame()}
+        {renderComp()}
 
         <View style={styles.pointsWrap}>
           <ButtonLabel value={`${fase}\nFase`} style={styles.pointsLbl}/>
@@ -255,7 +220,7 @@ export default function WordsGame({mode, navigation}) {
         </View>
 
         <NavButton label={Texts.Buttons.leave}
-            action={() => navigation.navigate('Games')}/>
+            action={() => setShowModal(true)}/>
 
         <BannerAd
             unitId={adUnitId}
@@ -275,25 +240,6 @@ const styles = StyleSheet.create({
     height:screen.height * 2,
     alignItems:'center'
   },
-  cardsWrap:{
-    flexDirection:'row',
-    flexWrap:'wrap',
-    alignItems:'center',
-    justifyContent:'space-between',
-  },
-  card:{
-    width:((screen.width - 40) * 0.5),
-    height:50,//screen.height * 0.3,
-    borderWidth:4,
-    borderRadius:10,
-    backgroundColor:Colors.orange,
-    alignItems:'center',
-    justifyContent:'center',
-    marginBottom:10
-  },
-  cardImg:{
-    borderRadius:20,
-  },
   pointsWrap:{
     flexDirection:'row',
     flexWrap:'wrap',
@@ -310,25 +256,48 @@ const styles = StyleSheet.create({
     width:screen.width * 0.3,
     textAlign:'center'
   },
-  charLbl:{
-    textAlign:'center',
-    marginTop:10,
-    marginHorizontal:5
-  },
-  endGameWrap:{
-    alignItems:'center',
+  board:{
+    paddingVertical:10,
+    marginTop:screen.height * 0.1,
+    marginBottom:10,
+    borderRadius:10,
+    borderWidth:4,
+    borderColor:Colors.black,
+    width:screen.width - 20,
     justifyContent:'center',
-    marginVertical:screen.height * 0.25
-  },
-  modalWrap:{
-    zIndex:20,
-    position:'absolute',
-    top:0,
-    width:screen.width,
-    height:screen.height,
-    backgroundColor:'rgba(255,255,255,0.95)',
     alignItems:'center',
-    paddingVertical:screen.width * 0.2,
-    paddingHorizontal:50
+    backgroundColor:Colors.yellow,
+  },
+  inputWrap:{
+    marginVertical:10,
+    borderRadius:10,
+    borderWidth:4,
+    borderColor:Colors.black,
+    width:screen.width - 20,
+    justifyContent:'center',
+    alignItems:'center',
+    backgroundColor:Colors.white,
+  },
+  optsWrap:{
+    flexDirection:'row',
+    flexWrap:'wrap',
+    justifyContent:'center',
+    alignItems:'center',
+    width:screen.width - 20
+  },
+  btnOpt:{
+    marginVertical:5,
+    marginHorizontal:screen.width * 0.03,
+    borderRadius:5,
+    borderWidth:4,
+    borderColor:Colors.black,
+    width:screen.width * 0.1,
+    height:screen.width * 0.1,
+    justifyContent:'center',
+    alignItems:'center',
+    backgroundColor:Colors.white,
+  },
+  loading:{
+    marginVertical:screen.height * 0.25,
   },
 });

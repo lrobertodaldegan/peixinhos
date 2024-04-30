@@ -12,6 +12,7 @@ import { Colors } from '../../utils/Colors';
 import ButtonLabel from '../ButtonLabel';
 import MemoryCard from '../MemoryCard';
 import Label from '../Label';
+import RankingModal from '../RankingModal';
 import { BannerAd, BannerAdSize, TestIds } from 'react-native-google-mobile-ads';
 const adUnitId = __DEV__ ? TestIds.BANNER : 'ca-app-pub-2420598559068720/9312913429';
 
@@ -26,6 +27,7 @@ export default function MemoryGame({mode, navigation}) {
   const [endGame, setEndGame] = useState(false);
   const [modalContent, setModalContent] = useState(false);
   const [modalActive, setModalActive] = useState(false);
+  const [showRankingModal, setShowRankingModal] = useState(false);
 
   useEffect(() => {
     setFase(1);
@@ -178,7 +180,7 @@ export default function MemoryGame({mode, navigation}) {
     if(faseEnded === true){
       let f = fase + 1;
 
-      if(f > 15){
+      if(f > 29){
         ToastAndroid.show('🎉 Parabéns!', 1000);
 
         setEndGame(true);
@@ -243,6 +245,12 @@ export default function MemoryGame({mode, navigation}) {
     <>
       {renderModal()}
 
+      <RankingModal game={Texts.Games.Menus.memory}
+        show={showRankingModal}
+        points={points}
+        onClose={() => navigation.navigate('Games')}
+      />
+
       <ScrollView contentContainerStyle={styles.wrap}>
         {renderCardsOrEndGame()}
 
@@ -255,7 +263,7 @@ export default function MemoryGame({mode, navigation}) {
         </View>
 
         <NavButton label={Texts.Buttons.leave}
-            action={() => navigation.navigate('Games')}/>
+            action={() => setShowRankingModal(true)}/>
 
         <BannerAd
             unitId={adUnitId}
@@ -272,7 +280,7 @@ const screen = Dimensions.get('screen');
 const styles = StyleSheet.create({
   wrap:{
     paddingHorizontal:10,
-    height:screen.height * 2,
+    minHeight:screen.height * 2,
     alignItems:'center'
   },
   cardsWrap:{

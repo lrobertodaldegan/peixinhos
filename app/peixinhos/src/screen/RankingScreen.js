@@ -21,15 +21,14 @@ import { Colors } from '../utils/Colors';
 const adUnitId = __DEV__ ? TestIds.BANNER : 'ca-app-pub-2420598559068720/9312913429';
 
 const FILTER_OPTIONS = [
-  Texts.Games.Menus.bibleBook,
-  Texts.Games.Menus.cards,
   Texts.Games.Menus.erros,
   Texts.Games.Menus.memory,
+  Texts.Games.Menus.bibleBook,
   Texts.Games.Menus.words,
 ];
 
 export default function RankingScreen({navigation}) {
-  const [game, setGame] = useState(Texts.Games.Menus.bibleBook);
+  const [game, setGame] = useState(Texts.Games.Menus.erros);
   const [itens, setItens] = useState([]);
   const [loading, setLoading] = useState(false);
 
@@ -114,8 +113,6 @@ export default function RankingScreen({navigation}) {
           </View>
         }
       />
-
-      <Footer />
 
     </ImageBackground> 
   );
